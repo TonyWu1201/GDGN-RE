@@ -1,0 +1,38 @@
+{
+  "config_resolved": {
+    "data_hash": "5097d56e25abb0d9",
+    "environment": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "pyarrow": "25.0.1",
+      "python": "3.14.6",
+      "rdkit": "2026.03.6",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1"
+    },
+    "generated_at_utc": "2026-09-23T05:29:54.805008+00:00",
+    "git_commit": "unknown",
+    "hvg_main": 1000,
+    "output_dir": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\5097d56e25abb0d9\\3abe6fa44a26d08a\\f05fd3d9603d2b21\\lco",
+    "preprocess_hash": "f05fd3d9603d2b21",
+    "split_hash": "3abe6fa44a26d08a",
+    "stage": "E1_build_expression_features",
+    "unit": "log2(TPM+1); no re-log (C0 dictionary note)"
+  },
+  "duration_s": 47.1,
+  "error": null,
+  "input_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\cdae74e2aff092c2ea904dcaa9d0ea7f13bf98a8021059a6c3a4872e0b6c2d12\\lco\\fold_candidate_0.csv": "590f8b6626c126fa9354eafcdbaba2e13491c083b39bd97b953dbdd21636cd67",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\cdae74e2aff092c2ea904dcaa9d0ea7f13bf98a8021059a6c3a4872e0b6c2d12\\lco\\fold_candidate_1.csv": "0be070527f37a3f02a24b321fff09f1645c83e9b7f2fd0bca31f272c727b45e8",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\cdae74e2aff092c2ea904dcaa9d0ea7f13bf98a8021059a6c3a4872e0b6c2d12\\lco\\fold_candidate_2.csv": "268ac4e131ad892f8da7ffea1c05725e94d1a63e86bce29fd4f8a82a2a3ce3ab",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\cdae74e2aff092c2ea904dcaa9d0ea7f13bf98a8021059a6c3a4872e0b6c2d12\\lco\\fold_candidate_3.csv": "89dac194440971387a74c9c46f5dcf92505ee84628352dacc9b61b1c50b0dbe3",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\cdae74e2aff092c2ea904dcaa9d0ea7f13bf98a8021059a6c3a4872e0b6c2d12\\lco\\fold_candidate_4.csv": "2df7e6cccfc1c679189b37f22ee5014c598221107a93ba3b43b839b90e6f5cf4"
+  },
+  "output_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\5097d56e25abb0d9\\3abe6fa44a26d08a\\f05fd3d9603d2b21\\lco\\hash_marker.txt": "dir"
+  },
+  "stage": "E1_build_expression_features",
+  "started_at": "2026-09-23T05:29:07.731533+00:00",
+  "status": "succeeded"
+}

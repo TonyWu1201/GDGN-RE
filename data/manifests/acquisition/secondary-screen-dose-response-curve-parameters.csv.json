@@ -1,0 +1,17 @@
+{
+  "source_id": "prism_secondary",
+  "release_id": "secondary_published",
+  "download_url": "https://ndownloader.figshare.com/files/20237739",
+  "local_path": "data/holdout/external/PRISM/secondary_published/secondary-screen-dose-response-curve-parameters.csv",
+  "accessed_at": "2026-09-23T02:00:10.228020+00:00",
+  "http_status": 200,
+  "final_url": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/20237739/secondaryscreendoseresponsecurveparameters.csv",
+  "content_type": "text/csv",
+  "content_length": "264340589",
+  "etag": "\"e629b9d505ad3d6bf65fde96f1c54bee\"",
+  "last_modified": "Sat, 17 Apr 2021 16:28:57 GMT",
+  "sha256": "88d1013506e0cd6f191a51c5f3fdd3fb2be54f8afb4e19a5d1f8538e81fbfec8",
+  "file_size": 264340589,
+  "downloaded_at": "2026-09-23T02:00:38.472267+00:00",
+  "acquisition_status": "downloaded_verified_container"
+}

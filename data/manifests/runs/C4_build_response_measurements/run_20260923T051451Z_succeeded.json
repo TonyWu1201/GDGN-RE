@@ -1,0 +1,53 @@
+{
+  "config_resolved": {
+    "aggregation": "median within (cell_id, compound_id, condition_key); keep n + dispersion",
+    "counts": {
+      "extrapolation_above": 143622,
+      "extrapolation_below": 733,
+      "mapped_to_long_table": 203129,
+      "modeling_samples": 203129,
+      "n_condition_keys": 403,
+      "nonfinite_excluded": 0,
+      "rmse_above_qc": 0,
+      "source_rows": 242036,
+      "unmapped_reason_counts": {
+        "cell_not_mapped": 226,
+        "cell_not_mapped|drug_not_mapped": 53,
+        "drug_not_mapped": 38628
+      },
+      "unmapped_rows": 38907
+    },
+    "environment": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "pyarrow": "25.0.1",
+      "python": "3.14.6",
+      "rdkit": "2026.03.6",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1"
+    },
+    "generated_at_utc": "2026-09-23T05:14:51.808649+00:00",
+    "git_commit": "unknown",
+    "label_policy": {
+      "endpoint": "LN_IC50",
+      "log_base": "e",
+      "no_relog": true,
+      "z_score_label": false
+    },
+    "stage": "C4_build_response_measurements"
+  },
+  "duration_s": 23.2,
+  "error": null,
+  "input_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\canonical\\GDSC\\release8.5\\GDSC2_fitted_dose_response_27Oct23.csv": "a4e757f80315c1a188bb15de313fd0696c9753ee966f1f9e62eaf98d2c09fe39"
+  },
+  "output_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\processed\\response\\modeling_samples.parquet": "a8d3959f6d68610122d7dc0625b0c7eda55a8d6887674b487e31322540c1eb6b",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\processed\\response\\response_measurements.parquet": "5d805061cb4d4e0959ec4a04abb4609625cc481da9f3aa52a507bbfce9c27176",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\processed\\response\\unmapped_measurements.csv": "6ec53d8314bb042a800aa3142be2f5128ec9318bbc90d5bf20105e79a5eda38c"
+  },
+  "stage": "C4_build_response_measurements",
+  "started_at": "2026-09-23T05:14:28.648937+00:00",
+  "status": "succeeded"
+}

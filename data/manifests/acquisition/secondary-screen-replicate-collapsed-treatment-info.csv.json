@@ -1,0 +1,17 @@
+{
+  "source_id": "prism_secondary",
+  "release_id": "secondary_published",
+  "download_url": "https://ndownloader.figshare.com/files/20237763",
+  "local_path": "data/raw/PRISM/secondary_published/secondary-screen-replicate-collapsed-treatment-info.csv",
+  "accessed_at": "2026-09-23T02:00:09.777667+00:00",
+  "http_status": 200,
+  "final_url": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/20237763/secondaryscreenreplicatecollapsedtreatmentinfo.csv",
+  "content_type": "text/csv",
+  "content_length": "3788355",
+  "etag": "\"54765b3639f91cede751378d694e3583\"",
+  "last_modified": "Sat, 17 Apr 2021 16:29:05 GMT",
+  "sha256": "9d0d1fb4faa87a63cd84965ec5e2b55a9df5680520a41b029abb679cfd4384f7",
+  "file_size": 3788355,
+  "downloaded_at": "2026-09-23T02:00:12.698101+00:00",
+  "acquisition_status": "downloaded_verified_container"
+}

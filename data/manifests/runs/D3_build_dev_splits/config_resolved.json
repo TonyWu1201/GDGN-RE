@@ -1,0 +1,29 @@
+{
+  "environment": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pyarrow": "25.0.1",
+    "python": "3.14.6",
+    "rdkit": "2026.03.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "folds": {
+    "lco_candidate": 5,
+    "lco_quick": 1,
+    "ldo_so": 5,
+    "lpo": 1
+  },
+  "generated_at_utc": "2026-09-23T05:23:18.456459+00:00",
+  "git_commit": "unknown",
+  "leakage_audit_all_pass": true,
+  "protocols": [
+    "lco",
+    "lpo",
+    "ldo_so",
+    "lco_expression_neighbor_stress"
+  ],
+  "split_seed_base": 20260923,
+  "stage": "D3_build_dev_splits"
+}

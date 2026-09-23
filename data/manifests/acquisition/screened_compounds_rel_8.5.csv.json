@@ -1,0 +1,17 @@
+{
+  "source_id": "gdsc",
+  "release_id": "8.5",
+  "download_url": "https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.5/screened_compounds_rel_8.5.csv",
+  "local_path": "data/raw/GDSC/release8.5/screened_compounds_rel_8.5.csv",
+  "accessed_at": "2026-09-23T01:49:05.601753+00:00",
+  "http_status": 200,
+  "final_url": "https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.5/screened_compounds_rel_8.5.csv",
+  "content_type": "text/csv",
+  "content_length": "46414",
+  "etag": "\"1f8a7c36e02f3298704063f104b5ff81\"",
+  "last_modified": "Mon, 30 Oct 2023 15:06:42 GMT",
+  "sha256": "d3cbb8b595980b36bf92d54af1da1dd995d2e2ce624c7cc70aacf2a754dce782",
+  "file_size": 46414,
+  "downloaded_at": "2026-09-23T01:49:06.818391+00:00",
+  "acquisition_status": "downloaded_verified_container"
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "pubchem",
+  "release_id": "snapshot_20260923",
+  "download_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/IUEWAGVJRJORLA-HZPDHXFCSA-N/property/IsomericSMILES,InChIKey,InChI/JSON",
+  "local_path": "data/raw/PubChem/snapshot_20260923/IUEWAGVJRJORLA-HZPDHXFCSA-N.json",
+  "accessed_at": "2026-09-23T02:01:51.876825+00:00",
+  "http_status": 200,
+  "final_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/IUEWAGVJRJORLA-HZPDHXFCSA-N/property/IsomericSMILES,InChIKey,InChI/JSON",
+  "content_type": "application/json",
+  "content_length": null,
+  "etag": null,
+  "last_modified": null,
+  "sha256": "8fb917395a3be95aa27aaa3ee787ed4fa0fc2f5380764a9c10b47d674d9b2df4",
+  "file_size": 408,
+  "downloaded_at": "2026-09-23T02:01:52.783579+00:00",
+  "acquisition_status": "downloaded_verified_container"
+}

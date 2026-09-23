@@ -1,0 +1,17 @@
+{
+  "source_id": "gdsc1_external",
+  "release_id": "8.5",
+  "download_url": "https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.5/GDSC1_fitted_dose_response_27Oct23.xlsx",
+  "local_path": "data/holdout/external/GDSC1/release8.5/GDSC1_fitted_dose_response_27Oct23.xlsx",
+  "accessed_at": "2026-09-23T01:49:06.083247+00:00",
+  "http_status": 200,
+  "final_url": "https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.5/GDSC1_fitted_dose_response_27Oct23.xlsx",
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "content_length": "29353210",
+  "etag": "\"d3db01db37e4bd461641a7bc9231012b\"",
+  "last_modified": "Mon, 30 Oct 2023 14:58:48 GMT",
+  "sha256": "837b0686500fde75179e490de08f034abd9f882d8b0253d637bafe83e156dafd",
+  "file_size": 29353210,
+  "downloaded_at": "2026-09-23T01:49:10.797558+00:00",
+  "acquisition_status": "downloaded_verified_container"
+}

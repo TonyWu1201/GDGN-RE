@@ -1,0 +1,11 @@
+{
+  "source_id": "DepMap",
+  "release_id": "26Q1",
+  "download_url": "https://depmap.org/portal/download/all/ (Cloudflare Turnstile verified browser download; signed GCS URL not recorded)",
+  "local_path": "data/raw/DepMap/26Q1/ModelCondition.csv",
+  "accessed_at": "2026-09-23",
+  "sha256": "8060accf252366d165618d80808e4e903ce5142de22fbd400a785ed195c1eb60",
+  "file_size": 223524,
+  "acquisition_status": "manual_download_provenance_incomplete",
+  "provenance_note": "User browser download from DepMap portal 26Q1 release public-26q1-5bbf.37; portal generates signed URLs that cannot be recorded here."
+}

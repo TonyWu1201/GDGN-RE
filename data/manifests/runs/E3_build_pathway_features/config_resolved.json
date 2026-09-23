@@ -1,0 +1,21 @@
+{
+  "collection": "MSigDB Human Hallmark 50 (entrez GMT v2026.1.Hs)",
+  "data_hash": "c16b80bae5982dd2",
+  "environment": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pyarrow": "25.0.1",
+    "python": "3.14.6",
+    "rdkit": "2026.03.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "generated_at_utc": "2026-09-23T05:32:14.109376+00:00",
+  "git_commit": "unknown",
+  "min_effective_members": 10,
+  "n_sets_valid": 50,
+  "preprocess_hash": "62b76ccfeb250232",
+  "split_hash": "3abe6fa44a26d08a",
+  "stage": "E3_build_pathway_features"
+}

@@ -1,0 +1,8 @@
+{
+  "release_evidence": "public-26q1-5bbf.37",
+  "local_path": "data/raw/DepMap/26Q1/Model.csv",
+  "scope": "Model.csv only; not evidence for other matrices",
+  "original_filename": "Model.csv",
+  "origin_without_signed_query": "https://storage.googleapis.com/depmap-external-downloads/downloads-by-canonical-id/public-26q1-5bbf.37/Model.csv",
+  "evidence_type": "Windows_Zone.Identifier"
+}

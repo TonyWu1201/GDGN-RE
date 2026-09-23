@@ -1,0 +1,43 @@
+{
+  "xlsx": "data/raw/GDSC/release8.5/GDSC2_fitted_dose_response_27Oct23.xlsx",
+  "csv": "data/canonical/GDSC/release8.5/GDSC2_fitted_dose_response_27Oct23.csv",
+  "rows_compared": 242036,
+  "header_equal": true,
+  "numeric_cells_compared": 2178324,
+  "max_numeric_absolute_difference": 1.1102230246251565e-16,
+  "mismatch_count": 717,
+  "whitespace_only_mismatches": 717,
+  "mismatch_examples": [
+    {
+      "line": 143620,
+      "field": "PUTATIVE_TARGET",
+      "xlsx": " ",
+      "csv": ""
+    },
+    {
+      "line": 143621,
+      "field": "PUTATIVE_TARGET",
+      "xlsx": " ",
+      "csv": ""
+    },
+    {
+      "line": 143622,
+      "field": "PUTATIVE_TARGET",
+      "xlsx": " ",
+      "csv": ""
+    },
+    {
+      "line": 143623,
+      "field": "PUTATIVE_TARGET",
+      "xlsx": " ",
+      "csv": ""
+    },
+    {
+      "line": 143624,
+      "field": "PUTATIVE_TARGET",
+      "xlsx": " ",
+      "csv": ""
+    }
+  ],
+  "comparison": "numeric tolerance rel=1e-12 abs=1e-12; string exact; no rounding changes to source"
+}

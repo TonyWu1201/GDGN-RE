@@ -1,0 +1,27 @@
+{
+  "compound_id_rule": "sorted by integer DRUG_ID, CMP0001..",
+  "counts": {
+    "core": 242,
+    "excluded": 47,
+    "low_confidence": 4,
+    "review_required": 2,
+    "same_inchikey_pairs": 10,
+    "skeleton_inchikey_mismatches_attributed_to_salt": 7,
+    "std_failures": 0
+  },
+  "environment": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pyarrow": "25.0.1",
+    "python": "3.14.6",
+    "rdkit": "2026.03.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "generated_at_utc": "2026-09-23T05:10:46.231161+00:00",
+  "git_commit": "unknown",
+  "rdkit_version": "2026.03.6",
+  "salt_policy_rule": "largest_fragment_as_parent; metal complexes untouched (DECISION_LOG 2026-09-22)",
+  "stage": "C3_build_compound_master"
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "gdsc",
+  "release_id": "8.5_annotation_20260917",
+  "download_url": "https://cog.sanger.ac.uk/cmp/download/screened_compounds_rel_8.5_inchi.csv",
+  "local_path": "data/raw/GDSC/release8.5/screened_compounds_rel_8.5_inchi.csv",
+  "accessed_at": "2026-09-23T01:51:38.525308+00:00",
+  "http_status": 200,
+  "final_url": "https://cog.sanger.ac.uk/cmp/download/screened_compounds_rel_8.5_inchi.csv",
+  "content_type": "binary/octet-stream",
+  "content_length": "60969",
+  "etag": "\"afae7c3265b6d49e4c236d947e9341e6\"",
+  "last_modified": "Thu, 17 Sep 2026 12:45:26 GMT",
+  "sha256": "16fb779bf55a0171ef388d1764d074db28c12e3e28ddc74516816dfd2568061d",
+  "file_size": 60969,
+  "downloaded_at": "2026-09-23T01:51:39.663027+00:00",
+  "acquisition_status": "downloaded_verified_container"
+}

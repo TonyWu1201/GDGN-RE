@@ -1,0 +1,10 @@
+{
+  "source_id": "chembl",
+  "release_id": "snapshot_20260923",
+  "download_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?molecule_chembl_id__in=CHEMBL1079175%2CCHEMBL1173055%2CCHEMBL159%2CCHEMBL176544%2CCHEMBL2017974%2CCHEMBL2386889%2CCHEMBL252164%2CCHEMBL3120215%2CCHEMBL3137320%2CCHEMBL3265288%2CCHEMBL3648328%2CCHEMBL393929%2CCHEMBL399530%2CCHEMBL401930%2CCHEMBL403664%2CCHEMBL408194%2CCHEMBL413%2CCHEMBL414804%2CCHEMBL477989%2CNone&limit=100",
+  "local_path": "data/raw/ChEMBL/snapshot_20260923/gdsc_conflict_molecules.json",
+  "accessed_at": "2026-09-23T01:55:20.369313+00:00",
+  "acquisition_status": "failed",
+  "error": "TimeoutError: The read operation timed out",
+  "attempt": 3
+}

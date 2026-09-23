@@ -1,0 +1,1 @@
+"""program.common：阶段 C–E 共享工具包。"""

@@ -1,0 +1,11 @@
+{
+  "source_id": "DepMap",
+  "release_id": "26Q1",
+  "download_url": "https://depmap.org/portal/download/all/ (Cloudflare Turnstile verified browser download; signed GCS URL not recorded)",
+  "local_path": "data/raw/DepMap/26Q1/OmicsExpressionTPMLogp1HumanProteinCodingGenes.csv",
+  "accessed_at": "2026-09-23",
+  "sha256": "0377be80c525fde98cbd2c6e8b06bdf2a4014a9683eb70182c1f8649d711021a",
+  "file_size": 305007605,
+  "acquisition_status": "manual_download_provenance_incomplete",
+  "provenance_note": "User browser download from DepMap portal 26Q1 release public-26q1-5bbf.37. SHA-256 identical to data/raw/DepMap/unverified/DepMap_ExpressionTPMLogp1HumanProteinCodingGenes.csv; legacy file verified as 26Q1 original."
+}

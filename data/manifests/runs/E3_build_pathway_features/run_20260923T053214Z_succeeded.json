@@ -1,0 +1,34 @@
+{
+  "config_resolved": {
+    "collection": "MSigDB Human Hallmark 50 (entrez GMT v2026.1.Hs)",
+    "data_hash": "c16b80bae5982dd2",
+    "environment": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "pyarrow": "25.0.1",
+      "python": "3.14.6",
+      "rdkit": "2026.03.6",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1"
+    },
+    "generated_at_utc": "2026-09-23T05:32:14.109376+00:00",
+    "git_commit": "unknown",
+    "min_effective_members": 10,
+    "n_sets_valid": 50,
+    "preprocess_hash": "62b76ccfeb250232",
+    "split_hash": "3abe6fa44a26d08a",
+    "stage": "E3_build_pathway_features"
+  },
+  "duration_s": 14.5,
+  "error": null,
+  "input_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\raw\\MSigDB\\2026.1.Hs\\msigdb_v2026.1.Hs_files_to_download_locally\\msigdb_v2026.1.Hs_GMTs\\h.all.v2026.1.Hs.entrez.gmt": "7b3c4de012b2a3aa8f90e5452c21fc8c116a31c30dd98ec00253816152ac9072"
+  },
+  "output_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\c16b80bae5982dd2\\3abe6fa44a26d08a\\62b76ccfeb250232\\pathway\\coverage_audit.json": "2817c0463159ac1f1353b4ebbdf16b97eb684e59315dbbe6f864bdd0b4edc8d8"
+  },
+  "stage": "E3_build_pathway_features",
+  "started_at": "2026-09-23T05:31:59.657799+00:00",
+  "status": "succeeded"
+}

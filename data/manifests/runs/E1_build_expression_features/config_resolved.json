@@ -1,0 +1,21 @@
+{
+  "data_hash": "5097d56e25abb0d9",
+  "environment": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pyarrow": "25.0.1",
+    "python": "3.14.6",
+    "rdkit": "2026.03.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "generated_at_utc": "2026-09-23T05:29:54.805008+00:00",
+  "git_commit": "unknown",
+  "hvg_main": 1000,
+  "output_dir": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\5097d56e25abb0d9\\3abe6fa44a26d08a\\f05fd3d9603d2b21\\lco",
+  "preprocess_hash": "f05fd3d9603d2b21",
+  "split_hash": "3abe6fa44a26d08a",
+  "stage": "E1_build_expression_features",
+  "unit": "log2(TPM+1); no re-log (C0 dictionary note)"
+}

@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+*.egg-info/
+
+# 大文件数据：data/ 下仅跟踪 manifests/ 与 splits/
+data/raw/
+data/canonical/
+data/processed/
+data/archive/
+data/features/
+data/runs/
+data/holdout/
+
+# 本地研究文档（计划/决策日志/审计报告）不上传
+guidance/
+
+# 本地与临时
+tmp/
+*.log
+
+# 系统
+.DS_Store
+Thumbs.db

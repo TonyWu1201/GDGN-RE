@@ -1,0 +1,10 @@
+{
+  "source_id": "chembl",
+  "release_id": "snapshot_20260923",
+  "download_url": "https://www.ebi.ac.uk/chembl/api/data/molecule/CHEMBL176544.json",
+  "local_path": "data/raw/ChEMBL/snapshot_20260923/CHEMBL176544.json",
+  "accessed_at": "2026-09-23T01:57:48.674955+00:00",
+  "acquisition_status": "failed",
+  "error": "HTTPError: HTTP Error 500: Internal Server Error",
+  "attempt": 3
+}

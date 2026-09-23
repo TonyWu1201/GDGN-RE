@@ -1,0 +1,17 @@
+{
+  "source_id": "prism_secondary",
+  "release_id": "secondary_published",
+  "download_url": "https://ndownloader.figshare.com/files/20237769",
+  "local_path": "data/raw/PRISM/secondary_published/secondary-screen-cell-line-info.csv",
+  "accessed_at": "2026-09-23T02:00:09.213048+00:00",
+  "http_status": 200,
+  "final_url": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/20237769/secondaryscreencelllineinfo.csv",
+  "content_type": "text/csv",
+  "content_length": "40979",
+  "etag": "\"6737b4aa9fd85404fd2f0cf825b037e4\"",
+  "last_modified": "Sat, 17 Apr 2021 16:29:05 GMT",
+  "sha256": "b93436b5f4bcf5fd14589697be4ca8f99ffd99d639223080380bc514c3718d27",
+  "file_size": 40979,
+  "downloaded_at": "2026-09-23T02:00:10.904058+00:00",
+  "acquisition_status": "downloaded_verified_container"
+}

@@ -1,0 +1,49 @@
+{
+  "counts": {
+    "cnv": 513,
+    "mapped": 968,
+    "mut": 959,
+    "review_rows": 0,
+    "rna": 717,
+    "status_counts": {
+      "mapped": 966,
+      "mapped_adjudicated": 1,
+      "mapped_via_cvcl_rrid": 1,
+      "no_expression_mapping": 1
+    }
+  },
+  "decisions": {
+    "profile_rule": "IsDefaultEntryForModel=Yes only",
+    "related_groups": "ML-1/ML-2 via CMP relations PMID:3458526; 0 groups from PatientID/Cellosaurus HI-AS within core",
+    "sidm00117": "existing adjudication reused (ACH-002172)",
+    "sidm00427": "no_expression_mapping (ACH-002194 absent from 26Q1)",
+    "sidm01117": "recovered via CMP RRID CVCL_1588 -> ACH-003071"
+  },
+  "environment": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pyarrow": "25.0.1",
+    "python": "3.14.6",
+    "rdkit": "2026.03.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "generated_at_utc": "2026-09-23T05:03:37.096262+00:00",
+  "git_commit": "unknown",
+  "inputs": {
+    "cellosaurus": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\raw\\Cellosaurus\\56.0\\cellosaurus.txt",
+    "cmp_model_list": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\raw\\CellModelPassports\\20260921\\model_list_20260921.csv",
+    "existing_adjudication": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\canonical\\cell_mapping_conflicts.csv",
+    "gdsc2_response": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\canonical\\GDSC\\release8.5\\GDSC2_fitted_dose_response_27Oct23.csv",
+    "model": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\raw\\DepMap\\26Q1\\Model.csv",
+    "profiles": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\raw\\DepMap\\26Q1\\OmicsProfiles.csv"
+  },
+  "outputs": {
+    "cell_crosswalk": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\processed\\entities\\cell_crosswalk.csv",
+    "cell_mapping_review": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\processed\\entities\\cell_mapping_review.csv",
+    "cell_master": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\processed\\entities\\cell_master.csv",
+    "related_cell_groups": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\processed\\entities\\related_cell_groups.csv"
+  },
+  "stage": "C2_build_cell_crosswalk"
+}

@@ -1,0 +1,38 @@
+{
+  "aggregation": "median within (cell_id, compound_id, condition_key); keep n + dispersion",
+  "counts": {
+    "extrapolation_above": 143622,
+    "extrapolation_below": 733,
+    "mapped_to_long_table": 203129,
+    "modeling_samples": 203129,
+    "n_condition_keys": 403,
+    "nonfinite_excluded": 0,
+    "rmse_above_qc": 0,
+    "source_rows": 242036,
+    "unmapped_reason_counts": {
+      "cell_not_mapped": 226,
+      "cell_not_mapped|drug_not_mapped": 53,
+      "drug_not_mapped": 38628
+    },
+    "unmapped_rows": 38907
+  },
+  "environment": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pyarrow": "25.0.1",
+    "python": "3.14.6",
+    "rdkit": "2026.03.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "generated_at_utc": "2026-09-23T05:14:51.808649+00:00",
+  "git_commit": "unknown",
+  "label_policy": {
+    "endpoint": "LN_IC50",
+    "log_base": "e",
+    "no_relog": true,
+    "z_score_label": false
+  },
+  "stage": "C4_build_response_measurements"
+}

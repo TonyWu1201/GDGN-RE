@@ -1,0 +1,193 @@
+{
+  "_meta": {
+    "schema_version": "1.0",
+    "project_tag": "rebuild-2026",
+    "description": "P0-P3 数据来源登记：获取内容、推荐入口与队列限制（计划第 3 节）。采集顺序：GDSC2 标签与注释 → DepMap 表达与注释 → 药物结构 → 三类实体映射 → 首个外部数据可行性抽查 → 通路 → 可选组学/图。",
+    "usage": "每项来源取得后在 data/manifests/source_manifest.csv 登记逐文件哈希与 provenance；证据文件 sources.json 由 audit-data 入口生成"
+  },
+  "version_policy": {
+    "freeze_one_reproducible_release": true,
+    "do_not_chase_latest_quarter": true,
+    "depmap_release_id_required": true,
+    "network_notes": "2026-09-22 核验：旧 GDSC 下载路径返回 410；DepMap 个别下载入口有人机验证；DGIdb 下载页未返回可解析正文。执行时走官方页面、官方 release 归档或已核验本地文件，不绕过登录或访问限制；上述情况不等于资源停止服务，也不表示下载成功"
+  },
+  "sources": [
+    {
+      "id": "gdsc2_response",
+      "priority": "P0",
+      "role": "GDSC2 响应标签",
+      "content": [
+        "原始拟合表",
+        "药物元数据",
+        "细胞系元数据",
+        "数据字典",
+        "剂量范围与重复测量（能获取时）"
+      ],
+      "entry_urls": [
+        "https://www.sanger.ac.uk/tool/gdsc-genomics-drug-sensitivity-cancer/",
+        "https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.5/GDSC_Fitted_Data_Description.pdf"
+      ],
+      "local_candidate": "data/raw/GDSC/release8.5/GDSC2_fitted_dose_response_27Oct23.xlsx",
+      "restricts_core": true,
+      "derived_candidate": "data/canonical/GDSC/release8.5/GDSC2_fitted_dose_response_27Oct23.csv"
+    },
+    {
+      "id": "depmap_expression",
+      "priority": "P0",
+      "role": "基础表达",
+      "content": [
+        "同一公开 release 的表达矩阵",
+        "Model 元数据",
+        "profile/condition 注释",
+        "README"
+      ],
+      "entry_url": "https://depmap.org/portal/data_page/?tab=allData",
+      "local_candidate": "data/raw/DepMap/26Q1/OmicsExpressionTPMLogp1HumanProteinCodingGenes.csv",
+      "restricts_core": true,
+      "release_status": "26Q1 (public-26q1-5bbf.37); expression/CNV/mutation SHA-256 match the 26Q1 portal originals; profiles and condition annotations downloaded 2026-09-23"
+    },
+    {
+      "id": "drug_structures",
+      "priority": "P0",
+      "role": "药物结构",
+      "content": [
+        "原始结构",
+        "立体结构 SMILES",
+        "InChIKey",
+        "CID",
+        "映射证据"
+      ],
+      "entry_url": "https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest",
+      "note": "先用筛选项目附带结构，再以 PubChem PUG REST 补充核验；PubChem 的 ConnectivitySMILES 不含立体化学，不能代替需要立体信息的原始结构",
+      "restricts_core": true,
+      "local_candidate": "data/raw/legacy_structure_seed/unverified/compound_cid_smiles.csv",
+      "missing_locally": false,
+      "curation_status": "candidate_only_pending_official_structure_review"
+    },
+    {
+      "id": "entity_mapping",
+      "priority": "P0",
+      "role": "实体映射",
+      "content": [
+        "GDSC/Sanger/COSMIC",
+        "DepMap ModelID",
+        "Cellosaurus accession",
+        "HGNC/Ensembl/Entrez 对照"
+      ],
+      "entry_urls": [
+        "https://www.cellosaurus.org/",
+        "https://www.genenames.org/download/statistics-and-files/"
+      ],
+      "note": "歧义实体不能自动纳入；旧仓库 common_cell_lines.csv 与 common_drugs_pubchem.csv 仅作候选映射证据",
+      "local_candidates": [
+        "data/raw/DepMap/26Q1/Model.csv",
+        "data/raw/Cellosaurus/56.0/cellosaurus.txt",
+        "data/raw/HGNC/unverified/Gene.csv",
+        "data/raw/CellModelPassports/20260921/model_list_20260921.csv"
+      ]
+    },
+    {
+      "id": "hallmark_pathways",
+      "priority": "P1",
+      "role": "可解释通路",
+      "content": [
+        "一个冻结版本的 Human Hallmark GMT",
+        "备选 Reactome 子集"
+      ],
+      "entry_url": "https://www.gsea-msigdb.org/gsea/msigdb/human/collections.jsp",
+      "local_candidate": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/h.all.v2026.1.Hs.symbols.gmt",
+      "restricts_core": false,
+      "note": "不能因少数通路缺失删除细胞系"
+    },
+    {
+      "id": "first_external_platform",
+      "priority": "P1",
+      "role": "首个外部平台",
+      "content": [
+        "响应",
+        "结构",
+        "细胞系映射",
+        "剂量与终点说明"
+      ],
+      "entry_url": "https://portals.broadinstitute.org/ctrp.v2.1/",
+      "fallback": "GDSC1",
+      "note": "不与主队列取交集后再训练",
+      "fallback_local_candidate": "data/holdout/external/GDSC1/release8.5/GDSC1_fitted_dose_response_27Oct23.xlsx",
+      "acquisition_status": "GDSC1 downloaded; CTRP pending; holdout labels not analyzed"
+    },
+    {
+      "id": "mutation_or_cnv",
+      "priority": "P2",
+      "role": "突变或 CNV",
+      "content": [
+        "与表达尽量同 release 的矩阵",
+        "测序/调用缺失标识"
+      ],
+      "entry_url": "https://depmap.org/portal/data_page/?tab=allData",
+      "local_candidates": [
+        "data/raw/DepMap/26Q1/OmicsSomaticMutations.csv",
+        "data/raw/DepMap/26Q1/OmicsCNGeneWGS.csv"
+      ],
+      "restricts_core": false,
+      "note": "建立扩展队列；旧 CCLE 时代版本接入前必须核对与表达是否同 release"
+    },
+    {
+      "id": "drug_gene_evidence",
+      "priority": "P2",
+      "role": "药物—基因证据",
+      "content": [
+        "interaction 类型",
+        "物种",
+        "原始来源",
+        "实验与文献证据",
+        "版本"
+      ],
+      "entry_url": "https://dgidb.org/downloads",
+      "local_candidate": "data/raw/DGIdb/unverified/",
+      "note": "缺少记录不代表无靶点；关联不都等于直接结合，须区分直接靶点、代谢酶、转运体、敏感性关联和未知类型"
+    },
+    {
+      "id": "protein_association_network",
+      "priority": "P2",
+      "role": "蛋白关联网络",
+      "content": [
+        "人类边表",
+        "证据通道",
+        "版本",
+        "蛋白到基因映射"
+      ],
+      "entry_urls": [
+        "https://string-db.org/cgi/download",
+        "https://string-db.org/help/scores/"
+      ],
+      "local_candidate": "data/raw/STRING/12.0/9606.protein.links.v12.0.txt",
+      "note": "功能关联包含间接关系，不自动解释为物理互作；孤立节点需要无图回退路径",
+      "evidence_channels_candidate": "data/raw/STRING/12.0/9606.protein.links.detailed.v12.0.txt.gz"
+    },
+    {
+      "id": "second_external_platform",
+      "priority": "P3",
+      "role": "第二外部平台（PRISM）",
+      "content": [
+        "多剂量药效指标及说明"
+      ],
+      "entry_url": "https://depmap.org/repurposing/",
+      "note": "区分单剂量 primary 与多剂量 secondary，不把单剂量存活率当成 AUC/IC50",
+      "local_candidate": "data/holdout/external/PRISM/secondary_published/secondary-screen-dose-response-curve-parameters.csv",
+      "metadata_directory": "data/raw/PRISM/secondary_published/",
+      "acquisition_status": "downloaded; response labels sealed and not analyzed"
+    },
+    {
+      "id": "protein_sequences",
+      "priority": "P3",
+      "role": "蛋白序列与预训练表示",
+      "content": [
+        "选定基因对应的序列",
+        "isoform",
+        "长度及模型版本"
+      ],
+      "local_candidate": "data/raw/UniProt/unverified/uniprot_sprot.dat",
+      "note": "只对已验证且有用途的基因子集收集；不作为表达基因保留条件"
+    }
+  ]
+}

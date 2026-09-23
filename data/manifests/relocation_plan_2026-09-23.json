@@ -1,0 +1,586 @@
+[
+  {
+    "old_path": "data/raw/cancer_driver_mutations/cmc_export.tsv",
+    "new_path": "data/raw/COSMIC_CMC/v104_GRCh37/cmc_export.tsv"
+  },
+  {
+    "old_path": "data/raw/cancer_driver_mutations/README_CancerMutationCensus_AllData_v104_GRCh37.txt",
+    "new_path": "data/raw/COSMIC_CMC/v104_GRCh37/README_CancerMutationCensus_AllData_v104_GRCh37.txt"
+  },
+  {
+    "old_path": "data/raw/cell_line_omics/26Q1_Mutation_Pipeline_Documentation.pdf",
+    "new_path": "data/raw/DepMap/26Q1/26Q1_Mutation_Pipeline_Documentation.pdf"
+  },
+  {
+    "old_path": "data/raw/cell_line_omics/CCLE_DNA_methylation_TSS1kb.txt",
+    "new_path": "data/raw/CCLE/legacy_unverified/CCLE_DNA_methylation_TSS1kb.txt"
+  },
+  {
+    "old_path": "data/raw/cell_line_omics/Cell_lines_annotations_20181226.txt",
+    "new_path": "data/raw/CCLE/legacy_unverified/Cell_lines_annotations_20181226.txt"
+  },
+  {
+    "old_path": "data/raw/cell_line_omics/DepMap_CNGeneWGS.csv",
+    "new_path": "data/raw/DepMap/unverified/DepMap_CNGeneWGS.csv"
+  },
+  {
+    "old_path": "data/raw/cell_line_omics/DepMap_ExpressionTPMLogp1HumanProteinCodingGenes.csv",
+    "new_path": "data/raw/DepMap/unverified/DepMap_ExpressionTPMLogp1HumanProteinCodingGenes.csv"
+  },
+  {
+    "old_path": "data/raw/cell_line_omics/DepMap_Model_26Q1.csv",
+    "new_path": "data/raw/DepMap/26Q1/Model.csv"
+  },
+  {
+    "old_path": "data/raw/cell_line_omics/DepMap_SomaticMutations.csv",
+    "new_path": "data/raw/DepMap/unverified/DepMap_SomaticMutations.csv"
+  },
+  {
+    "old_path": "data/raw/cell_line_omics/Gene.csv",
+    "new_path": "data/raw/HGNC/unverified/Gene.csv"
+  },
+  {
+    "old_path": "data/raw/drug_gene_interaction/categories.tsv",
+    "new_path": "data/raw/DGIdb/unverified/categories.tsv"
+  },
+  {
+    "old_path": "data/raw/drug_gene_interaction/drugs.tsv",
+    "new_path": "data/raw/DGIdb/unverified/drugs.tsv"
+  },
+  {
+    "old_path": "data/raw/drug_gene_interaction/genes.tsv",
+    "new_path": "data/raw/DGIdb/unverified/genes.tsv"
+  },
+  {
+    "old_path": "data/raw/drug_gene_interaction/interactions.tsv",
+    "new_path": "data/raw/DGIdb/unverified/interactions.tsv"
+  },
+  {
+    "old_path": "data/raw/drug_sensitivity/GDSC2_fitted_dose_response_27Oct23.csv",
+    "new_path": "data/canonical/GDSC/release8.5/GDSC2_fitted_dose_response_27Oct23.csv"
+  },
+  {
+    "old_path": "data/raw/drug_structures/compound_cid_smiles.csv",
+    "new_path": "data/raw/legacy_structure_seed/unverified/compound_cid_smiles.csv"
+  },
+  {
+    "old_path": "data/raw/entity_mapping/cellosaurus.txt",
+    "new_path": "data/raw/Cellosaurus/56.0/cellosaurus.txt"
+  },
+  {
+    "old_path": "data/raw/protein_protein_interaction/9606.protein.aliases.v12.0.txt",
+    "new_path": "data/raw/STRING/12.0/9606.protein.aliases.v12.0.txt"
+  },
+  {
+    "old_path": "data/raw/protein_protein_interaction/9606.protein.links.v12.0.txt",
+    "new_path": "data/raw/STRING/12.0/9606.protein.links.v12.0.txt"
+  },
+  {
+    "old_path": "data/raw/protein_sequence/uniprot_sprot.dat",
+    "new_path": "data/raw/UniProt/unverified/uniprot_sprot.dat"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_AFFY_HG_U133_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_AFFY_HG_U133_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_AFFY_HG_U95_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_AFFY_HG_U95_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_AFFY_HuGene_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_AFFY_HuGene_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_AFFY_MISC_Array_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_AFFY_MISC_Array_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_AGILENT_Array_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_AGILENT_Array_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_Codelink_Codelink_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_Codelink_Codelink_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_Ensembl_Gene_ID_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_Ensembl_Gene_ID_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_Ensembl_Transcript_ID_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_Ensembl_Transcript_ID_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_Gene_Symbol_with_Remapping_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_Gene_Symbol_with_Remapping_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_HGNC_ID_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_HGNC_ID_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_ILLUMINA_Array_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_ILLUMINA_Array_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_Image_Clone_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_Image_Clone_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_NCBI_Gene_ID_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_NCBI_Gene_ID_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_Phalanx_OneArray_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_Phalanx_OneArray_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_RefSeq_Accession_Extended_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_RefSeq_Accession_Extended_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_RefSeq_Accession_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_RefSeq_Accession_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_Seq_Accession_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_Seq_Accession_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_UniProt_IDs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Human_UniProt_IDs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Macaque_Ensembl_Gene_ID_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Macaque_Ensembl_Gene_ID_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_AFFY_MG_U74_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_AFFY_MG_U74_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_AFFY_MoGene_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_AFFY_MoGene_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_AFFY_Mouse430_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_AFFY_Mouse430_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_AFFY_Mu11K_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_AFFY_Mu11K_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_AGILENT_Array_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_AGILENT_Array_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_Codelink_Codelink_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_Codelink_Codelink_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_Ensembl_Gene_ID_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_Ensembl_Gene_ID_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_Ensembl_Transcript_ID_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_Ensembl_Transcript_ID_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_Gene_Symbol_Remapping_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_Gene_Symbol_Remapping_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_ILLUMINA_Array_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_ILLUMINA_Array_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_Image_Clone_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_Image_Clone_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_MGI_ID_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_MGI_ID_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_NCBI_Gene_ID_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_NCBI_Gene_ID_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_Operon_V1_1_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_Operon_V1_1_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_Phalanx_OneArray_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_Phalanx_OneArray_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_RefSeq_Accession_Extended_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_RefSeq_Accession_Extended_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_RefSeq_Accession_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_RefSeq_Accession_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_Seq_Accession_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_Seq_Accession_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_UCSC_ID_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_UCSC_ID_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_UniProt_IDs_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Mouse_UniProt_IDs_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_AFFY_230_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_AFFY_230_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_AFFY_RaGene_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_AFFY_RaGene_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_AFFY_U34_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_AFFY_U34_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_AGILENT_Array_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_AGILENT_Array_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_Codelink_Codelink_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_Codelink_Codelink_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_Ensembl_Gene_ID_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_Ensembl_Gene_ID_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_Ensembl_Transcript_ID_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_Ensembl_Transcript_ID_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_Gene_Symbol_Remapping_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_Gene_Symbol_Remapping_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_ILLUMINA_Array_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_ILLUMINA_Array_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_Image_Clone_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_Image_Clone_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_NCBI_Gene_ID_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_NCBI_Gene_ID_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_Phalanx_OneArray_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_Phalanx_OneArray_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_RefSeq_Accession_Extended_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_RefSeq_Accession_Extended_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_RefSeq_Accession_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_RefSeq_Accession_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_RGD_ID_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_RGD_ID_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_Seq_Accession_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_Seq_Accession_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_UniProt_IDs_Human_Orthologs_MSigDB.v2026.1.Hs.chip",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_chip_files_to_download_locally/Rat_UniProt_IDs_Human_Orthologs_MSigDB.v2026.1.Hs.chip"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c1.all.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c1.all.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c1.all.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c1.all.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.all.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.all.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.all.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.all.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cgp.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cgp.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cgp.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cgp.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.biocarta.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.biocarta.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.biocarta.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.biocarta.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.kegg_legacy.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.kegg_legacy.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.kegg_legacy.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.kegg_legacy.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.kegg_medicus.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.kegg_medicus.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.kegg_medicus.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.kegg_medicus.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.pid.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.pid.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.pid.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.pid.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.reactome.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.reactome.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.reactome.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.reactome.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.wikipathways.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.wikipathways.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.wikipathways.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c2.cp.wikipathways.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.all.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.all.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.all.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.all.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.mir.mirdb.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.mir.mirdb.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.mir.mirdb.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.mir.mirdb.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.mir.mir_legacy.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.mir.mir_legacy.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.mir.mir_legacy.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.mir.mir_legacy.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.mir.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.mir.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.mir.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.mir.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.tft.gtrd.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.tft.gtrd.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.tft.gtrd.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.tft.gtrd.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.tft.tft_legacy.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.tft.tft_legacy.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.tft.tft_legacy.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.tft.tft_legacy.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.tft.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.tft.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.tft.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c3.tft.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c4.3ca.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c4.3ca.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c4.3ca.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c4.3ca.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c4.all.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c4.all.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c4.all.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c4.all.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c4.cgn.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c4.cgn.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c4.cgn.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c4.cgn.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c4.cm.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c4.cm.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c4.cm.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c4.cm.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.all.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.all.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.all.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.all.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.go.bp.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.go.bp.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.go.bp.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.go.bp.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.go.cc.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.go.cc.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.go.cc.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.go.cc.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.go.mf.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.go.mf.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.go.mf.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.go.mf.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.go.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.go.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.go.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.go.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.hpo.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.hpo.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.hpo.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c5.hpo.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c6.all.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c6.all.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c6.all.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c6.all.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c7.all.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c7.all.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c7.all.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c7.all.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c7.immunesigdb.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c7.immunesigdb.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c7.immunesigdb.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c7.immunesigdb.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c7.vax.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c7.vax.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c7.vax.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c7.vax.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c8.all.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c8.all.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c8.all.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c8.all.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c9.all.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c9.all.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c9.all.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/c9.all.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/h.all.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/h.all.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/h.all.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/h.all.v2026.1.Hs.symbols.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/msigdb.v2026.1.Hs.entrez.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/msigdb.v2026.1.Hs.entrez.gmt"
+  },
+  {
+    "old_path": "data/raw/pathway/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/msigdb.v2026.1.Hs.symbols.gmt",
+    "new_path": "data/raw/MSigDB/2026.1.Hs/msigdb_v2026.1.Hs_files_to_download_locally/msigdb_v2026.1.Hs_GMTs/msigdb.v2026.1.Hs.symbols.gmt"
+  }
+]

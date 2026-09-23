@@ -1,0 +1,39 @@
+{
+  "config_resolved": {
+    "cell_group_ratio": 0.15,
+    "cohort_hash": "cdae74e2aff092c2ea904dcaa9d0ea7f13bf98a8021059a6c3a4872e0b6c2d12",
+    "drug_group_ratio": 0.15,
+    "environment": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "pyarrow": "25.0.1",
+      "python": "3.14.6",
+      "rdkit": "2026.03.6",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1"
+    },
+    "generated_at_utc": "2026-09-23T05:20:50.593347+00:00",
+    "git_commit": "unknown",
+    "grouping_rules": {
+      "use_model_errors": false,
+      "use_response_values": false
+    },
+    "naming": "internal confirmation (entities participated in legacy project development); NOT independent data",
+    "split_seed": 20260923,
+    "stage": "D2_build_sealed_regions",
+    "tissue_balance_tolerance": 0.05
+  },
+  "duration_s": 1.5,
+  "error": null,
+  "input_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\processed\\cohorts\\core_samples.parquet": "d49e2646fade6cb789fcb42937dcc429474f575e07448ebac0fbe5a4bf065853"
+  },
+  "output_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\cdae74e2aff092c2ea904dcaa9d0ea7f13bf98a8021059a6c3a4872e0b6c2d12\\holdout\\cell_group_assignment.csv": "9440db09cbd8d76aa114a1752e0eff99486566dd011c6a26f67c17280b9b2858",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\cdae74e2aff092c2ea904dcaa9d0ea7f13bf98a8021059a6c3a4872e0b6c2d12\\holdout\\drug_group_assignment.csv": "b37eba09d72d39eaa5dc7f5d714cf97f81cb2c4eb5095f4130f9ab510801d602"
+  },
+  "stage": "D2_build_sealed_regions",
+  "started_at": "2026-09-23T05:20:49.107010+00:00",
+  "status": "succeeded"
+}

@@ -1,0 +1,41 @@
+{
+  "_meta": {
+    "schema_version": "1.0",
+    "project_tag": "rebuild-2026",
+    "description": "A1 必须覆盖的对照、调参公平性与基础信号验收（计划第 10、11 节）。先完成强基线，再决定 GDGN 应有什么结构"
+  },
+  "controls": [
+    {"id": "global_mean", "form": "训练标签均值", "question": "是否超过最基本预测", "scope": "全部"},
+    {"id": "drug_mean_cell_mean", "form": "训练实体统计，未见实体回退全局均值", "question": "高分是否来自实体平均效应", "scope": "全部，冷启动回退必须注明"},
+    {"id": "two_way_additive", "form": "mu + drug_id_effect + cell_id_effect，正则化最小二乘或迭代拟合，和为零约束", "question": "简单身份效应能解释多少", "scope": "全部，未见实体效应为 0"},
+    {"id": "structure_only_ridge_mlp", "form": "指纹→响应", "question": "是否忽略了细胞组学", "scope": "全部"},
+    {"id": "expression_only_ridge_mlp", "form": "表达→响应", "question": "药物信息的必要性", "scope": "全部"},
+    {"id": "global_ridge_elasticnet", "form": "指纹＋表达拼接", "question": "线性和稀疏加性信号是否足够", "scope": "LCO、LDO、DB"},
+    {"id": "per_drug_elasticnet", "form": "每药物单独从表达预测，训练细胞调参，低覆盖药物按预注册规则回退并单独统计", "question": "同药物差异可否被简单方法捕获", "scope": "主要 LCO，不能用于真正未见药物"},
+    {"id": "tree_family", "form": "随机森林或梯度提升树，先选一个家族", "question": "非线性强基线", "scope": "全部"},
+    {"id": "similar_drug_neighbor", "form": "训练药物指纹近邻及可用训练响应", "question": "LDO 结果是否只是近邻插值", "scope": "LDO，DB 需另有细胞近邻规则"},
+    {"id": "small_twin_tower_concat_mlp", "form": "独立 cell/drug encoder＋拼接头", "question": "神经网络基础锚点", "scope": "全部"},
+    {"id": "legacy_representative", "form": "旧 baseline_simple / DeepCDR 适配实现，在新 schema 上重新训练", "question": "与历史研究桥接", "scope": "必要时保留一个代表模型"}
+  ],
+  "hyperparameter_budget": {
+    "per_family_max_trials": 12,
+    "confirmation_same_cap_or_smaller_frozen_range": true,
+    "record_actual_trials_and_time": true,
+    "deterministic_models_single_run": "确定性线性模型同一折同一配置只运行一次",
+    "search_note": "给线性、树、MLP 都提供合理的验证集搜索，不用一个默认 ElasticNet 对比多轮调优的新模型"
+  },
+  "fairness": {
+    "shared": ["data", "split", "feature_cache", "metric_implementation", "test_scope"],
+    "report_parameter_count": true,
+    "parameter_matched_control": "声称架构增益时补充"
+  },
+  "literature_baselines": "区分原文原数据复现与本项目数据上的适配比较；改变输入粒度、药物编码器或组学组合后不能继续称为严格复现 DeepCDR；是否下载复现原实现放在主基线闭环之后",
+  "signal_acceptance": {
+    "tiny_subset_fit_and_alignment": true,
+    "lco_macro_beats_constant_or_random": "每药物模型或全局表达模型在 LCO 的同药物指标优于常数/随机排序，而不是只有 pooled PCC 高",
+    "expression_ablation_hurts_or_uncertainty_stated": true,
+    "label_shuffle_check": "标签在训练折内打乱后不能仍得到异常的差异敏感性高分；保留药物均值的同药物打乱应主要破坏个体差异信号，不要求 pooled PCC 必须降到零",
+    "learning_curves": ["按训练细胞数", "按药物数"],
+    "failure_path": "全部模型都无法利用表达时，先检查映射、基础状态、噪声和标签信息量，限定最多一轮数据诊断修正后重跑基线"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "gdsc",
+  "release_id": "8.5",
+  "download_url": "https://cmp.cog.sanger.ac.uk/download/GDSC2_public_raw_data_27Oct23.zip",
+  "local_path": "data/raw/GDSC/release8.5/GDSC2_public_raw_data_27Oct23.zip",
+  "accessed_at": "2026-09-23T01:51:39.019062+00:00",
+  "http_status": 200,
+  "final_url": "https://cmp.cog.sanger.ac.uk/download/GDSC2_public_raw_data_27Oct23.zip",
+  "content_type": "application/zip",
+  "content_length": "122866072",
+  "etag": "\"ef60e21e00d409777c6f55bc30653a35-8\"",
+  "last_modified": "Wed, 08 Apr 2026 08:34:49 GMT",
+  "sha256": "45dca6c707dcb8b80e73764adc91aeabe9c620af4a3f1f87648c80c35cd74d1b",
+  "file_size": 122866072,
+  "downloaded_at": "2026-09-23T01:51:54.343932+00:00",
+  "acquisition_status": "downloaded_verified_container"
+}

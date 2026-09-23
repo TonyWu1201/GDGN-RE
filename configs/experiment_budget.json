@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "schema_version": "1.0",
+    "project_tag": "rebuild-2026",
+    "description": "A0-C 分轮预算、预注册选择门槛与停止规则（计划第 14、15 节）。执行前可根据重复测量噪声、覆盖与 pilot 调整一次并冻结，不是文献公认阈值"
+  },
+  "rounds": {
+    "a0": {"content": "极小真实子集、朴素预测、一次端到端训练", "decision": "映射、标签、切分、训练、预测是否闭环"},
+    "a1": {
+      "content": "强基线筛选",
+      "naive_and_diagnostic_runs": 12,
+      "learning_models_max_runs": 36,
+      "learning_model_families": ["全局 Ridge", "全局 ElasticNet", "每药物 ElasticNet", "树", "近邻", "小型 MLP"],
+      "notes": "确定性模型不重复种子，不适用协议不运行；单侧输入诊断固定用线性版本"
+    },
+    "a2": {"content": "最小模型机制", "new_configs_max_runs": 24, "decision": "在 R1/R2/通路路线中保留至多 2 条"},
+    "a3": {"content": "模块审判，仅通过 A2 后运行", "graph_configs_max_runs": 30, "modality_control_separate": true},
+    "b": {"content": "开发区多折确认", "max_runs": 90, "decision": "选定最终方案、冻结全部规则"},
+    "c": {"content": "封存与外部确认", "full_fit_runs": 9, "decision": "最终主张与适用范围；DB 默认在 C 轮作为压力测试"}
+  },
+  "total_selected_fit_cap": 201,
+  "cap_note": "A1 48 + A2 24 + A3 30 + B 90 + C 9，模态对照另计；不含 A0 演练、超参 trial、额外模态、历史模型桥接和可选预训练；无效阶段立即停止，后续预算取消；每药物模型一次运行含多个子模型拟合，另统计",
+  "hyperparameter_trials_cap_per_family": 12,
+  "compute_management": "总算力用 pilot 实测的 GPU/CPU 小时管理；达到预算先减少候选与探索协议，保留强基线、主任务和独立确认，不能通过减少对照制造优势",
+  "no_cartesian_product": "不做全部六协议与所有模块的笛卡尔积",
+  "decision_thresholds": {
+    "new_neural_structure_screen": {
+      "macro_spearman_gain_min": 0.02,
+      "same_direction_seeds_min": 2,
+      "seeds_total": 3,
+      "rmse_worsening_max": 0.02
+    },
+    "new_neural_structure_final_keep": "相对预注册最强适用基线的差值 CI 下界 >0，达到预设实用差值，且原尺度误差满足约束",
+    "extra_modality": "匹配队列上同药物指标改善，不只改善 pooled PCC；多折和确认保持收益且成本可接受",
+    "pathway_prior": "优于相同输入维数的浅层对照；最终优于匹配随机成员关系且解释忠实性有证据",
+    "graph_residual": "真图优于无图且有可观察残差贡献；最终优于无图及预注册随机图对照并通过干预检验",
+    "esm_pretraining": "独立、同配置比较中有正向趋势；多折确认优于 ID/随机初始化对照且计算代价合理",
+    "ldo_specific_model": "只对 LDO 作主张，不能替代未通过的 LCO 主任务结论",
+    "dual_requirement": "统计与实际效应必须共同满足；CI 跨 0 时写证据不足，不以多数种子为正替代显著性证据"
+  },
+  "stop_actions": [
+    "连续两组单变量配置未改善主指标：停止该结构方向，保留失败配置与原因",
+    "真图不能超过随机图：从主模型移除图；仅作先验可视化时不声称拓扑有独立贡献",
+    "加入模态后只有换队列才变好：收益归因于队列，不声称多组学有效",
+    "高 pooled PCC 但同药物预测接近常数：回到任务和标签分解，不继续扩大 encoder",
+    "解释不通过忠实性：不把注意力热图或富集结果作为机制证明",
+    "LCO 有效、LDO/DB 失败：接受已知药物上新细胞预测的较窄结论，另列新药物研究路线",
+    "全部复杂模型不超过强简单方法：交付最强简单方法及完整诊断，不继续无上限增加模块"
+  ]
+}

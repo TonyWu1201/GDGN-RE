@@ -1,0 +1,42 @@
+{
+  "counts": {
+    "audit_class_counts": {
+      "not_measurable_in_expression_from_cnv_wgs": 236,
+      "not_measurable_in_expression_from_hallmark_entrez_gmt": 8,
+      "not_measurable_in_expression_from_somatic_mutations": 1550
+    },
+    "audit_rows": 1794,
+    "cnv_space": 19366,
+    "expression_gene_columns": 19215,
+    "hallmark_members_total": 4384,
+    "hallmark_sets": 50,
+    "master_rows": 19215,
+    "mutation_entrez": 20085
+  },
+  "environment": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pyarrow": "25.0.1",
+    "python": "3.14.6",
+    "rdkit": "2026.03.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "generated_at_utc": "2026-09-23T04:49:40.869792+00:00",
+  "git_commit": "unknown",
+  "hgnc_role": "control_columns_only_version_unknown",
+  "inputs": {
+    "cnv": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\raw\\DepMap\\26Q1\\OmicsCNGeneWGS.csv",
+    "expression": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\raw\\DepMap\\26Q1\\OmicsExpressionTPMLogp1HumanProteinCodingGenes.csv",
+    "hallmark_gmt": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\raw\\MSigDB\\2026.1.Hs\\msigdb_v2026.1.Hs_files_to_download_locally\\msigdb_v2026.1.Hs_GMTs\\h.all.v2026.1.Hs.entrez.gmt",
+    "hgnc": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\raw\\HGNC\\unverified\\Gene.csv",
+    "mutations": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\raw\\DepMap\\26Q1\\OmicsSomaticMutations.csv"
+  },
+  "outputs": {
+    "audit": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\processed\\entities\\gene_mapping_audit.csv",
+    "gene_master": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\processed\\entities\\gene_master.csv"
+  },
+  "stable_key": "ncbi_entrez_gene_id",
+  "stage": "C1_build_gene_master"
+}

@@ -1,0 +1,42 @@
+{
+  "config_resolved": {
+    "cohort_hash": "cdae74e2aff092c2ea904dcaa9d0ea7f13bf98a8021059a6c3a4872e0b6c2d12",
+    "counts": {
+      "W1_valid_measurements_after_source_qc": 203129,
+      "W2_after_cell_mapping": 203129,
+      "W3_after_basic_expression": 151710,
+      "W4_after_structure_verification": 151710,
+      "W5_after_replicate_aggregation": 151710,
+      "W6_core_after_thresholds": 151710
+    },
+    "environment": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "pyarrow": "25.0.1",
+      "python": "3.14.6",
+      "rdkit": "2026.03.6",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1"
+    },
+    "generated_at_utc": "2026-09-23T05:17:08.779704+00:00",
+    "git_commit": "unknown",
+    "stage": "D1_build_cohorts",
+    "thresholds": {
+      "min_cells_per_drug": 30,
+      "min_drugs_per_cell": 10
+    }
+  },
+  "duration_s": 3.7,
+  "error": null,
+  "input_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\processed\\response\\modeling_samples.parquet": "a8d3959f6d68610122d7dc0625b0c7eda55a8d6887674b487e31322540c1eb6b"
+  },
+  "output_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\processed\\cohorts\\cohort_waterfall.json": "ce5ece22165f463b34c6fafbea30f5d31b27917f957845b42ae47a8ca6435b4a",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\processed\\cohorts\\core_samples.parquet": "d49e2646fade6cb789fcb42937dcc429474f575e07448ebac0fbe5a4bf065853"
+  },
+  "stage": "D1_build_cohorts",
+  "started_at": "2026-09-23T05:17:05.055186+00:00",
+  "status": "succeeded"
+}

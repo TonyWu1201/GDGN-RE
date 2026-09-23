@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "schema_version": "1.0",
+    "project_tag": "rebuild-2026",
+    "description": "封存确认区、开发集六协议、三阶段流程与测试输入规则（计划第 8 节）。比例在覆盖审计后、模型训练前冻结"
+  },
+  "sealed_holdout": {
+    "cell_group_ratio": 0.15,
+    "drug_group_ratio": 0.15,
+    "regions": {
+      "lco_confirmation": "C_hold × D_dev",
+      "ldo_so_confirmation": "C_dev × D_hold",
+      "db_confirmation": "C_hold × D_hold"
+    },
+    "rules": [
+      "三类确认区的响应均不得进入开发训练或早停",
+      "留出实体曾在旧项目参与开发的，称为新流程内部确认，不能称为从未使用的独立数据",
+      "确认集实体数不足时先调整比例或采用嵌套分组交叉验证，理由只能来自覆盖与方差估计需求"
+    ]
+  },
+  "protocols": {
+    "lpo": "train/validation/test 隔离规范化响应对与全部对应重复测量，同一 pair 不能跨集合",
+    "lco": "按细胞身份相关组（父系/衍生系/已知同源组）Group split，组织分布作平衡约束；表达近邻聚类作为更难的独立压力测试",
+    "ldo_so": "按标准化母体及预注册化学簇分组；报告 Bemis-Murcko scaffold 与最近训练药物 Tanimoto 分布；测试药物任何响应与特异 DTI 都不能训练",
+    "db": "两侧实体组，明确 excluded 交叉区及覆盖损失",
+    "lto": "组织标签对应的整组细胞，小组织不根据表现随意合并",
+    "ldo_kt": "与 LDO-SO 相同响应划分，仅信息预算不同，可提供公开已知靶点"
+  },
+  "grouping_rules": {
+    "use_response_values": false,
+    "use_model_errors": false,
+    "similarity_threshold_claims": "论文声称相似度阈值隔离时必须实际满足该阈值，并记录巨型簇、数据删减和训练规模变化"
+  },
+  "stages": {
+    "quick_screening": {"outer_folds": 1, "seeds": 3, "note": "模型内部超参数只看相应 inner validation"},
+    "candidate_confirmation": {"max_models": 3, "outer_folds": 5, "note": "每折独立拟合预处理并在内层选参；若 outer 结果继续影响架构，仍是开发证据"},
+    "final_freeze": "锁定输入、超参数、训练轮数确定方法、种子、主指标和统计脚本",
+    "final_retrain": "仅使用整个开发区；采用开发折选定 epoch 的中位数作为固定训练长度；不得在封存区早停",
+    "one_shot_evaluation": "一次性评价三个封存区与外部确认集；此后继续改模型需承认确认区已转为开发数据"
+  },
+  "test_time_inputs": {
+    "lco_allowed": "测试细胞的基础表达",
+    "lco_forbidden": "利用测试细胞响应拟合插补、批次参数或表示",
+    "ldo_so_allowed": "测试药物自身结构",
+    "ldo_so_forbidden": "测试药物已知 DTI、按测试药物靶点定制的基因集或经这些靶点训练的专属 gate",
+    "public_priors": "公共人类 PPI/通路先验可冻结使用，需与按测试药物身份定制的知识区分"
+  }
+}

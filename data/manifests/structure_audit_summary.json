@@ -1,0 +1,11 @@
+{
+  "status_counts": {
+    "official_key_exact_match": 221,
+    "official_key_conflict_review_required": 21,
+    "official_key_missing": 2
+  },
+  "candidate_count": 244,
+  "not_core_eligibility_approval": true,
+  "unmatched_count": 51,
+  "evidence": "GDSC release 8.5 structure annotation, official CMP catalog snapshot 2026-09-23"
+}

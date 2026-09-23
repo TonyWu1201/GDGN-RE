@@ -1,0 +1,17 @@
+{
+  "source_id": "string",
+  "release_id": "12.0",
+  "download_url": "https://stringdb-downloads.org/download/protein.links.detailed.v12.0/9606.protein.links.detailed.v12.0.txt.gz",
+  "local_path": "data/raw/STRING/12.0/9606.protein.links.detailed.v12.0.txt.gz",
+  "accessed_at": "2026-09-23T01:48:32.448207+00:00",
+  "http_status": 200,
+  "final_url": "https://stringdb-downloads.org/download/protein.links.detailed.v12.0/9606.protein.links.detailed.v12.0.txt.gz",
+  "content_type": "application/octet-stream",
+  "content_length": "139634808",
+  "etag": "\"64eca38b-852a878\"",
+  "last_modified": "Mon, 28 Aug 2023 13:39:23 GMT",
+  "sha256": "28a2ea3b22c964e691c0f2f934c5e3e397a4b0a12c833d8787fa02b7847b91b6",
+  "file_size": 139634808,
+  "downloaded_at": "2026-09-23T01:48:47.028664+00:00",
+  "acquisition_status": "downloaded_verified_container"
+}

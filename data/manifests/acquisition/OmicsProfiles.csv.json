@@ -1,0 +1,11 @@
+{
+  "source_id": "DepMap",
+  "release_id": "26Q1",
+  "download_url": "https://depmap.org/portal/download/all/ (Cloudflare Turnstile verified browser download; signed GCS URL not recorded)",
+  "local_path": "data/raw/DepMap/26Q1/OmicsProfiles.csv",
+  "accessed_at": "2026-09-23",
+  "sha256": "978f9ff9a11214e9d923619c20d2bc36bf4ca3e30fd46a6d9a424ea0e7c49bd2",
+  "file_size": 671558,
+  "acquisition_status": "manual_download_provenance_incomplete",
+  "provenance_note": "User browser download from DepMap portal 26Q1 release public-26q1-5bbf.37; portal generates signed URLs that cannot be recorded here. Identity to unverified expression matrix hashes confirms release alignment."
+}

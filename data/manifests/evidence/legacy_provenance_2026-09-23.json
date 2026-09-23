@@ -1,0 +1,59 @@
+{
+  "audit_date": "2026-09-23",
+  "policy": "Record only local evidence; unknown dates stay unknown. No official-source claims without a probe or in-file statement.",
+  "files": [
+    {
+      "local_path": "data/raw/UniProt/unverified/uniprot_sprot.dat",
+      "in_file_evidence": "Entry 'DT 10-JUN-2026, entry version 47' among first entries; integrated dates as old as 28-JUN-2011.",
+      "conclusion": "Full Swiss-Prot flat file, all species, consistent with UniProtKB 2026_02-era snapshot (download ~2026-06). Exact release label not stated in file.",
+      "status": "local_evidence_only_release_label_inferred_not_official",
+      "action_for_core": "Not used for Core; P3 protein-sequence branch would re-download a pinned release with recorded URL."
+    },
+    {
+      "local_path": "data/raw/DGIdb/unverified/{categories,drugs,genes,interactions}.tsv",
+      "in_file_evidence": "13-column header with interaction_source_db_version (DGIdb v5-era export).",
+      "official_probe": "https://dgidb.org/data/*.tsv now returns SPA HTML (status 200, text/html), not TSV.",
+      "conclusion": "Snapshot version unknown; official static TSV path changed. Interaction-level evidence provenance (species/PMID) still incomplete per sources.json pending dgidb_evidence.",
+      "status": "provenance_incomplete_documented",
+      "action_for_core": "Not used for Core; graph branch (P2) requires fresh download with recorded release before use."
+    },
+    {
+      "local_path": "data/raw/HGNC/unverified/Gene.csv",
+      "in_file_evidence": "Standard HGNC custom-download schema (hgnc_id, symbol, name, locus_group, ...); no embedded date.",
+      "official_probe": "genenames.org custom download endpoint returned HTTP 500 during probe 2026-09-23.",
+      "conclusion": "Snapshot version unknown. Row content (44,083 rows) will be validated against a fresh pinned download when HGNC endpoint recovers or via a dated alternative.",
+      "status": "provenance_incomplete_documented",
+      "action_for_core": "Entity mapping uses it as mapping-evidence candidate; final crosswalk requires a pinned HGNC release record."
+    },
+    {
+      "local_path": "data/raw/CCLE/legacy_unverified/Cell_lines_annotations_20181226.txt",
+      "in_file_evidence": "Filename carries 2018-12-26 (the CCLE legacy annotation freeze).",
+      "conclusion": "Legacy CCLE-era annotation, used only by Legacy-Bridge queue; excluded from Core.",
+      "status": "legacy_only_provenance_from_filename"
+    },
+    {
+      "local_path": "data/raw/CCLE/legacy_unverified/CCLE_DNA_methylation_TSS1kb.txt",
+      "in_file_evidence": "Legacy CCLE methylation matrix (pre-2019 CCLE format).",
+      "conclusion": "Legacy-Bridge only; not Core; version not claimed beyond filename/format.",
+      "status": "legacy_only_provenance_from_filename"
+    },
+    {
+      "local_path": "data/raw/legacy_structure_seed/unverified/{gdsc_to_cid.csv,compound_cid_smiles.csv}",
+      "in_file_evidence": "Read-only copies from the legacy repo (D:/AAA_STUDY/SRTP/模型改进/GDGN), SHA-256 recorded in relocation records.",
+      "conclusion": "Candidate seed evidence only; superseded by official GDSC structure annotation and PubChem verification; not a Core structure source.",
+      "status": "candidate_seed_from_legacy_repo_hash_verified"
+    },
+    {
+      "local_path": "data/raw/COSMIC_CMC/v104_GRCh37/*",
+      "in_file_evidence": "Directory label v104_GRCh37; README inside describes Cancer Mutation Census v104 GRCh37.",
+      "conclusion": "Release label from in-directory README (v104 GRCh37); original download date unknown.",
+      "status": "release_label_from_in_file_readme_download_date_unknown"
+    },
+    {
+      "local_path": "data/raw/STRING/12.0/*",
+      "in_file_evidence": "v12.0 filenames + official detailed links file downloaded 2026-09-23 with recorded URL/hash.",
+      "conclusion": "Release v12.0 verified for the detailed-links download; links/aliases files are legacy local copies with version from filename.",
+      "status": "partially_verified_detailed_channels_downloaded_with_provenance"
+    }
+  ]
+}

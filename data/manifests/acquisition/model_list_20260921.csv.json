@@ -1,0 +1,17 @@
+{
+  "source_id": "cell_model_passports",
+  "release_id": "20260921",
+  "download_url": "https://cog.sanger.ac.uk/cmp/download/model_list_20260921.csv",
+  "local_path": "data/raw/CellModelPassports/20260921/model_list_20260921.csv",
+  "accessed_at": "2026-09-23T01:51:39.450725+00:00",
+  "http_status": 200,
+  "final_url": "https://cog.sanger.ac.uk/cmp/download/model_list_20260921.csv",
+  "content_type": "binary/octet-stream",
+  "content_length": "957555",
+  "etag": "\"ad0fe368043739e557395088fc1ebddb\"",
+  "last_modified": "Mon, 21 Sep 2026 11:54:21 GMT",
+  "sha256": "419f65d1d6534454194f1a744550fab632cd1d7411f6b13411a885735aa37006",
+  "file_size": 957555,
+  "downloaded_at": "2026-09-23T01:51:41.622711+00:00",
+  "acquisition_status": "downloaded_verified_container"
+}

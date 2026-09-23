@@ -1,0 +1,68 @@
+{
+  "uniprot_sprot.dat": {
+    "in_file_signature": [
+      "DT   28-JUN-2011, integrated into UniProtKB/Swiss-Prot."
+    ]
+  },
+  "dgidb_interactions.tsv": {
+    "header": [
+      "gene_claim_name",
+      "gene_concept_id",
+      "gene_name",
+      "interaction_source_db_name",
+      "interaction_source_db_version",
+      "interaction_type",
+      "interaction_score",
+      "drug_claim_name",
+      "drug_concept_id",
+      "drug_name",
+      "approved",
+      "immunotherapy",
+      "anti_neoplastic"
+    ],
+    "columns": 13
+  },
+  "hgnc_gene.csv": {
+    "header": [
+      "hgnc_id",
+      "symbol",
+      "name",
+      "locus_group",
+      "locus_type",
+      "status",
+      "location",
+      "location_sortable",
+      "alias_symbol",
+      "alias_name"
+    ]
+  },
+  "dgidb_official_probe": {
+    "interactions": {
+      "status": 200,
+      "content_type": "text/html",
+      "content_length": "1263",
+      "head": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><link rel=\"icon\" href=\"/favicon.png\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"DGIdb, The Drug Gene Interaction Database, is a research"
+    },
+    "drugs": {
+      "status": 200,
+      "content_type": "text/html",
+      "content_length": "1263",
+      "head": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><link rel=\"icon\" href=\"/favicon.png\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"DGIdb, The Drug Gene Interaction Database, is a research"
+    },
+    "genes": {
+      "status": 200,
+      "content_type": "text/html",
+      "content_length": "1263",
+      "head": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><link rel=\"icon\" href=\"/favicon.png\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"DGIdb, The Drug Gene Interaction Database, is a research"
+    },
+    "categories": {
+      "status": 200,
+      "content_type": "text/html",
+      "content_length": "1263",
+      "head": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><link rel=\"icon\" href=\"/favicon.png\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"DGIdb, The Drug Gene Interaction Database, is a research"
+    }
+  },
+  "hgnc_official_probe": {
+    "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  }
+}

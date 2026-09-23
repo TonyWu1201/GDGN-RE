@@ -1,0 +1,53 @@
+{
+  "_meta": {
+    "schema_version": "1.0",
+    "project_tag": "rebuild-2026",
+    "description": "三个队列的纳入条件、初始质控门槛、重复聚合与主标签定义（计划第 5、6 节）。门槛为工程起点，须在查看模型结果前根据实际分布冻结"
+  },
+  "cohorts": {
+    "core": {
+      "inclusion": ["有效响应", "明确细胞身份", "基础表达", "明确小分子结构"],
+      "role": "主基线、主模型和主要结论"
+    },
+    "extended_m": {
+      "inclusion": "Core 中额外具有模态 M 的样本；另保留带缺失掩码的全 Core 版本",
+      "role": "单模态增益及覆盖影响分析"
+    },
+    "legacy_bridge": {
+      "inclusion": "新规则下仍可对齐的旧 404/184 子集",
+      "role": "理解变化来自数据重建还是建模变化；四格对照：旧规则队列/新 Core × 同一简单基线/同一候选模型"
+    },
+    "comparison_rule": "模型性能比较必须在完全相同的样本、划分和标签上进行"
+  },
+  "qc_thresholds": {
+    "unresolved_mapping_ambiguity": {"limit": 0, "action": "进入人工复核队列，暂不进入 Core"},
+    "unexplained_duplicate_samples": {"limit": 0, "action": "回到测量层级检查源编号与条件"},
+    "nonfinite_labels": {"limit": 0, "action": "排除并记录，不插补"},
+    "structure_coverage_target": {"value": 0.95, "note": "复核触发线；报告真实覆盖，不为达标强行映射"},
+    "min_cells_per_drug": {"value": 30, "note": "Core 候选初始下限；稀疏药物另表保存，不因测试相关性低再删除"},
+    "min_drugs_per_cell": {"value": 10, "note": "小样本另层报告"},
+    "confirmation_drug_min_cells": 10,
+    "confirmation_drug_requires_label_variance": true,
+    "extended_modality_core_coverage_prefer_masked_model": 0.80
+  },
+  "replicate_policy": {
+    "same_condition_technical_replicates": "先评价一致性，再按预注册规则合并；默认同尺度 LN_IC50 取中位数，保留次数与离散程度",
+    "different_conditions": "不同剂量范围、处理时长或平台保持不同测量组，不按 cell/CID 取均值",
+    "missing_response": "不生成监督样本，不用模型或行列均值补标签",
+    "extrapolated_ic50": "标记外推；主分析保留符合来源 QC 的记录，并报告排除外推后的敏感性分析",
+    "censored_measurements": "保留界限及删失类型，不擅自当成精确 IC50",
+    "same_entity_multiple_aliases": "统一化学实体后分组，避免重复测量跨 train/test"
+  },
+  "label": {
+    "definition": "LN_IC50 = ln(IC50 / 1 uM)",
+    "no_relog": true,
+    "pic50_conversion": "pIC50 = 6 - LN_IC50 / ln(10)，转换前必须确认原始单位",
+    "zscore_as_training_label": false,
+    "auc_note": "AUC 是给定测试浓度范围上的归一化曲线面积，不能默认不同来源 AUC 完全可比"
+  },
+  "pathway_config": {
+    "collection": "MSigDB Human Hallmark（50 个基因集）",
+    "min_effective_members": 10,
+    "note": "不合格集合以掩码处理，不按模型效果挑选"
+  }
+}

@@ -1,0 +1,7333 @@
+{
+  "data": [
+    {
+      "attributes": {
+        "columns": 6,
+        "icon": "mutation",
+        "name": "Mutation Data",
+        "order": 3
+      },
+      "id": 2,
+      "relationships": {
+        "groups": {
+          "data": [
+            {
+              "id": "5",
+              "type": "download_file_group"
+            },
+            {
+              "id": "4",
+              "type": "download_file_group"
+            },
+            {
+              "id": "6",
+              "type": "download_file_group"
+            },
+            {
+              "id": "18",
+              "type": "download_file_group"
+            },
+            {
+              "id": "21",
+              "type": "download_file_group"
+            },
+            {
+              "id": "49",
+              "type": "download_file_group"
+            }
+          ]
+        }
+      },
+      "type": "download_file_category"
+    },
+    {
+      "attributes": {
+        "columns": 6,
+        "icon": "fusion",
+        "name": "Fusion Data",
+        "order": 9
+      },
+      "id": 5,
+      "relationships": {
+        "groups": {
+          "data": [
+            {
+              "id": "11",
+              "type": "download_file_group"
+            }
+          ]
+        }
+      },
+      "type": "download_file_category"
+    },
+    {
+      "attributes": {
+        "columns": 6,
+        "icon": "cnv",
+        "name": "Copy Number Data",
+        "order": 5
+      },
+      "id": 6,
+      "relationships": {
+        "groups": {
+          "data": [
+            {
+              "id": "12",
+              "type": "download_file_group"
+            },
+            {
+              "id": "23",
+              "type": "download_file_group"
+            },
+            {
+              "id": "22",
+              "type": "download_file_group"
+            },
+            {
+              "id": "24",
+              "type": "download_file_group"
+            },
+            {
+              "id": "25",
+              "type": "download_file_group"
+            },
+            {
+              "id": "26",
+              "type": "download_file_group"
+            }
+          ]
+        }
+      },
+      "type": "download_file_category"
+    },
+    {
+      "attributes": {
+        "columns": 6,
+        "icon": "gene",
+        "name": "Gene Annotation",
+        "order": 2
+      },
+      "id": 7,
+      "relationships": {
+        "groups": {
+          "data": [
+            {
+              "id": "2",
+              "type": "download_file_group"
+            },
+            {
+              "id": "15",
+              "type": "download_file_group"
+            },
+            {
+              "id": "16",
+              "type": "download_file_group"
+            },
+            {
+              "id": "17",
+              "type": "download_file_group"
+            },
+            {
+              "id": "43",
+              "type": "download_file_group"
+            }
+          ]
+        }
+      },
+      "type": "download_file_category"
+    },
+    {
+      "attributes": {
+        "columns": 6,
+        "icon": "model",
+        "name": "Model Annotation",
+        "order": 1
+      },
+      "id": 1,
+      "relationships": {
+        "groups": {
+          "data": [
+            {
+              "id": "1",
+              "type": "download_file_group"
+            },
+            {
+              "id": "19",
+              "type": "download_file_group"
+            },
+            {
+              "id": "28",
+              "type": "download_file_group"
+            }
+          ]
+        }
+      },
+      "type": "download_file_category"
+    },
+    {
+      "attributes": {
+        "columns": 6,
+        "icon": "expression",
+        "name": "Expression Data",
+        "order": 4
+      },
+      "id": 4,
+      "relationships": {
+        "groups": {
+          "data": [
+            {
+              "id": "10",
+              "type": "download_file_group"
+            },
+            {
+              "id": "40",
+              "type": "download_file_group"
+            }
+          ]
+        }
+      },
+      "type": "download_file_category"
+    },
+    {
+      "attributes": {
+        "columns": 6,
+        "icon": "crispr_ko",
+        "name": "CRISPR KO Data",
+        "order": 6
+      },
+      "id": 3,
+      "relationships": {
+        "groups": {
+          "data": [
+            {
+              "id": "7",
+              "type": "download_file_group"
+            },
+            {
+              "id": "29",
+              "type": "download_file_group"
+            },
+            {
+              "id": "30",
+              "type": "download_file_group"
+            },
+            {
+              "id": "42",
+              "type": "download_file_group"
+            },
+            {
+              "id": "41",
+              "type": "download_file_group"
+            }
+          ]
+        }
+      },
+      "type": "download_file_category"
+    },
+    {
+      "attributes": {
+        "columns": 6,
+        "icon": "multiomics",
+        "name": "Synthetically Augmented Multiomics Datasets",
+        "order": 11
+      },
+      "id": 9,
+      "relationships": {
+        "groups": {
+          "data": [
+            {
+              "id": "39",
+              "type": "download_file_group"
+            },
+            {
+              "id": "31",
+              "type": "download_file_group"
+            },
+            {
+              "id": "32",
+              "type": "download_file_group"
+            },
+            {
+              "id": "33",
+              "type": "download_file_group"
+            },
+            {
+              "id": "34",
+              "type": "download_file_group"
+            },
+            {
+              "id": "35",
+              "type": "download_file_group"
+            },
+            {
+              "id": "36",
+              "type": "download_file_group"
+            },
+            {
+              "id": "37",
+              "type": "download_file_group"
+            },
+            {
+              "id": "38",
+              "type": "download_file_group"
+            }
+          ]
+        }
+      },
+      "type": "download_file_category"
+    },
+    {
+      "attributes": {
+        "columns": 6,
+        "icon": "proteomics",
+        "name": "Proteomics",
+        "order": 10
+      },
+      "id": 8,
+      "relationships": {
+        "groups": {
+          "data": [
+            {
+              "id": "27",
+              "type": "download_file_group"
+            }
+          ]
+        }
+      },
+      "type": "download_file_category"
+    },
+    {
+      "attributes": {
+        "columns": 6,
+        "icon": "drugs",
+        "name": "Drug Sensitivity Data",
+        "order": 8
+      },
+      "id": 10,
+      "relationships": {
+        "groups": {
+          "data": [
+            {
+              "id": "48",
+              "type": "download_file_group"
+            },
+            {
+              "id": "47",
+              "type": "download_file_group"
+            },
+            {
+              "id": "45",
+              "type": "download_file_group"
+            },
+            {
+              "id": "44",
+              "type": "download_file_group"
+            },
+            {
+              "id": "46",
+              "type": "download_file_group"
+            }
+          ]
+        }
+      },
+      "type": "download_file_category"
+    },
+    {
+      "attributes": {
+        "columns": 6,
+        "icon": "crispr_ko",
+        "name": "CRISPR Dependencies Data (Organoids)",
+        "order": 7
+      },
+      "id": 11,
+      "relationships": {
+        "groups": {
+          "data": [
+            {
+              "id": "50",
+              "type": "download_file_group"
+            },
+            {
+              "id": "52",
+              "type": "download_file_group"
+            },
+            {
+              "id": "51",
+              "type": "download_file_group"
+            }
+          ]
+        }
+      },
+      "type": "download_file_category"
+    }
+  ],
+  "included": [
+    {
+      "attributes": {
+        "category_id": 2,
+        "description": "Caveman and Pindel processed VCFs with cancer driver annotation.",
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "annotated WES VCFs",
+        "order": 3,
+        "title": "VCFs: Whole Exome Sequencing"
+      },
+      "id": 5,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "2",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "5",
+              "type": "download_file"
+            },
+            {
+              "id": "102",
+              "type": "download_file"
+            },
+            {
+              "id": "6279",
+              "type": "download_file"
+            },
+            {
+              "id": "11729",
+              "type": "download_file"
+            },
+            {
+              "id": "21919",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 5,
+        "size": 1778380916,
+        "timestamp": "2018-06-21T14:41:53.672000+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/cell_line_wes_20180620.zip"
+      },
+      "id": 5,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "5",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 5,
+        "size": 396126490,
+        "timestamp": "2021-11-24T15:21:23.702669+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_wes_vcf_20211124.zip"
+      },
+      "id": 102,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "5",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 5,
+        "size": 543140229,
+        "timestamp": "2022-10-18T15:57:38.317802+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_wes_vcf_20221010.zip"
+      },
+      "id": 6279,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "5",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 5,
+        "size": 543142990,
+        "timestamp": "2024-12-12T13:32:10.536708+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_wes_vcf_20231130.zip"
+      },
+      "id": 11729,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "5",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 5,
+        "size": 558033991,
+        "timestamp": "2025-03-18T10:44:26.255973+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_wes_vcf_20250226.zip"
+      },
+      "id": 21919,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "5",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 2,
+        "description": "A list of cancer driver mutations present in all sequenced models.",
+        "latest_link": "https://cog.sanger.ac.uk/cmp/download/mutations_summary_latest.csv.gz",
+        "link_lead": "Download",
+        "link_text": "driver mutations",
+        "order": 1,
+        "title": "Mutations Summary"
+      },
+      "id": 4,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "2",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "35",
+              "type": "download_file"
+            },
+            {
+              "id": "36",
+              "type": "download_file"
+            },
+            {
+              "id": "38",
+              "type": "download_file"
+            },
+            {
+              "id": "51",
+              "type": "download_file"
+            },
+            {
+              "id": "100",
+              "type": "download_file"
+            },
+            {
+              "id": "130",
+              "type": "download_file"
+            },
+            {
+              "id": "147",
+              "type": "download_file"
+            },
+            {
+              "id": "6275",
+              "type": "download_file"
+            },
+            {
+              "id": "10206",
+              "type": "download_file"
+            },
+            {
+              "id": "10208",
+              "type": "download_file"
+            },
+            {
+              "id": "11725",
+              "type": "download_file"
+            },
+            {
+              "id": "21909",
+              "type": "download_file"
+            },
+            {
+              "id": "21915",
+              "type": "download_file"
+            },
+            {
+              "id": "23132",
+              "type": "download_file"
+            },
+            {
+              "id": "25480",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 4,
+        "size": 16239799,
+        "timestamp": "2018-08-01T16:40:55.933000+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_2018-08-01_1640.csv.gz"
+      },
+      "id": 35,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "4",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 4,
+        "size": 16479163,
+        "timestamp": "2019-02-19T10:45:36.402000+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_2019-02-19_1045.csv.gz"
+      },
+      "id": 36,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "4",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 4,
+        "size": 17050384,
+        "timestamp": "2019-03-06T10:37:06.112000+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_2019-03-06_1036.csv.gz"
+      },
+      "id": 38,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "4",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 4,
+        "size": 20236900,
+        "timestamp": "2019-11-01T11:45:53.050730+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_20191101.zip"
+      },
+      "id": 51,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "4",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 4,
+        "size": 277186,
+        "timestamp": "2021-11-24T15:06:14.115480+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_summary_20211124.zip"
+      },
+      "id": 100,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "4",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 4,
+        "size": 285847,
+        "timestamp": "2022-03-15T11:59:04.673103+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_summary_20220315.zip"
+      },
+      "id": 130,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "4",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 4,
+        "size": 294989,
+        "timestamp": "2022-05-09T15:35:04.339343+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_summary_20220509.zip"
+      },
+      "id": 147,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "4",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 4,
+        "size": 302230,
+        "timestamp": "2022-10-18T15:42:53.362776+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_summary_20221018.zip"
+      },
+      "id": 6275,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "4",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 4,
+        "size": 303063,
+        "timestamp": "2023-02-02T12:28:18.281190+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_summary_20230202.zip"
+      },
+      "id": 10206,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "4",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 4,
+        "size": 303063,
+        "timestamp": "2023-02-02T12:38:13.473284+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_summary_20230202.zip"
+      },
+      "id": 10208,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "4",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 4,
+        "size": 462052,
+        "timestamp": "2024-12-12T13:16:18.404913+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_summary_20241212.zip"
+      },
+      "id": 11725,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "4",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 4,
+        "size": 461782,
+        "timestamp": "2025-02-26T16:01:53.394291+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_summary_20250226.zip"
+      },
+      "id": 21909,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "4",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 4,
+        "size": 504728,
+        "timestamp": "2025-03-18T10:21:50.347287+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_summary_20250318.zip"
+      },
+      "id": 21915,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "4",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 4,
+        "size": 534613,
+        "timestamp": "2026-03-16T15:48:22.203253+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_summary_20260316.zip"
+      },
+      "id": 23132,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "4",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 4,
+        "size": 584662,
+        "timestamp": "2026-07-24T15:02:57.842251+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_summary_20260724.zip"
+      },
+      "id": 25480,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "4",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 2,
+        "description": "Caveman and Pindel processed VCFs with cancer driver annotation (Organoid specific dataset).",
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "annotated TGS VCFs",
+        "order": 6,
+        "title": "VCFs: Targeted Gene Sequencing"
+      },
+      "id": 6,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "2",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "40",
+              "type": "download_file"
+            },
+            {
+              "id": "103",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 6,
+        "size": 4237290,
+        "timestamp": "2018-06-21T15:07:03.828000+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/organoids_tgs_20180621.zip"
+      },
+      "id": 40,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "6",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 6,
+        "size": 3328699,
+        "timestamp": "2021-11-24T15:23:08.918836+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_tgs_vcf_20211124.zip"
+      },
+      "id": 103,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "6",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 2,
+        "description": "A list of all mutations present in all sequenced models.",
+        "latest_link": "https://cog.sanger.ac.uk/cmp/download/mutations_all_latest.csv.gz",
+        "link_lead": "Download",
+        "link_text": "all mutations",
+        "order": 2,
+        "title": "Mutations All"
+      },
+      "id": 18,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "2",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "101",
+              "type": "download_file"
+            },
+            {
+              "id": "108",
+              "type": "download_file"
+            },
+            {
+              "id": "131",
+              "type": "download_file"
+            },
+            {
+              "id": "149",
+              "type": "download_file"
+            },
+            {
+              "id": "6277",
+              "type": "download_file"
+            },
+            {
+              "id": "10210",
+              "type": "download_file"
+            },
+            {
+              "id": "11727",
+              "type": "download_file"
+            },
+            {
+              "id": "21907",
+              "type": "download_file"
+            },
+            {
+              "id": "21917",
+              "type": "download_file"
+            },
+            {
+              "id": "23136",
+              "type": "download_file"
+            },
+            {
+              "id": "25482",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 18,
+        "size": 91378617,
+        "timestamp": "2021-11-24T15:15:42.914880+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_all_20211124.zip"
+      },
+      "id": 101,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "18",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 18,
+        "size": 91344908,
+        "timestamp": "2021-12-08T11:35:23.265177+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_all_20211208.zip"
+      },
+      "id": 108,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "18",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 18,
+        "size": 99406077,
+        "timestamp": "2022-03-15T12:10:15.722675+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_all_20220315.zip"
+      },
+      "id": 131,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "18",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 18,
+        "size": 107535426,
+        "timestamp": "2022-05-10T10:03:21.283396+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_all_20220510.zip"
+      },
+      "id": 149,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "18",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 18,
+        "size": 112035417,
+        "timestamp": "2022-10-18T15:54:32.896764+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_all_20221018.zip"
+      },
+      "id": 6277,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "18",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 18,
+        "size": 112642865,
+        "timestamp": "2023-02-02T12:54:30.008758+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_all_20230202.zip"
+      },
+      "id": 10210,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "18",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 18,
+        "size": 218319692,
+        "timestamp": "2024-12-12T13:29:34.275332+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_all_20241212.zip"
+      },
+      "id": 11727,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "18",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 18,
+        "size": 218192787,
+        "timestamp": "2025-02-26T15:53:43.044226+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_all_20250226.zip"
+      },
+      "id": 21907,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "18",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 18,
+        "size": 222628354,
+        "timestamp": "2025-03-18T10:40:37.603261+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_all_20250318.zip"
+      },
+      "id": 21917,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "18",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 18,
+        "size": 250830633,
+        "timestamp": "2026-03-16T16:36:25.784722+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_all_20260316.zip"
+      },
+      "id": 23136,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "18",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 18,
+        "size": 305104654,
+        "timestamp": "2026-07-24T15:17:14.471906+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_all_20260724.zip"
+      },
+      "id": 25482,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "18",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 2,
+        "description": "Caveman and Pindel processed VCFs with cancer driver annotation.",
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "annotated WGS VCFs",
+        "order": 4,
+        "title": "VCFs: Whole Genome Sequencing"
+      },
+      "id": 21,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "2",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "104",
+              "type": "download_file"
+            },
+            {
+              "id": "132",
+              "type": "download_file"
+            },
+            {
+              "id": "150",
+              "type": "download_file"
+            },
+            {
+              "id": "6280",
+              "type": "download_file"
+            },
+            {
+              "id": "10212",
+              "type": "download_file"
+            },
+            {
+              "id": "11730",
+              "type": "download_file"
+            },
+            {
+              "id": "23138",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 21,
+        "size": 191156967,
+        "timestamp": "2021-11-24T15:33:34.421290+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_wgs_vcf_20211124.zip"
+      },
+      "id": 104,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "21",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 21,
+        "size": 301861498,
+        "timestamp": "2022-03-15T12:13:39.531320+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_wgs_vcf_20220204.zip"
+      },
+      "id": 132,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "21",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 21,
+        "size": 422474464,
+        "timestamp": "2022-05-10T10:07:16.594640+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_wgs_vcf_20220323.zip"
+      },
+      "id": 150,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "21",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 21,
+        "size": 493066033,
+        "timestamp": "2022-10-18T15:58:22.050349+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_wgs_vcf_20221010.zip"
+      },
+      "id": 6280,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "21",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 21,
+        "size": 493521768,
+        "timestamp": "2023-02-02T12:56:44.674547+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_wgs_vcf_20221123.zip"
+      },
+      "id": 10212,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "21",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 21,
+        "size": 494991098,
+        "timestamp": "2024-12-12T13:32:27.717412+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_wgs_vcf_20231130.zip"
+      },
+      "id": 11730,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "21",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 21,
+        "size": 586565412,
+        "timestamp": "2026-03-16T16:53:52.576475+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_wgs_vcf_20260305.zip"
+      },
+      "id": 23138,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "21",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 2,
+        "description": "Caveman and Pindel processed VCFs with cancer driver annotation. Sample IDs (SIDS) can be mapped to Model IDs (SIDM) using the Model List download file.",
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "annotated WGS VCFs",
+        "order": 5,
+        "title": "VCFs: Whole Genome Sequencing (Matched Tumour)"
+      },
+      "id": 49,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "2",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "25304",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 49,
+        "size": 339855718,
+        "timestamp": "2026-06-01T10:55:59.638309+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/mutations_wgs_vcf_tumour_matched_20260407.zip"
+      },
+      "id": 25304,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "49",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 5,
+        "description": "Fusions predicted from RNA-Seq data.",
+        "latest_link": "https://cog.sanger.ac.uk/cmp/download/fusions_latest.csv.gz",
+        "link_lead": "Download",
+        "link_text": "fusion data",
+        "order": 1,
+        "title": "Gene Fusions"
+      },
+      "id": 11,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "5",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "7",
+              "type": "download_file"
+            },
+            {
+              "id": "49",
+              "type": "download_file"
+            },
+            {
+              "id": "10777",
+              "type": "download_file"
+            },
+            {
+              "id": "17673",
+              "type": "download_file"
+            },
+            {
+              "id": "20017",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 11,
+        "size": 161820,
+        "timestamp": "2019-06-17T16:35:49.302000+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/fusions_2019-06-17_1635.csv.gz"
+      },
+      "id": 7,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "11",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 11,
+        "size": 163903,
+        "timestamp": "2019-11-01T11:43:22.837771+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/fusions_20191101.zip"
+      },
+      "id": 49,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "11",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 11,
+        "size": 167090,
+        "timestamp": "2023-07-25T16:03:30.503024+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/Fusions_20230725.zip"
+      },
+      "id": 10777,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "11",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 11,
+        "size": 167861,
+        "timestamp": "2025-02-05T13:38:46.603242+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/Fusions_20250205.zip"
+      },
+      "id": 17673,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "11",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 11,
+        "size": 168016,
+        "timestamp": "2025-02-10T17:10:44.502655+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/Fusions_20250210.zip"
+      },
+      "id": 20017,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "11",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 6,
+        "description": "PICNIC absolute copy numbers and GISTIC scores derived from Affymetrix SNP6.0 array data.",
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "SNP6 CNV data",
+        "order": 6,
+        "title": "Copy Number (SNP6)"
+      },
+      "id": 12,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "6",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "11",
+              "type": "download_file"
+            },
+            {
+              "id": "55",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 12,
+        "size": 147908324,
+        "timestamp": "2018-11-13T16:07:30.632000+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/gene_cnv_2018-11-13_1545.csv.bz2"
+      },
+      "id": 11,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "12",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 12,
+        "size": 16620486,
+        "timestamp": "2019-11-01T13:46:23.805443+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/cnv_20191101.zip"
+      },
+      "id": 55,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "12",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 6,
+        "description": "Total copy number and categorical CNA calls derived from WES data processed through PureCN.",
+        "latest_link": "https://cog.sanger.ac.uk/cmp/download/WES_pureCN_CNV_segments_latest.csv.gz",
+        "link_lead": "Download",
+        "link_text": "CNV segment data",
+        "order": 3,
+        "title": "CNV Segment Data (WES)"
+      },
+      "id": 23,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "6",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "110",
+              "type": "download_file"
+            },
+            {
+              "id": "1424",
+              "type": "download_file"
+            },
+            {
+              "id": "8943",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 23,
+        "size": 12931088,
+        "timestamp": "2022-01-18T16:47:28.408634+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WES_pureCN_CNV_segments_20220118.zip"
+      },
+      "id": 110,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "23",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 23,
+        "size": 12862004,
+        "timestamp": "2022-06-23T16:03:46.042625+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WES_pureCN_CNV_segments_20220623.zip"
+      },
+      "id": 1424,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "23",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 23,
+        "size": 12932066,
+        "timestamp": "2022-12-14T09:30:53.329592+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WES_pureCN_CNV_segments_20221214.zip"
+      },
+      "id": 8943,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "23",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 6,
+        "description": "Total copy number and categorical CNA calls derived from WES data processed through PureCN.",
+        "latest_link": "https://cog.sanger.ac.uk/cmp/download/WES_pureCN_CNV_genes_latest.csv.gz",
+        "link_lead": "Download",
+        "link_text": "CNV gene data",
+        "order": 2,
+        "title": "CNV Gene Data (WES)"
+      },
+      "id": 22,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "6",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "111",
+              "type": "download_file"
+            },
+            {
+              "id": "114",
+              "type": "download_file"
+            },
+            {
+              "id": "155",
+              "type": "download_file"
+            },
+            {
+              "id": "157",
+              "type": "download_file"
+            },
+            {
+              "id": "6287",
+              "type": "download_file"
+            },
+            {
+              "id": "7688",
+              "type": "download_file"
+            },
+            {
+              "id": "18615",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 22,
+        "size": 56146850,
+        "timestamp": "2022-01-18T20:45:31.931948+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WES_pureCN_CNV_genes_20220118.zip"
+      },
+      "id": 111,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "22",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 22,
+        "size": 56527438,
+        "timestamp": "2022-01-20T12:52:02.436325+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WES_pureCN_CNV_genes_20220120.zip"
+      },
+      "id": 114,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "22",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 22,
+        "size": 56542263,
+        "timestamp": "2022-06-22T13:28:07.194985+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WES_pureCN_CNV_genes_20220622.zip"
+      },
+      "id": 155,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "22",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 22,
+        "size": 56548476,
+        "timestamp": "2022-06-23T14:24:53.360253+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WES_pureCN_CNV_genes_20220623.zip"
+      },
+      "id": 157,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "22",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 22,
+        "size": 783885852,
+        "timestamp": "2022-11-09T18:20:19.081687+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WES_pureCN_CNV_genes_20221109.zip"
+      },
+      "id": 6287,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "22",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 22,
+        "size": 776198184,
+        "timestamp": "2022-12-13T17:12:36.091011+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WES_pureCN_CNV_genes_20221213.zip"
+      },
+      "id": 7688,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "22",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 22,
+        "size": 876077679,
+        "timestamp": "2025-02-07T14:36:33.260714+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WES_pureCN_CNV_genes_20250207.zip"
+      },
+      "id": 18615,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "22",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 6,
+        "description": "Total copy number and categorical CNA calls derived from WGS data processed through PURPLE.",
+        "latest_link": "https://cog.sanger.ac.uk/cmp/download/WGS_purple_CNV_genes_latest.csv.gz",
+        "link_lead": "Download",
+        "link_text": "CNV gene data",
+        "order": 4,
+        "title": "CNV Gene Data (WGS)"
+      },
+      "id": 24,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "6",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "124",
+              "type": "download_file"
+            },
+            {
+              "id": "133",
+              "type": "download_file"
+            },
+            {
+              "id": "148",
+              "type": "download_file"
+            },
+            {
+              "id": "2691",
+              "type": "download_file"
+            },
+            {
+              "id": "7554",
+              "type": "download_file"
+            },
+            {
+              "id": "10341",
+              "type": "download_file"
+            },
+            {
+              "id": "10614",
+              "type": "download_file"
+            },
+            {
+              "id": "19870",
+              "type": "download_file"
+            },
+            {
+              "id": "23141",
+              "type": "download_file"
+            },
+            {
+              "id": "25742",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 24,
+        "size": 4683335,
+        "timestamp": "2022-03-08T13:12:17.076481+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WGS_purple_CNV_genes_20220308.zip"
+      },
+      "id": 124,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "24",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 24,
+        "size": 6909354,
+        "timestamp": "2022-03-15T12:39:37.083794+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WGS_purple_CNV_genes_20220315.zip"
+      },
+      "id": 133,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "24",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 24,
+        "size": 8658026,
+        "timestamp": "2022-05-10T09:36:10.221896+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WGS_purple_CNV_genes_20220510.zip"
+      },
+      "id": 148,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "24",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 24,
+        "size": 8652526,
+        "timestamp": "2022-06-23T16:25:46.038491+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WGS_purple_CNV_genes_20220623.zip"
+      },
+      "id": 2691,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "24",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 24,
+        "size": 98786011,
+        "timestamp": "2022-11-10T09:46:21.889061+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WGS_purple_CNV_genes_20221110.zip"
+      },
+      "id": 7554,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "24",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 24,
+        "size": 86039801,
+        "timestamp": "2023-03-02T13:49:30.872843+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WGS_purple_CNV_genes_20230302.zip"
+      },
+      "id": 10341,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "24",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 24,
+        "size": 100609451,
+        "timestamp": "2023-03-03T18:50:19.250335+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WGS_purple_CNV_genes_20230303.zip"
+      },
+      "id": 10614,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "24",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 24,
+        "size": 115968772,
+        "timestamp": "2025-02-07T15:54:16.079306+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WGS_purple_CNV_genes_20250207.zip"
+      },
+      "id": 19870,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "24",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 24,
+        "size": 212129500,
+        "timestamp": "2026-03-17T13:42:56.107820+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WGS_purple_CNV_genes_20260317.zip"
+      },
+      "id": 23141,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "24",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 24,
+        "size": 212091869,
+        "timestamp": "2026-08-04T12:51:30.622713+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WGS_purple_CNV_genes_20260804.zip"
+      },
+      "id": 25742,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "24",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 6,
+        "description": "Total copy number and categorical CNA calls derived from WGS data processed through PURPLE.",
+        "latest_link": "https://cog.sanger.ac.uk/cmp/download/WGS_purple_CNV_segments_latest.csv.gz",
+        "link_lead": "Download",
+        "link_text": "CNV segment data",
+        "order": 5,
+        "title": "CNV Segment Data (WGS)"
+      },
+      "id": 25,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "6",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "125",
+              "type": "download_file"
+            },
+            {
+              "id": "134",
+              "type": "download_file"
+            },
+            {
+              "id": "145",
+              "type": "download_file"
+            },
+            {
+              "id": "2817",
+              "type": "download_file"
+            },
+            {
+              "id": "10215",
+              "type": "download_file"
+            },
+            {
+              "id": "10467",
+              "type": "download_file"
+            },
+            {
+              "id": "22876",
+              "type": "download_file"
+            },
+            {
+              "id": "25486",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 25,
+        "size": 327521,
+        "timestamp": "2022-03-08T13:24:00.820764+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WGS_purple_CNV_segments_20220308.zip"
+      },
+      "id": 125,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "25",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 25,
+        "size": 456569,
+        "timestamp": "2022-03-15T12:41:54.841369+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WGS_purple_CNV_segments_20220315.zip"
+      },
+      "id": 134,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "25",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 25,
+        "size": 557271,
+        "timestamp": "2022-05-09T15:27:11.794213+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WGS_purple_CNV_segments_20220509.zip"
+      },
+      "id": 145,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "25",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 25,
+        "size": 557649,
+        "timestamp": "2022-06-23T16:32:45.701838+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WGS_purple_CNV_segments_20220623.zip"
+      },
+      "id": 2817,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "25",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 25,
+        "size": 3766426,
+        "timestamp": "2023-03-02T12:22:10.256564+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WGS_purple_CNV_segments_20230302.zip"
+      },
+      "id": 10215,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "25",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 25,
+        "size": 3748298,
+        "timestamp": "2023-03-03T18:18:06.549184+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WGS_purple_CNV_segments_20230303.zip"
+      },
+      "id": 10467,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "25",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 25,
+        "size": 6910689,
+        "timestamp": "2026-03-16T15:06:54.424881+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WGS_purple_CNV_segments_20260316.zip"
+      },
+      "id": 22876,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "25",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 25,
+        "size": 6191090,
+        "timestamp": "2026-08-04T12:36:55.535239+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/WGS_purple_CNV_segments_20260804.zip"
+      },
+      "id": 25486,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "25",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 6,
+        "description": "Total copy number and categorical CNA calls in cancer driver genes.",
+        "latest_link": "https://cog.sanger.ac.uk/cmp/download/cnv_summary_latest.csv.gz",
+        "link_lead": "Download",
+        "link_text": "CNV driver gene data",
+        "order": 1,
+        "title": "CNV Summary"
+      },
+      "id": 26,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "6",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "126",
+              "type": "download_file"
+            },
+            {
+              "id": "135",
+              "type": "download_file"
+            },
+            {
+              "id": "146",
+              "type": "download_file"
+            },
+            {
+              "id": "10198",
+              "type": "download_file"
+            },
+            {
+              "id": "10213",
+              "type": "download_file"
+            },
+            {
+              "id": "10761",
+              "type": "download_file"
+            },
+            {
+              "id": "18613",
+              "type": "download_file"
+            },
+            {
+              "id": "23134",
+              "type": "download_file"
+            },
+            {
+              "id": "25998",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 26,
+        "size": 7887497,
+        "timestamp": "2022-03-08T13:26:12.900156+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/cnv_summary_20220308.zip"
+      },
+      "id": 126,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "26",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 26,
+        "size": 8082451,
+        "timestamp": "2022-03-15T13:19:50.937096+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/cnv_summary_20220315.zip"
+      },
+      "id": 135,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "26",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 26,
+        "size": 8240451,
+        "timestamp": "2022-05-09T15:31:07.356788+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/cnv_summary_20220509.zip"
+      },
+      "id": 146,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "26",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 26,
+        "size": 8161786,
+        "timestamp": "2022-12-14T10:06:15.620722+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/cnv_summary_20221214.zip"
+      },
+      "id": 10198,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "26",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 26,
+        "size": 8180122,
+        "timestamp": "2023-03-02T12:16:25.670593+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/cnv_summary_20230302.zip"
+      },
+      "id": 10213,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "26",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 26,
+        "size": 8349216,
+        "timestamp": "2023-03-03T19:00:41.860741+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/cnv_summary_20230303.zip"
+      },
+      "id": 10761,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "26",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 26,
+        "size": 8344149,
+        "timestamp": "2025-02-07T13:37:01.649068+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/cnv_summary_20250207.zip"
+      },
+      "id": 18613,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "26",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 26,
+        "size": 9084798,
+        "timestamp": "2026-03-16T15:53:41.740228+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/cnv_summary_20260316.zip"
+      },
+      "id": 23134,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "26",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 26,
+        "size": 9098915,
+        "timestamp": "2026-08-04T15:17:15.342638+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/cnv_summary_20260804.zip"
+      },
+      "id": 25998,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "26",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 7,
+        "description": "A list of all genes used in the Cell Model Passports, with HUGO, Ensembl, Entrez and Refseq annotation.",
+        "latest_link": "https://cog.sanger.ac.uk/cmp/download/gene_identifiers_latest.csv.gz",
+        "link_lead": "Download",
+        "link_text": "list of all annotated genes",
+        "order": 3,
+        "title": "Gene List"
+      },
+      "id": 2,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "7",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "13",
+              "type": "download_file"
+            },
+            {
+              "id": "50",
+              "type": "download_file"
+            },
+            {
+              "id": "11717",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 2,
+        "size": 922338,
+        "timestamp": "2019-02-19T10:24:20.008000+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/gene_identifiers_2019-02-19_1024.csv.gz"
+      },
+      "id": 13,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "2",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 2,
+        "size": 2913781,
+        "timestamp": "2019-11-01T11:44:05.992996+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/gene_identifiers_20191101.csv"
+      },
+      "id": 50,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "2",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 2,
+        "size": 3873087,
+        "timestamp": "2024-12-12T09:13:57.299348+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/gene_identifiers_20241212.csv"
+      },
+      "id": 11717,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "2",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 7,
+        "description": "The cancer driver gene list used by the Cell Model Passports.",
+        "latest_link": "https://cog.sanger.ac.uk/cmp/download/driver_genes_latest.csv",
+        "link_lead": "Download",
+        "link_text": "cancer driver gene list",
+        "order": 4,
+        "title": "Cancer Driver Genes"
+      },
+      "id": 15,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "7",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "96",
+              "type": "download_file"
+            },
+            {
+              "id": "6267",
+              "type": "download_file"
+            },
+            {
+              "id": "11723",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 15,
+        "size": 26946,
+        "timestamp": "2021-11-24T09:45:01.646243+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/driver_genes_20211124.csv"
+      },
+      "id": 96,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "15",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 15,
+        "size": 26946,
+        "timestamp": "2022-10-18T13:42:59.017610+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/driver_genes_20221018.csv"
+      },
+      "id": 6267,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "15",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 15,
+        "size": 41433,
+        "timestamp": "2024-12-12T13:03:31.867938+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/driver_genes_20241212.csv"
+      },
+      "id": 11723,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "15",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 7,
+        "description": "The cancer driver mutation list used by the Cell Model Passports.",
+        "latest_link": "https://cog.sanger.ac.uk/cmp/download/driver_mutations_latest.csv",
+        "link_lead": "Download",
+        "link_text": "cancer driver mutation list",
+        "order": 5,
+        "title": "Cancer Driver Mutations"
+      },
+      "id": 16,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "7",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "97",
+              "type": "download_file"
+            },
+            {
+              "id": "6269",
+              "type": "download_file"
+            },
+            {
+              "id": "7680",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 16,
+        "size": 2037044,
+        "timestamp": "2021-11-24T09:46:28.953683+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/driver_mutations_20211124.csv"
+      },
+      "id": 97,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "16",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 16,
+        "size": 2112386,
+        "timestamp": "2022-10-18T13:43:13.033837+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/driver_mutations_20221018.csv"
+      },
+      "id": 6269,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "16",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 16,
+        "size": 2064896,
+        "timestamp": "2022-12-08T13:13:05.945148+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/driver_mutations_20221208.csv"
+      },
+      "id": 7680,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "16",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 7,
+        "description": "The cancer predisposition variant list used by the Cell Model Passports.",
+        "latest_link": "https://cog.sanger.ac.uk/cmp/download/cancer_predisposition_variants_latest.csv",
+        "link_lead": "Download",
+        "link_text": "cancer predisposition variant list",
+        "order": 6,
+        "title": "Cancer Predisposition Variants"
+      },
+      "id": 17,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "7",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "98",
+              "type": "download_file"
+            },
+            {
+              "id": "6271",
+              "type": "download_file"
+            },
+            {
+              "id": "6283",
+              "type": "download_file"
+            },
+            {
+              "id": "7682",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 17,
+        "size": 43767,
+        "timestamp": "2021-11-24T09:46:38.210197+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/cancer_predisposition_variants_20211124.csv"
+      },
+      "id": 98,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "17",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 17,
+        "size": 35915,
+        "timestamp": "2022-10-18T13:43:33.247795+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/cancer_predisposition_variants_20221018.csv"
+      },
+      "id": 6271,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "17",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 17,
+        "size": 44967,
+        "timestamp": "2022-10-19T15:13:50.000429+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/cancer_predisposition_variants_20221019.csv"
+      },
+      "id": 6283,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "17",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 17,
+        "size": 43987,
+        "timestamp": "2022-12-08T13:13:18.084996+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/cancer_predisposition_variants_20221208.csv"
+      },
+      "id": 7682,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "17",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 7,
+        "description": null,
+        "latest_link": "https://cog.sanger.ac.uk/cmp/download/gene_tractability_latest.csv.gz",
+        "link_lead": "Download",
+        "link_text": "gene tractability data",
+        "order": 7,
+        "title": "Gene Tractability"
+      },
+      "id": 43,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "7",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "22865",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 43,
+        "size": 1279566,
+        "timestamp": "2025-10-09T09:50:53.688979+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/gene_tractabilty_20251009.csv"
+      },
+      "id": 22865,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "43",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 1,
+        "description": "A list of all models in the Cell Model Passports with their annotation including tissue, cancer type and identifiers.",
+        "latest_link": "https://cog.sanger.ac.uk/cmp/download/model_list_latest.csv.gz",
+        "link_lead": "Download",
+        "link_text": "list of all annotated models",
+        "order": 1,
+        "title": "Model List"
+      },
+      "id": 1,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "1",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "16",
+              "type": "download_file"
+            },
+            {
+              "id": "18",
+              "type": "download_file"
+            },
+            {
+              "id": "19",
+              "type": "download_file"
+            },
+            {
+              "id": "20",
+              "type": "download_file"
+            },
+            {
+              "id": "24",
+              "type": "download_file"
+            },
+            {
+              "id": "28",
+              "type": "download_file"
+            },
+            {
+              "id": "29",
+              "type": "download_file"
+            },
+            {
+              "id": "30",
+              "type": "download_file"
+            },
+            {
+              "id": "31",
+              "type": "download_file"
+            },
+            {
+              "id": "47",
+              "type": "download_file"
+            },
+            {
+              "id": "56",
+              "type": "download_file"
+            },
+            {
+              "id": "57",
+              "type": "download_file"
+            },
+            {
+              "id": "58",
+              "type": "download_file"
+            },
+            {
+              "id": "59",
+              "type": "download_file"
+            },
+            {
+              "id": "60",
+              "type": "download_file"
+            },
+            {
+              "id": "61",
+              "type": "download_file"
+            },
+            {
+              "id": "62",
+              "type": "download_file"
+            },
+            {
+              "id": "63",
+              "type": "download_file"
+            },
+            {
+              "id": "64",
+              "type": "download_file"
+            },
+            {
+              "id": "65",
+              "type": "download_file"
+            },
+            {
+              "id": "66",
+              "type": "download_file"
+            },
+            {
+              "id": "67",
+              "type": "download_file"
+            },
+            {
+              "id": "68",
+              "type": "download_file"
+            },
+            {
+              "id": "69",
+              "type": "download_file"
+            },
+            {
+              "id": "70",
+              "type": "download_file"
+            },
+            {
+              "id": "71",
+              "type": "download_file"
+            },
+            {
+              "id": "72",
+              "type": "download_file"
+            },
+            {
+              "id": "73",
+              "type": "download_file"
+            },
+            {
+              "id": "74",
+              "type": "download_file"
+            },
+            {
+              "id": "75",
+              "type": "download_file"
+            },
+            {
+              "id": "78",
+              "type": "download_file"
+            },
+            {
+              "id": "76",
+              "type": "download_file"
+            },
+            {
+              "id": "79",
+              "type": "download_file"
+            },
+            {
+              "id": "77",
+              "type": "download_file"
+            },
+            {
+              "id": "80",
+              "type": "download_file"
+            },
+            {
+              "id": "81",
+              "type": "download_file"
+            },
+            {
+              "id": "82",
+              "type": "download_file"
+            },
+            {
+              "id": "83",
+              "type": "download_file"
+            },
+            {
+              "id": "84",
+              "type": "download_file"
+            },
+            {
+              "id": "85",
+              "type": "download_file"
+            },
+            {
+              "id": "89",
+              "type": "download_file"
+            },
+            {
+              "id": "90",
+              "type": "download_file"
+            },
+            {
+              "id": "92",
+              "type": "download_file"
+            },
+            {
+              "id": "93",
+              "type": "download_file"
+            },
+            {
+              "id": "94",
+              "type": "download_file"
+            },
+            {
+              "id": "95",
+              "type": "download_file"
+            },
+            {
+              "id": "99",
+              "type": "download_file"
+            },
+            {
+              "id": "107",
+              "type": "download_file"
+            },
+            {
+              "id": "115",
+              "type": "download_file"
+            },
+            {
+              "id": "119",
+              "type": "download_file"
+            },
+            {
+              "id": "123",
+              "type": "download_file"
+            },
+            {
+              "id": "129",
+              "type": "download_file"
+            },
+            {
+              "id": "136",
+              "type": "download_file"
+            },
+            {
+              "id": "139",
+              "type": "download_file"
+            },
+            {
+              "id": "140",
+              "type": "download_file"
+            },
+            {
+              "id": "141",
+              "type": "download_file"
+            },
+            {
+              "id": "152",
+              "type": "download_file"
+            },
+            {
+              "id": "153",
+              "type": "download_file"
+            },
+            {
+              "id": "154",
+              "type": "download_file"
+            },
+            {
+              "id": "5302",
+              "type": "download_file"
+            },
+            {
+              "id": "6259",
+              "type": "download_file"
+            },
+            {
+              "id": "6261",
+              "type": "download_file"
+            },
+            {
+              "id": "6265",
+              "type": "download_file"
+            },
+            {
+              "id": "6285",
+              "type": "download_file"
+            },
+            {
+              "id": "10204",
+              "type": "download_file"
+            },
+            {
+              "id": "10765",
+              "type": "download_file"
+            },
+            {
+              "id": "10767",
+              "type": "download_file"
+            },
+            {
+              "id": "10769",
+              "type": "download_file"
+            },
+            {
+              "id": "10771",
+              "type": "download_file"
+            },
+            {
+              "id": "10773",
+              "type": "download_file"
+            },
+            {
+              "id": "10775",
+              "type": "download_file"
+            },
+            {
+              "id": "11692",
+              "type": "download_file"
+            },
+            {
+              "id": "11694",
+              "type": "download_file"
+            },
+            {
+              "id": "11696",
+              "type": "download_file"
+            },
+            {
+              "id": "11698",
+              "type": "download_file"
+            },
+            {
+              "id": "11700",
+              "type": "download_file"
+            },
+            {
+              "id": "11702",
+              "type": "download_file"
+            },
+            {
+              "id": "11719",
+              "type": "download_file"
+            },
+            {
+              "id": "21911",
+              "type": "download_file"
+            },
+            {
+              "id": "21920",
+              "type": "download_file"
+            },
+            {
+              "id": "21922",
+              "type": "download_file"
+            },
+            {
+              "id": "21924",
+              "type": "download_file"
+            },
+            {
+              "id": "22862",
+              "type": "download_file"
+            },
+            {
+              "id": "22872",
+              "type": "download_file"
+            },
+            {
+              "id": "22874",
+              "type": "download_file"
+            },
+            {
+              "id": "23561",
+              "type": "download_file"
+            },
+            {
+              "id": "25302",
+              "type": "download_file"
+            },
+            {
+              "id": "25305",
+              "type": "download_file"
+            },
+            {
+              "id": "25307",
+              "type": "download_file"
+            },
+            {
+              "id": "25309",
+              "type": "download_file"
+            },
+            {
+              "id": "25478",
+              "type": "download_file"
+            },
+            {
+              "id": "26000",
+              "type": "download_file"
+            },
+            {
+              "id": "26002",
+              "type": "download_file"
+            },
+            {
+              "id": "26005",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 423082,
+        "timestamp": "2018-09-06T10:28:58.421000+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_2018-09-06_1028.csv"
+      },
+      "id": 16,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 423269,
+        "timestamp": "2018-09-10T15:27:23.836000+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_2018-09-10_1527.csv"
+      },
+      "id": 18,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 423032,
+        "timestamp": "2018-09-28T14:52:32.843000+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_2018-09-28_1452.csv"
+      },
+      "id": 19,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 90098,
+        "timestamp": "2019-02-19T10:42:53.007000+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_2019-02-19_1042.csv.gz"
+      },
+      "id": 20,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 92885,
+        "timestamp": "2019-04-04T09:16:46.357000+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_2019-04-04_0916.csv.gz"
+      },
+      "id": 24,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 115431,
+        "timestamp": "2019-06-06T12:02:26.133000+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_2019-06-06_1202.csv.gz"
+      },
+      "id": 28,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 116624,
+        "timestamp": "2019-06-14T14:25:31.675000+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_2019-06-14_1425.csv.gz"
+      },
+      "id": 29,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 130355,
+        "timestamp": "2019-06-21T15:35:47.105000+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_2019-06-21_1535.csv.gz"
+      },
+      "id": 30,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 130580,
+        "timestamp": "2019-07-12T08:54:29.715000+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_2019-07-12_0854.csv.gz"
+      },
+      "id": 31,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 587773,
+        "timestamp": "2019-11-01T11:40:41.572475+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20191101.csv"
+      },
+      "id": 47,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 588663,
+        "timestamp": "2019-11-04T09:55:07.134923+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20191104.csv"
+      },
+      "id": 56,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 588674,
+        "timestamp": "2019-12-03T01:01:42.114950+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20191203.csv"
+      },
+      "id": 57,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 634122,
+        "timestamp": "2020-01-07T14:01:00.373138+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20200107.csv"
+      },
+      "id": 58,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 634158,
+        "timestamp": "2020-01-10T01:01:25.152267+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20200110.csv"
+      },
+      "id": 59,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 642603,
+        "timestamp": "2020-01-14T14:41:39.100311+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20200114.csv"
+      },
+      "id": 60,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 653502,
+        "timestamp": "2020-01-15T11:09:11.608601+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20200115.csv"
+      },
+      "id": 61,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 653502,
+        "timestamp": "2020-01-15T11:14:11.996648+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20200115.csv"
+      },
+      "id": 62,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 653524,
+        "timestamp": "2020-02-04T01:01:13.362550+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20200204.csv"
+      },
+      "id": 63,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 655177,
+        "timestamp": "2020-06-01T13:16:46.516263+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20200601.csv"
+      },
+      "id": 64,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 655177,
+        "timestamp": "2020-06-03T01:01:16.195724+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20200603.csv"
+      },
+      "id": 65,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 655176,
+        "timestamp": "2020-06-04T01:01:19.443468+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20200604.csv"
+      },
+      "id": 66,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 655186,
+        "timestamp": "2020-06-10T01:01:20.355591+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20200610.csv"
+      },
+      "id": 67,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 732950,
+        "timestamp": "2020-06-30T10:47:43.307351+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20200630.csv"
+      },
+      "id": 68,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 733253,
+        "timestamp": "2020-06-30T13:36:51.120422+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20200630.csv"
+      },
+      "id": 69,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 733253,
+        "timestamp": "2020-07-01T13:39:05.141231+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20200701.csv"
+      },
+      "id": 70,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 733801,
+        "timestamp": "2020-07-02T13:11:46.425871+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20200702.csv"
+      },
+      "id": 71,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 733771,
+        "timestamp": "2020-07-11T01:01:30.091567+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20200711.csv"
+      },
+      "id": 72,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 733751,
+        "timestamp": "2020-07-28T01:01:31.634478+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20200728.csv"
+      },
+      "id": 73,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 733741,
+        "timestamp": "2020-07-29T01:01:31.155397+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20200729.csv"
+      },
+      "id": 74,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 733729,
+        "timestamp": "2020-07-30T01:01:39.706695+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20200730.csv"
+      },
+      "id": 75,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 733817,
+        "timestamp": "2020-10-03T01:01:49.851085+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20201003.csv"
+      },
+      "id": 78,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 733772,
+        "timestamp": "2020-08-25T01:01:30.425105+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20200825.csv"
+      },
+      "id": 76,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 745210,
+        "timestamp": "2020-10-20T15:01:22.832686+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20201020.csv"
+      },
+      "id": 79,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 733795,
+        "timestamp": "2020-09-24T01:01:32.977223+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20200924.csv"
+      },
+      "id": 77,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 734485,
+        "timestamp": "2020-10-21T01:01:42.019684+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20201021.csv"
+      },
+      "id": 80,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 745128,
+        "timestamp": "2020-10-22T09:23:31.331940+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20201022.csv"
+      },
+      "id": 81,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 734411,
+        "timestamp": "2021-02-06T01:01:35.566287+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20210206.csv"
+      },
+      "id": 82,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 739951,
+        "timestamp": "2021-02-12T01:01:39.052599+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20210212.csv"
+      },
+      "id": 83,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 741249,
+        "timestamp": "2021-03-03T01:01:51.475769+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20210303.csv"
+      },
+      "id": 84,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 741183,
+        "timestamp": "2021-03-10T01:01:55.285387+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20210310.csv"
+      },
+      "id": 85,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 752717,
+        "timestamp": "2021-03-24T11:36:18.798347+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20210324.csv"
+      },
+      "id": 89,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 750177,
+        "timestamp": "2021-03-26T10:37:50.851257+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20210326.csv"
+      },
+      "id": 90,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 751314,
+        "timestamp": "2021-04-27T10:37:23.876909+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20210427.csv"
+      },
+      "id": 92,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 758953,
+        "timestamp": "2021-06-10T11:32:27.487718+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20210610.csv"
+      },
+      "id": 93,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 782161,
+        "timestamp": "2021-06-11T13:48:56.112038+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20210611.csv"
+      },
+      "id": 94,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 781726,
+        "timestamp": "2021-07-19T16:27:41.454680+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20210719.csv"
+      },
+      "id": 95,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 693874,
+        "timestamp": "2021-11-24T15:03:25.935086+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20211124.csv"
+      },
+      "id": 99,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 705017,
+        "timestamp": "2021-11-24T20:13:35.111248+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20211124.csv"
+      },
+      "id": 107,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 703354,
+        "timestamp": "2022-01-24T12:07:51.067542+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20220124.csv"
+      },
+      "id": 115,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 703417,
+        "timestamp": "2022-02-05T01:01:45.289780+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20220205.csv"
+      },
+      "id": 119,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 728781,
+        "timestamp": "2022-03-08T11:13:38.338034+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20220308.csv"
+      },
+      "id": 123,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 736473,
+        "timestamp": "2022-03-14T16:23:32.772596+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20220314.csv"
+      },
+      "id": 129,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 736780,
+        "timestamp": "2022-03-15T13:59:22.368160+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20220315.csv"
+      },
+      "id": 136,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 737319,
+        "timestamp": "2022-04-30T01:03:06.339999+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20220430.csv"
+      },
+      "id": 139,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 737283,
+        "timestamp": "2022-05-07T01:03:45.673474+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20220507.csv"
+      },
+      "id": 140,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 747643,
+        "timestamp": "2022-05-09T14:46:31.466256+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20220509.csv"
+      },
+      "id": 141,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 749266,
+        "timestamp": "2022-05-14T01:03:18.903900+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20220514.csv"
+      },
+      "id": 152,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 747349,
+        "timestamp": "2022-05-23T15:22:00.515683+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20220523.csv"
+      },
+      "id": 153,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 748988,
+        "timestamp": "2022-06-07T01:03:15.768535+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20220607.csv"
+      },
+      "id": 154,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 866162,
+        "timestamp": "2022-06-28T15:04:03.004189+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20220628.csv"
+      },
+      "id": 5302,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 867537,
+        "timestamp": "2022-08-08T17:40:25.674012+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20220808.csv"
+      },
+      "id": 6259,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 867793,
+        "timestamp": "2022-08-10T01:03:16.695138+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20220810.csv"
+      },
+      "id": 6261,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 874536,
+        "timestamp": "2022-10-14T01:02:03.397990+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20221014.csv"
+      },
+      "id": 6265,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 874542,
+        "timestamp": "2022-11-02T01:03:50.766858+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20221102.csv"
+      },
+      "id": 6285,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 874186,
+        "timestamp": "2023-01-10T01:02:45.859408+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20230110.csv"
+      },
+      "id": 10204,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 877022,
+        "timestamp": "2023-03-06T12:41:57.828037+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20230306.csv"
+      },
+      "id": 10765,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 877095,
+        "timestamp": "2023-03-07T10:36:12.762744+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20230307.csv"
+      },
+      "id": 10767,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 877137,
+        "timestamp": "2023-04-19T01:01:17.280744+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20230419.csv"
+      },
+      "id": 10769,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 877126,
+        "timestamp": "2023-05-05T01:01:48.273678+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20230505.csv"
+      },
+      "id": 10771,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 877131,
+        "timestamp": "2023-05-17T01:00:52.820745+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20230517.csv"
+      },
+      "id": 10773,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 900618,
+        "timestamp": "2023-06-08T01:01:10.937202+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20230608.csv"
+      },
+      "id": 10775,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 900670,
+        "timestamp": "2023-07-27T01:01:53.334942+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20230727.csv"
+      },
+      "id": 11692,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 900035,
+        "timestamp": "2023-08-01T01:01:27.944500+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20230801.csv"
+      },
+      "id": 11694,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 902918,
+        "timestamp": "2023-09-02T01:01:09.802515+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20230902.csv"
+      },
+      "id": 11696,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 902918,
+        "timestamp": "2023-09-23T01:01:45.544102+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20230923.csv"
+      },
+      "id": 11698,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 902918,
+        "timestamp": "2024-01-03T11:09:43.263507+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20240103.csv"
+      },
+      "id": 11700,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 902914,
+        "timestamp": "2024-01-10T01:00:59.406307+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20240110.csv"
+      },
+      "id": 11702,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 803865,
+        "timestamp": "2024-12-12T10:18:37.649822+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20241212.csv"
+      },
+      "id": 11719,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 925294,
+        "timestamp": "2025-03-11T09:34:53.982147+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20250311.csv"
+      },
+      "id": 21911,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 958119,
+        "timestamp": "2025-04-04T11:43:31.535156+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20250404.csv"
+      },
+      "id": 21920,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 957915,
+        "timestamp": "2025-04-07T15:58:21.222881+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20250407.csv"
+      },
+      "id": 21922,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 958561,
+        "timestamp": "2025-04-23T11:29:13.991667+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20250423.csv"
+      },
+      "id": 21924,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 945863,
+        "timestamp": "2025-06-30T12:18:27.399703+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20250630.csv"
+      },
+      "id": 22862,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 946066,
+        "timestamp": "2026-03-03T15:06:46.319682+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20260303.csv"
+      },
+      "id": 22872,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 950103,
+        "timestamp": "2026-03-16T15:05:06.631821+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20260316.csv"
+      },
+      "id": 22874,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 956006,
+        "timestamp": "2026-03-23T11:36:20.600649+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20260323.csv"
+      },
+      "id": 23561,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 956381,
+        "timestamp": "2026-04-20T10:02:09.108773+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20260420.csv"
+      },
+      "id": 25302,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 957100,
+        "timestamp": "2026-06-16T01:01:36.696151+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20260616.csv"
+      },
+      "id": 25305,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 957169,
+        "timestamp": "2026-06-19T01:01:13.808025+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20260619.csv"
+      },
+      "id": 25307,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 957353,
+        "timestamp": "2026-07-09T01:01:00.243186+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20260709.csv"
+      },
+      "id": 25309,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 957399,
+        "timestamp": "2026-07-24T01:00:50.594994+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20260724.csv"
+      },
+      "id": 25478,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 957409,
+        "timestamp": "2026-08-11T01:01:33.120502+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20260811.csv"
+      },
+      "id": 26000,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 957555,
+        "timestamp": "2026-08-14T01:01:15.267627+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20260814.csv"
+      },
+      "id": 26002,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 1,
+        "size": 957555,
+        "timestamp": "2026-09-21T12:54:21.120603+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20260921.csv"
+      },
+      "id": 26005,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "1",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 1,
+        "description": "Contains the datasets available for each model.",
+        "latest_link": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_latest.csv.gz",
+        "link_lead": "Download",
+        "link_text": "dataset availability matrix",
+        "order": 2,
+        "title": "Model Dataset Availability"
+      },
+      "id": 19,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "1",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "105",
+              "type": "download_file"
+            },
+            {
+              "id": "112",
+              "type": "download_file"
+            },
+            {
+              "id": "113",
+              "type": "download_file"
+            },
+            {
+              "id": "121",
+              "type": "download_file"
+            },
+            {
+              "id": "127",
+              "type": "download_file"
+            },
+            {
+              "id": "128",
+              "type": "download_file"
+            },
+            {
+              "id": "137",
+              "type": "download_file"
+            },
+            {
+              "id": "143",
+              "type": "download_file"
+            },
+            {
+              "id": "5304",
+              "type": "download_file"
+            },
+            {
+              "id": "6257",
+              "type": "download_file"
+            },
+            {
+              "id": "6273",
+              "type": "download_file"
+            },
+            {
+              "id": "6281",
+              "type": "download_file"
+            },
+            {
+              "id": "7684",
+              "type": "download_file"
+            },
+            {
+              "id": "7686",
+              "type": "download_file"
+            },
+            {
+              "id": "10763",
+              "type": "download_file"
+            },
+            {
+              "id": "11721",
+              "type": "download_file"
+            },
+            {
+              "id": "21913",
+              "type": "download_file"
+            },
+            {
+              "id": "22860",
+              "type": "download_file"
+            },
+            {
+              "id": "23139",
+              "type": "download_file"
+            },
+            {
+              "id": "23452",
+              "type": "download_file"
+            },
+            {
+              "id": "25476",
+              "type": "download_file"
+            },
+            {
+              "id": "25484",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 120211,
+        "timestamp": "2021-11-24T17:25:15.835224+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20211124.csv"
+      },
+      "id": 105,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 141364,
+        "timestamp": "2022-01-19T09:53:04.555331+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20220119.csv"
+      },
+      "id": 112,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 150349,
+        "timestamp": "2022-01-19T12:31:07.599716+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20220119.csv"
+      },
+      "id": 113,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 160245,
+        "timestamp": "2022-02-16T19:39:10.259499+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20220216.csv"
+      },
+      "id": 121,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 170139,
+        "timestamp": "2022-03-08T13:46:36.335915+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20220308.csv"
+      },
+      "id": 127,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 170172,
+        "timestamp": "2022-03-14T12:08:34.367789+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20220314.csv"
+      },
+      "id": 128,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 173395,
+        "timestamp": "2022-03-15T14:29:33.689549+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20220315.csv"
+      },
+      "id": 137,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 178361,
+        "timestamp": "2022-05-09T15:25:12.311959+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20220509.csv"
+      },
+      "id": 143,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 197976,
+        "timestamp": "2022-06-28T15:46:13.580968+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20220628.csv"
+      },
+      "id": 5304,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 207424,
+        "timestamp": "2022-07-13T12:50:19.893194+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20220713.csv"
+      },
+      "id": 6257,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 215848,
+        "timestamp": "2022-10-18T15:41:30.492982+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20221018.csv"
+      },
+      "id": 6273,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 230403,
+        "timestamp": "2022-10-18T16:11:44.247857+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20221018.csv"
+      },
+      "id": 6281,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 215882,
+        "timestamp": "2022-12-12T15:43:57.664399+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20221212.csv"
+      },
+      "id": 7684,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 230437,
+        "timestamp": "2022-12-12T16:41:45.542775+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20221212.csv"
+      },
+      "id": 7686,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 230416,
+        "timestamp": "2023-03-06T10:05:29.186365+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20230306.csv"
+      },
+      "id": 10763,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 251145,
+        "timestamp": "2024-12-12T12:18:36.086520+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20241212.csv"
+      },
+      "id": 11721,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 254391,
+        "timestamp": "2025-03-18T10:02:03.823640+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20250318.csv"
+      },
+      "id": 21913,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 254462,
+        "timestamp": "2025-06-24T16:10:07.989681+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20250624.csv"
+      },
+      "id": 22860,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 281058,
+        "timestamp": "2026-03-17T09:36:36.918001+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20260317.csv"
+      },
+      "id": 23139,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 280943,
+        "timestamp": "2026-03-23T11:15:20.443039+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20260323.csv"
+      },
+      "id": 23452,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 293038,
+        "timestamp": "2026-07-23T15:02:04.447631+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20260723.csv"
+      },
+      "id": 25476,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 19,
+        "size": 305142,
+        "timestamp": "2026-07-27T08:51:01.967223+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/model_dataset_availability_20260727.csv"
+      },
+      "id": 25484,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "19",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 1,
+        "description": "GDSC Growth Estimate",
+        "latest_link": "https://cog.sanger.ac.uk/cmp/download/growth_rate_latest.csv",
+        "link_lead": "Download",
+        "link_text": "growth rate data",
+        "order": 3,
+        "title": "Growth Rate"
+      },
+      "id": 28,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "1",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "6263",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 28,
+        "size": 41938,
+        "timestamp": "2022-09-07T14:05:08.577663+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/growth_rate_20220907.csv"
+      },
+      "id": 6263,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "28",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 4,
+        "description": "Read count, TPM and FPKM values from RSEM and, where available, HTSeq in a long format file for all analysed models.",
+        "latest_link": "https://cog.sanger.ac.uk/cmp/download/rnaseq_latest.csv.gz",
+        "link_lead": "Download",
+        "link_text": "all RNA-Seq processed data",
+        "order": 2,
+        "title": "RNA-Seq All"
+      },
+      "id": 10,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "4",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "42",
+              "type": "download_file"
+            },
+            {
+              "id": "43",
+              "type": "download_file"
+            },
+            {
+              "id": "44",
+              "type": "download_file"
+            },
+            {
+              "id": "53",
+              "type": "download_file"
+            },
+            {
+              "id": "91",
+              "type": "download_file"
+            },
+            {
+              "id": "106",
+              "type": "download_file"
+            },
+            {
+              "id": "109",
+              "type": "download_file"
+            },
+            {
+              "id": "122",
+              "type": "download_file"
+            },
+            {
+              "id": "138",
+              "type": "download_file"
+            },
+            {
+              "id": "151",
+              "type": "download_file"
+            },
+            {
+              "id": "3869",
+              "type": "download_file"
+            },
+            {
+              "id": "11749",
+              "type": "download_file"
+            },
+            {
+              "id": "12875",
+              "type": "download_file"
+            },
+            {
+              "id": "14102",
+              "type": "download_file"
+            },
+            {
+              "id": "15887",
+              "type": "download_file"
+            },
+            {
+              "id": "23397",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 10,
+        "size": 69164190,
+        "timestamp": "2019-02-19T10:08:22.257000+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_2019-02-19_1005.csv.gz"
+      },
+      "id": 42,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "10",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 10,
+        "size": 191081392,
+        "timestamp": "2019-04-15T11:41:36.349000+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_2019-04-15_1133.csv.gz"
+      },
+      "id": 43,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "10",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 10,
+        "size": 61579612,
+        "timestamp": "2019-09-30T13:43:07.462000+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_20190821.zip"
+      },
+      "id": 44,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "10",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 10,
+        "size": 61579614,
+        "timestamp": "2019-11-01T13:29:49.758139+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_20191101.zip"
+      },
+      "id": 53,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "10",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 10,
+        "size": 866015937,
+        "timestamp": "2021-03-29T14:10:48.008505+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_merged_Sanger_Broad_20210329.zip"
+      },
+      "id": 91,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "10",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 10,
+        "size": 910369166,
+        "timestamp": "2021-11-24T19:16:43.206375+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_merged_Sanger_Broad_20211124.zip"
+      },
+      "id": 106,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "10",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 10,
+        "size": 911058421,
+        "timestamp": "2022-01-18T15:20:07.876514+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_all_20220118.zip"
+      },
+      "id": 109,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "10",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 10,
+        "size": 888030226,
+        "timestamp": "2022-02-16T20:44:46.855815+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_all_20220216.zip"
+      },
+      "id": 122,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "10",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 10,
+        "size": 908637557,
+        "timestamp": "2022-03-15T16:04:00.587458+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_all_20220315.zip"
+      },
+      "id": 138,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "10",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 10,
+        "size": 940492356,
+        "timestamp": "2022-05-10T12:21:45.998816+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_all_20220510.zip"
+      },
+      "id": 151,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "10",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 10,
+        "size": 940707972,
+        "timestamp": "2022-06-24T11:57:05.316389+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_all_20220624.zip"
+      },
+      "id": 3869,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "10",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 10,
+        "size": 368132199,
+        "timestamp": "2024-12-12T15:19:26.351862+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_all_20241212.zip"
+      },
+      "id": 11749,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "10",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 10,
+        "size": 973335890,
+        "timestamp": "2024-12-17T17:56:33.368999+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_all_20241217.zip"
+      },
+      "id": 12875,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "10",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 10,
+        "size": 973333338,
+        "timestamp": "2024-12-18T13:25:09.588957+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_all_20241218.zip"
+      },
+      "id": 14102,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "10",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 10,
+        "size": 1097983591,
+        "timestamp": "2025-01-17T11:35:33.643814+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_all_20250117.zip"
+      },
+      "id": 15887,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "10",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 10,
+        "size": 1204249751,
+        "timestamp": "2026-03-23T10:41:35.288095+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_all_20260323.zip"
+      },
+      "id": 23397,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "10",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 4,
+        "description": "Read count, TPM and FPKM values in wide and long format files. When models have duplicate analyses, Sanger data has been chosen.",
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "RNA-Seq processed data",
+        "order": 1,
+        "title": "RNA-Seq Summary"
+      },
+      "id": 40,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "4",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "12874",
+              "type": "download_file"
+            },
+            {
+              "id": "17672",
+              "type": "download_file"
+            },
+            {
+              "id": "22864",
+              "type": "download_file"
+            },
+            {
+              "id": "25301",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 40,
+        "size": 1106607423,
+        "timestamp": "2024-12-17T17:28:26.766258+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_merged_20241217.zip"
+      },
+      "id": 12874,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "40",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 40,
+        "size": 1209789644,
+        "timestamp": "2025-01-17T15:51:46.442555+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_merged_20250117.zip"
+      },
+      "id": 17672,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "40",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 40,
+        "size": 1217777248,
+        "timestamp": "2025-09-22T16:10:46.345581+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_merged_20250922.zip"
+      },
+      "id": 22864,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "40",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 40,
+        "size": 1291769946,
+        "timestamp": "2026-03-23T17:24:39.478394+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_merged_20260323.zip"
+      },
+      "id": 25301,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "40",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 3,
+        "description": "Integrated fitness and binary depletion data from Project Score.",
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "Legacy CRISPR dependencies fitness score data",
+        "order": 5,
+        "title": "CRISPR KO Fitness Scores (Archive)"
+      },
+      "id": 7,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "3",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "6",
+              "type": "download_file"
+            },
+            {
+              "id": "21926",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 7,
+        "size": null,
+        "timestamp": "2019-04-10T16:12:58.361000+00:00",
+        "url": "https://score.depmap.sanger.ac.uk/downloads"
+      },
+      "id": 6,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "7",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 7,
+        "size": null,
+        "timestamp": null,
+        "url": "http://cmp.cog.sanger.ac.uk/download/Project_score_archive_data.zip"
+      },
+      "id": 21926,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "7",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 3,
+        "description": "Dataset as described in Pacini et al (https://doi.org/10.1016/j.ccell.2023.12.016).",
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "CRISPR KO fitness score data",
+        "order": 1,
+        "title": "CRISPR KO Fitness Scores (Pacini et al, 2024)"
+      },
+      "id": 29,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "3",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "11704",
+              "type": "download_file"
+            },
+            {
+              "id": "21929",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 29,
+        "size": 488061952,
+        "timestamp": "2024-01-11T10:55:00+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/Project_Score2_fitness_scores_Sanger_v2_Broad_21Q2_20240111.zip"
+      },
+      "id": 11704,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "29",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 29,
+        "size": 198873260,
+        "timestamp": "2025-06-24T14:51:51.150675+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/Project_Score2_fitness_scores_Sanger_v2_Broad_21Q2_20250624.zip"
+      },
+      "id": 21929,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "29",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 3,
+        "description": "Dataset as described in Pacini et al (https://doi.org/10.1016/j.ccell.2023.12.016).",
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "CRISPR KO target priority score data",
+        "order": 2,
+        "title": "CRISPR KO Target Priority Scores (Pacini et al, 2024)"
+      },
+      "id": 30,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "3",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "11705",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 30,
+        "size": 8736,
+        "timestamp": "2024-01-11T10:55:00+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/Project_Score2_piority_scores_Sanger_v2_Broad_21Q2_20240111.csv.zip"
+      },
+      "id": 11705,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "30",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 3,
+        "description": "Raw count data for the Sanger generated dataset.",
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "sgRNA Raw Counts",
+        "order": 4,
+        "title": "CRISPR Dependencies sgRNA Raw Counts"
+      },
+      "id": 42,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "3",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "21927",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 42,
+        "size": null,
+        "timestamp": null,
+        "url": "http://cmp.cog.sanger.ac.uk/download/Project_score_raw_counts.zip"
+      },
+      "id": 21927,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "42",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 3,
+        "description": "Common Essential, Pan-Cancer Core Fitness & Context Specific Core Fitness gene annotation for the CRISPR dependencies dataset as described in Pacini et al (https://doi.org/10.1016/j.ccell.2023.12.016).",
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "CRISPR dependencies supplementary data",
+        "order": 3,
+        "title": "CRISPR KO Supplementary Information (Pacini et al, 2024)"
+      },
+      "id": 41,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "3",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "21928",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 41,
+        "size": 1181795,
+        "timestamp": "2025-06-24T09:14:03.963917+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/CRISPR_KO_supplemental_information_20250624.csv"
+      },
+      "id": 21928,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "41",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 9,
+        "description": null,
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "Multiomics Joint Latent Space data",
+        "order": 9,
+        "title": "Multiomics Joint Latent Space"
+      },
+      "id": 39,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "9",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "11715",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 39,
+        "size": 1700000,
+        "timestamp": null,
+        "url": "https://figshare.com/ndownloader/files/43146637"
+      },
+      "id": 11715,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "39",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 9,
+        "description": "Synthetically augmented multiomics datasets.\n\nMissing data across multiple datasets was imputed using a machine learning model. This model has been trained on the majority of widely available large-scale datasets.\n\nData as described:  https://doi.org/10.1101/2024.06.26.600742",
+        "latest_link": null,
+        "link_lead": null,
+        "link_text": null,
+        "order": 1,
+        "title": "Synthetically Augmented Multiomics Datasets"
+      },
+      "id": 31,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "9",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "11706",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 31,
+        "size": null,
+        "timestamp": null,
+        "url": null
+      },
+      "id": 11706,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "31",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 9,
+        "description": null,
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "Copy Number data",
+        "order": 2,
+        "title": "Copy Number"
+      },
+      "id": 32,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "9",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "11708",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 32,
+        "size": 457310,
+        "timestamp": null,
+        "url": "https://figshare.com/ndownloader/files/43146622"
+      },
+      "id": 11708,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "32",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 9,
+        "description": null,
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "Transcriptomics data",
+        "order": 3,
+        "title": "Transcriptomics"
+      },
+      "id": 33,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "9",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "11709",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 33,
+        "size": 78340000,
+        "timestamp": null,
+        "url": "https://figshare.com/ndownloader/files/43146658"
+      },
+      "id": 11709,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "33",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 9,
+        "description": null,
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "Proteomics data",
+        "order": 4,
+        "title": "Proteomics"
+      },
+      "id": 34,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "9",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "11710",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 34,
+        "size": 23850000,
+        "timestamp": null,
+        "url": "https://figshare.com/ndownloader/files/43146640"
+      },
+      "id": 11710,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "34",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 9,
+        "description": null,
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "Methylomics data",
+        "order": 5,
+        "title": "Methylomics"
+      },
+      "id": 35,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "9",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "11711",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 35,
+        "size": 58580000,
+        "timestamp": null,
+        "url": "https://figshare.com/ndownloader/files/43146652"
+      },
+      "id": 11711,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "35",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 9,
+        "description": null,
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "Metabolomics data",
+        "order": 6,
+        "title": "Metabolomics"
+      },
+      "id": 36,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "9",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "11712",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 36,
+        "size": 978260,
+        "timestamp": null,
+        "url": "https://figshare.com/ndownloader/files/43146631"
+      },
+      "id": 11712,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "36",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 9,
+        "description": null,
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "CRISPR-Cas9 data",
+        "order": 7,
+        "title": "CRISPR-Cas9"
+      },
+      "id": 37,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "9",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "11713",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 37,
+        "size": 71540000,
+        "timestamp": null,
+        "url": "https://figshare.com/ndownloader/files/43146646"
+      },
+      "id": 11713,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "37",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 9,
+        "description": null,
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "Drug Response data",
+        "order": 8,
+        "title": "Drug Response"
+      },
+      "id": 38,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "9",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "11714",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 38,
+        "size": 4060000,
+        "timestamp": null,
+        "url": "https://figshare.com/ndownloader/files/43146625"
+      },
+      "id": 11714,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "38",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 8,
+        "description": "Protein intensity values acquired using data-independent acquisition mass spectrometry (DIA-MS).",
+        "latest_link": "https://cog.sanger.ac.uk/cmp/download/proteomics_latest.csv.gz",
+        "link_lead": "Download",
+        "link_text": "proteomics data",
+        "order": 1,
+        "title": "Proteomics"
+      },
+      "id": 27,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "8",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "5306",
+              "type": "download_file"
+            },
+            {
+              "id": "10202",
+              "type": "download_file"
+            },
+            {
+              "id": "20957",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 27,
+        "size": 112801049,
+        "timestamp": "2022-07-13T11:36:23.572120+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/Proteomics_20220713.zip"
+      },
+      "id": 5306,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "27",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 27,
+        "size": 112671590,
+        "timestamp": "2022-12-14T10:39:04.318100+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/Proteomics_20221214.zip"
+      },
+      "id": 10202,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "27",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 27,
+        "size": 132153900,
+        "timestamp": "2025-02-11T10:48:26.763389+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/Proteomics_20250211.zip"
+      },
+      "id": 20957,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "27",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 10,
+        "description": "A list of all compound names, identifiers and target annotations used within the Cell Model Passports and GDSC Datasets.",
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "screened compounds",
+        "order": 5,
+        "title": "Compound Annotation"
+      },
+      "id": 48,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "10",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "22871",
+              "type": "download_file"
+            },
+            {
+              "id": "26004",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 48,
+        "size": 46414,
+        "timestamp": "2026-01-14T11:41:00+00:00",
+        "url": "https://cmp.cog.sanger.ac.uk/download/screened_compounds_rel_8.5.csv"
+      },
+      "id": 22871,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "48",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "group_id": 48,
+        "size": 60969,
+        "timestamp": "2026-09-17T14:33:33.344026+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/screened_compounds_rel_8.5_inchi.csv"
+      },
+      "id": 26004,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "48",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 10,
+        "description": "The raw data package for GDSC2. See documentation pages for additional information.",
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "GDSC2 raw data",
+        "order": 2,
+        "title": "GDSC2 Raw Data"
+      },
+      "id": 47,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "10",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "22867",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 47,
+        "size": 122866072,
+        "timestamp": "2026-02-16T15:07:00+00:00",
+        "url": "https://cmp.cog.sanger.ac.uk/download/GDSC2_public_raw_data_27Oct23.zip"
+      },
+      "id": 22867,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "47",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 10,
+        "description": "The raw data package for GDSC1. See documentation pages for additional information.",
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "GDSC1 raw data",
+        "order": 4,
+        "title": "GDSC1 Raw Data (Legacy Dataset)"
+      },
+      "id": 45,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "10",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "22868",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 45,
+        "size": 66418176,
+        "timestamp": "2026-02-16T15:07:00+00:00",
+        "url": "https://cmp.cog.sanger.ac.uk/download/GDSC1_public_raw_data_27Oct23.zip"
+      },
+      "id": 22868,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "45",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 10,
+        "description": "Dataset as described in Iorio et al (doi.org/10.1016/j.cell.2016.06.017)\n\n",
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "GDSC1 dataset",
+        "order": 3,
+        "title": "GDSC1 IC50 Data (Legacy Dataset)"
+      },
+      "id": 44,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "10",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "22869",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 44,
+        "size": 30348856,
+        "timestamp": "2026-02-27T13:03:15+00:00",
+        "url": "https://cmp.cog.sanger.ac.uk/download/GDSC1_fitted_dose_response_27Oct23.xlsx"
+      },
+      "id": 22869,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "44",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 10,
+        "description": "The most recent Genomics of Drug Sensitivity in Cancer dataset. Provides IC50, AUC and Z-Score values.",
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "GDSC2 dataset",
+        "order": 1,
+        "title": "GDSC2 IC50 Data"
+      },
+      "id": 46,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "10",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "22870",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 46,
+        "size": 22112537,
+        "timestamp": "2026-02-27T13:09:33+00:00",
+        "url": "https://cmp.cog.sanger.ac.uk/download/GDSC2_fitted_dose_response_27Oct23.xlsx"
+      },
+      "id": 22870,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "46",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 11,
+        "description": null,
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "CRISPR dependencies fitness score data",
+        "order": 1,
+        "title": "CRISPR Dependencies Fitness Scores"
+      },
+      "id": 50,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "11",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "25311",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 50,
+        "size": 21460577,
+        "timestamp": "2026-07-23T14:19:04.237654+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/Organoids_fitness_scores_20260723.zip"
+      },
+      "id": 25311,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "50",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 11,
+        "description": "Raw count data for the Sanger generated organoid dataset.",
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "sgRNA Raw Counts",
+        "order": 3,
+        "title": "CRISPR Dependencies sgRNA Raw Counts"
+      },
+      "id": 52,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "11",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "25475",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 52,
+        "size": 150606034,
+        "timestamp": "2026-07-22T11:02:00+00:00",
+        "url": "http://cmp.cog.sanger.ac.uk/download/raw_counts.zip"
+      },
+      "id": 25475,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "52",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    },
+    {
+      "attributes": {
+        "category_id": 11,
+        "description": "Common Essential, Pan-Cancer Core Fitness & Context Specific Core Fitness gene annotation for the Organoid CRISPR Dependencies dataset.",
+        "latest_link": null,
+        "link_lead": "Download",
+        "link_text": "CRISPR dependencies supplementary data",
+        "order": 2,
+        "title": "CRISPR Dependencies Supplementary Information"
+      },
+      "id": 51,
+      "relationships": {
+        "category": {
+          "data": {
+            "id": "11",
+            "type": "download_file_category"
+          }
+        },
+        "files": {
+          "data": [
+            {
+              "id": "25474",
+              "type": "download_file"
+            }
+          ]
+        }
+      },
+      "type": "download_file_group"
+    },
+    {
+      "attributes": {
+        "group_id": 51,
+        "size": 765643,
+        "timestamp": "2026-07-23T14:22:07.676826+00:00",
+        "url": "https://cog.sanger.ac.uk/cmp/download/CRISPR_supplemental_information_20260723.csv"
+      },
+      "id": 25474,
+      "relationships": {
+        "group": {
+          "data": {
+            "id": "51",
+            "type": "download_file_group"
+          }
+        }
+      },
+      "type": "download_file"
+    }
+  ],
+  "jsonapi": {
+    "version": "1.0"
+  },
+  "links": {
+    "self": "http://api.cellmodelpassports.sanger.ac.uk/download_files?include=groups.files"
+  },
+  "meta": {
+    "count": 11
+  }
+}

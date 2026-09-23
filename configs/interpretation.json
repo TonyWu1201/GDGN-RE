@@ -1,0 +1,32 @@
+{
+  "_meta": {
+    "schema_version": "1.0",
+    "project_tag": "rebuild-2026",
+    "description": "可解释性三层次、最小解释实验与防循环验证规则（计划第 13 节）。从看权重改为验证贡献"
+  },
+  "levels": [
+    {"id": "model_dependency", "question": "模型输出是否使用了该输入或分支", "evidence": "置零、置换、删除、输出分解"},
+    {"id": "faithfulness", "question": "解释排序能否找到对预测更关键的因素", "evidence": "top-k 删除/保留相对匹配随机对照、稳定性、随机化 sanity check"},
+    {"id": "biological_support", "question": "模型依赖的因素是否有独立生物证据", "evidence": "未作为训练先验使用的实验资料、基因扰动、跨数据一致性"}
+  ],
+  "attention_rule": "注意力与 IG 不一致是诊断信号，不能单独作为任一方法正确或错误的判决；注意力权重不能天然视为因果贡献，需在具体模型上检验",
+  "minimal_experiments": [
+    {"id": "modality_necessity", "rule": "去掉该模态重新训练；另做推理时跨细胞置换；两者结论分开"},
+    {"id": "background_control", "rule": "表达置换至少比较全体置换和组织内置换；其他组学、缺失掩码及通路派生特征按干预目标保持一致"},
+    {"id": "method_comparison", "rule": "小型 MLP 用 IG 与遮挡；树模型用适用的树归因方法并做遮挡核查；通路加性模型输出直接贡献并检查分解一致性"},
+    {"id": "ig_numerics", "rule": "至少两种训练来源背景（训练中位数、同组织训练参考）；报告积分近似收敛与 completeness 误差"},
+    {"id": "deletion_retention_curves", "rule": "预先固定 top 1%、5%、10% 或通路 top 1/3/5；与等数量随机、表达均值/方差匹配及图度匹配对照比较；删除值取训练参考"},
+    {"id": "branch_gate_intervention", "rule": "关闭图残差、打乱药物 gate、替换均匀 gate；保持 base 输出不变"},
+    {"id": "stability", "rule": "跨训练种子、参考背景和相近样本比较 top-k Jaccard、排名相关性及贡献符号；相关基因可替代时优先报告通路稳定性"},
+    {"id": "model_randomization", "rule": "打乱标签训练或逐层随机化权重后，解释不应继续产生几乎相同的特异机制"}
+  ],
+  "computational_intervention_boundary": "数字遮挡属于计算干预，可能产生分布外组合，不能直接推断真实敲除或用药结果；关键发现尽量补相近真实样本、条件置换或独立扰动数据",
+  "anti_circular_validation": [
+    "作为训练输入的 DTI、通路、驱动基因列表，其命中率只能证明与输入先验一致，不能作为独立生物验证",
+    "基因富集背景使用实际可被模型排序/测量的基因集合，并进行多重检验校正；不默认全基因组背景",
+    "同药物选择高/低响应和中间响应案例，按预注册分位数或固定随机种子抽取；同时展示成功与失败案例",
+    "响应标志物可能处于靶点下游或药物代谢路径；直接 DTI 命中不是解释正确性的必要或充分条件",
+    "注意力未通过干预检验时报告内部权重即可，不为让热图尖锐添加正则项并宣称机制被恢复"
+  ],
+  "deliverables": ["interpretation_summary.md", "机器可读 contribution 表", "干预差值与 CI", "稳定性图", "案例选择清单", "知识来源表"]
+}
