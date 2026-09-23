@@ -1,0 +1,39 @@
+{
+  "config_resolved": {
+    "data_hash": "e9a0f90e2e5256b1",
+    "environment": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "pyarrow": "25.0.1",
+      "python": "3.14.6",
+      "rdkit": "2026.03.6",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1"
+    },
+    "generated_at_utc": "2026-09-23T07:01:06.290328+00:00",
+    "git_commit": "93add6f3614fee976c284648828b25b445dfdd4f",
+    "hvg_main": 1000,
+    "output_dir": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\c43ccb638207f085\\lco",
+    "preprocess_hash": "c43ccb638207f085",
+    "split_hash": "2645a153fa756bf6",
+    "stage": "E1_build_expression_features",
+    "unit": "log2(TPM+1); no re-log (C0 dictionary note)"
+  },
+  "duration_s": 56.8,
+  "error": null,
+  "input_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27\\lco\\fold_candidate_0.csv": "b57b4d40b996fca1e8443d58e14bbea3c899213d8bc50f003cbce4236eb3c7d4",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27\\lco\\fold_candidate_1.csv": "c117418c1dd15ef7a49f98442e9b77d92614097181c81b9a0af5126a105a74e9",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27\\lco\\fold_candidate_2.csv": "306a93c51097f57944548b3fe5aa6938cf68d9881e06b7a9c2831b34c09dcd73",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27\\lco\\fold_candidate_3.csv": "1f85ba966ba506f38aeff315389b2a6f68b4fb3496d7313ac97363b02fcef027",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27\\lco\\fold_candidate_4.csv": "75f280ee04757ca85b1ca640032c704f005ce7ea118d1224ca4636a401b0859a",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27\\lco\\fold_quick_screening_0.csv": "bbc32940dc330eea7de2a19a570812435f8c78d11c8d82b0f881665752f3f17f"
+  },
+  "output_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\c43ccb638207f085\\lco\\hash_marker.txt": "dir"
+  },
+  "stage": "E1_build_expression_features",
+  "started_at": "2026-09-23T07:00:09.537748+00:00",
+  "status": "succeeded"
+}

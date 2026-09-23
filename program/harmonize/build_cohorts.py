@@ -252,6 +252,7 @@ def main() -> int:
 
     base_cfg = {
         "stage": stage,
+        "implementation_sha256": sha256_file(P.REPO_ROOT / "program" / "harmonize" / "build_cohorts.py"),
         "thresholds": {"min_cells_per_drug": MIN_CELLS_PER_DRUG, "min_drugs_per_cell": MIN_DRUGS_PER_CELL},
         "counts": {wlv["level"]: wlv["measurements"] for wlv in waterfall},
         "cohort_hash": cohort_hash,
@@ -261,7 +262,7 @@ def main() -> int:
     save_run_record(
         stage,
         cfg,
-        input_hashes={str(P.RESPONSE_DIR / "modeling_samples.parquet"): sha256_file(P.RESPONSE_DIR / "modeling_samples.parquet")},
+        input_hashes={str(p): sha256_file(p) for p in (P.RESPONSE_DIR / "modeling_samples.parquet", P.ENTITIES_DIR / "cell_master.csv", P.ENTITIES_DIR / "compound_master.csv")},
         outputs={str(out_core): sha256_file(out_core), str(out_wf_json): sha256_file(out_wf_json)},
         status="succeeded",
         started_at=t0,

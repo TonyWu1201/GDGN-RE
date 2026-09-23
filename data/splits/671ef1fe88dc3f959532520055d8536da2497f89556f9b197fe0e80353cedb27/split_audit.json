@@ -1,0 +1,455 @@
+{
+  "cohort_hash": "671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27",
+  "dev_samples": 109687,
+  "lco": [
+    {
+      "fold": 0,
+      "min_drug_test_cells": 31,
+      "test_drugs": 205,
+      "test_groups": 122,
+      "test_samples": 21869,
+      "test_tissue_dist": {
+        "Adrenal Gland": 193,
+        "Bladder/Urinary Tract": 518,
+        "Bone": 577,
+        "Bowel": 1307,
+        "Breast": 1446,
+        "CNS/Brain": 1162,
+        "Cervix": 325,
+        "Esophagus/Stomach": 1705,
+        "Head and Neck": 686,
+        "Kidney": 536,
+        "Liver": 576,
+        "Lung": 4073,
+        "Lymphoid": 2660,
+        "Myeloid": 902,
+        "Ovary/Fallopian Tube": 1111,
+        "Pancreas": 712,
+        "Peripheral Nervous System": 519,
+        "Pleura": 193,
+        "Prostate": 385,
+        "Skin": 1062,
+        "Soft Tissue": 344,
+        "Thyroid": 384,
+        "Uterus": 493
+      },
+      "train_samples": 87818
+    },
+    {
+      "fold": 1,
+      "min_drug_test_cells": 24,
+      "test_drugs": 205,
+      "test_groups": 122,
+      "test_samples": 22011,
+      "test_tissue_dist": {
+        "Biliary Tract": 134,
+        "Bladder/Urinary Tract": 536,
+        "Bone": 577,
+        "Bowel": 1327,
+        "Breast": 1327,
+        "CNS/Brain": 1345,
+        "Cervix": 385,
+        "Esophagus/Stomach": 1387,
+        "Fibroblast": 151,
+        "Head and Neck": 768,
+        "Kidney": 535,
+        "Liver": 564,
+        "Lung": 4228,
+        "Lymphoid": 2538,
+        "Myeloid": 854,
+        "Ovary/Fallopian Tube": 983,
+        "Pancreas": 962,
+        "Peripheral Nervous System": 518,
+        "Pleura": 192,
+        "Prostate": 193,
+        "Skin": 1203,
+        "Soft Tissue": 192,
+        "Thyroid": 385,
+        "Uterus": 576,
+        "Vulva/Vagina": 151
+      },
+      "train_samples": 87676
+    },
+    {
+      "fold": 2,
+      "min_drug_test_cells": 23,
+      "test_drugs": 205,
+      "test_groups": 123,
+      "test_samples": 21908,
+      "test_tissue_dist": {
+        "Biliary Tract": 193,
+        "Bladder/Urinary Tract": 385,
+        "Bone": 519,
+        "Bowel": 1549,
+        "Breast": 1450,
+        "CNS/Brain": 1048,
+        "Cervix": 385,
+        "Esophagus/Stomach": 1626,
+        "Head and Neck": 922,
+        "Kidney": 518,
+        "Liver": 385,
+        "Lung": 3965,
+        "Lymphoid": 2655,
+        "Myeloid": 1083,
+        "Ovary/Fallopian Tube": 1093,
+        "Pancreas": 877,
+        "Peripheral Nervous System": 519,
+        "Pleura": 193,
+        "Prostate": 151,
+        "Skin": 976,
+        "Soft Tissue": 386,
+        "Testis": 134,
+        "Thyroid": 318,
+        "Uterus": 578
+      },
+      "train_samples": 87779
+    },
+    {
+      "fold": 3,
+      "min_drug_test_cells": 23,
+      "test_drugs": 205,
+      "test_groups": 122,
+      "test_samples": 21906,
+      "test_tissue_dist": {
+        "Bladder/Urinary Tract": 566,
+        "Bone": 577,
+        "Bowel": 1490,
+        "Breast": 1515,
+        "CNS/Brain": 1069,
+        "Cervix": 385,
+        "Esophagus/Stomach": 1437,
+        "Head and Neck": 821,
+        "Kidney": 728,
+        "Liver": 385,
+        "Lung": 3983,
+        "Lymphoid": 2813,
+        "Myeloid": 819,
+        "Ovary/Fallopian Tube": 992,
+        "Pancreas": 906,
+        "Peripheral Nervous System": 469,
+        "Pleura": 386,
+        "Prostate": 192,
+        "Skin": 1028,
+        "Soft Tissue": 384,
+        "Thyroid": 384,
+        "Uterus": 577
+      },
+      "train_samples": 87781
+    },
+    {
+      "fold": 4,
+      "min_drug_test_cells": 19,
+      "test_drugs": 205,
+      "test_groups": 121,
+      "test_samples": 21993,
+      "test_tissue_dist": {
+        "Bladder/Urinary Tract": 531,
+        "Bone": 781,
+        "Bowel": 1255,
+        "Breast": 1507,
+        "CNS/Brain": 1070,
+        "Cervix": 384,
+        "Esophagus/Stomach": 1636,
+        "Head and Neck": 687,
+        "Kidney": 729,
+        "Liver": 385,
+        "Lung": 4320,
+        "Lymphoid": 2667,
+        "Myeloid": 912,
+        "Ovary/Fallopian Tube": 901,
+        "Pancreas": 962,
+        "Peripheral Nervous System": 494,
+        "Pleura": 193,
+        "Prostate": 193,
+        "Skin": 1126,
+        "Soft Tissue": 11,
+        "Testis": 134,
+        "Thyroid": 537,
+        "Uterus": 385,
+        "Vulva/Vagina": 193
+      },
+      "train_samples": 87694
+    },
+    {
+      "fold": "quick_0",
+      "test_samples": 21944,
+      "train_samples": 87743
+    }
+  ],
+  "lco_subtype_stress": [
+    {
+      "fold": 0,
+      "test_samples": 27508,
+      "test_subtypes": 18
+    },
+    {
+      "fold": 1,
+      "test_samples": 27003,
+      "test_subtypes": 19
+    },
+    {
+      "fold": 2,
+      "test_samples": 16515,
+      "test_subtypes": 25
+    },
+    {
+      "fold": 3,
+      "test_samples": 16284,
+      "test_subtypes": 28
+    },
+    {
+      "fold": 4,
+      "test_samples": 22377,
+      "test_subtypes": 27
+    }
+  ],
+  "ldo_so": [
+    {
+      "fold": 0,
+      "test_chemical_groups": 37,
+      "test_drugs": 38,
+      "test_parents": 38,
+      "test_samples": 21508
+    },
+    {
+      "fold": 1,
+      "test_chemical_groups": 37,
+      "test_drugs": 39,
+      "test_parents": 38,
+      "test_samples": 20384
+    },
+    {
+      "fold": 2,
+      "test_chemical_groups": 37,
+      "test_drugs": 47,
+      "test_parents": 40,
+      "test_samples": 24829
+    },
+    {
+      "fold": 3,
+      "test_chemical_groups": 37,
+      "test_drugs": 42,
+      "test_parents": 41,
+      "test_samples": 22361
+    },
+    {
+      "fold": 4,
+      "test_chemical_groups": 37,
+      "test_drugs": 39,
+      "test_parents": 39,
+      "test_samples": 20605
+    }
+  ],
+  "leakage_audit": {
+    "g1": {
+      "check": "1_group_disjoint_lco",
+      "detail": [],
+      "pass": true
+    },
+    "g1b": {
+      "check": "1_group_disjoint_ldo_so",
+      "detail": [],
+      "pass": true
+    },
+    "g2": {
+      "check": "2_sealed_zero_leakage",
+      "detail": {
+        "leaked_cell_rows": 0,
+        "leaked_drug_rows": 0
+      },
+      "pass": true
+    },
+    "g3": {
+      "check": "3_label_permutation_invariant",
+      "detail": {
+        "folds_compared": 5
+      },
+      "pass": true
+    },
+    "g4": {
+      "check": "4_deterministic_and_row_order_invariant",
+      "detail": {
+        "row_order_invariant": true,
+        "same_seed": true
+      },
+      "pass": true
+    },
+    "g5": {
+      "check": "5_fold_structure_stats",
+      "detail": [
+        {
+          "drugs_below_min_cells": 0,
+          "fold": 0,
+          "test_samples": 21869,
+          "tissue_dist": {
+            "Adrenal Gland": 193,
+            "Bladder/Urinary Tract": 518,
+            "Bone": 577,
+            "Bowel": 1307,
+            "Breast": 1446,
+            "CNS/Brain": 1162,
+            "Cervix": 325,
+            "Esophagus/Stomach": 1705,
+            "Head and Neck": 686,
+            "Kidney": 536,
+            "Liver": 576,
+            "Lung": 4073,
+            "Lymphoid": 2660,
+            "Myeloid": 902,
+            "Ovary/Fallopian Tube": 1111,
+            "Pancreas": 712,
+            "Peripheral Nervous System": 519,
+            "Pleura": 193,
+            "Prostate": 385,
+            "Skin": 1062,
+            "Soft Tissue": 344,
+            "Thyroid": 384,
+            "Uterus": 493
+          }
+        },
+        {
+          "drugs_below_min_cells": 0,
+          "fold": 1,
+          "test_samples": 22011,
+          "tissue_dist": {
+            "Biliary Tract": 134,
+            "Bladder/Urinary Tract": 536,
+            "Bone": 577,
+            "Bowel": 1327,
+            "Breast": 1327,
+            "CNS/Brain": 1345,
+            "Cervix": 385,
+            "Esophagus/Stomach": 1387,
+            "Fibroblast": 151,
+            "Head and Neck": 768,
+            "Kidney": 535,
+            "Liver": 564,
+            "Lung": 4228,
+            "Lymphoid": 2538,
+            "Myeloid": 854,
+            "Ovary/Fallopian Tube": 983,
+            "Pancreas": 962,
+            "Peripheral Nervous System": 518,
+            "Pleura": 192,
+            "Prostate": 193,
+            "Skin": 1203,
+            "Soft Tissue": 192,
+            "Thyroid": 385,
+            "Uterus": 576,
+            "Vulva/Vagina": 151
+          }
+        },
+        {
+          "drugs_below_min_cells": 0,
+          "fold": 2,
+          "test_samples": 21908,
+          "tissue_dist": {
+            "Biliary Tract": 193,
+            "Bladder/Urinary Tract": 385,
+            "Bone": 519,
+            "Bowel": 1549,
+            "Breast": 1450,
+            "CNS/Brain": 1048,
+            "Cervix": 385,
+            "Esophagus/Stomach": 1626,
+            "Head and Neck": 922,
+            "Kidney": 518,
+            "Liver": 385,
+            "Lung": 3965,
+            "Lymphoid": 2655,
+            "Myeloid": 1083,
+            "Ovary/Fallopian Tube": 1093,
+            "Pancreas": 877,
+            "Peripheral Nervous System": 519,
+            "Pleura": 193,
+            "Prostate": 151,
+            "Skin": 976,
+            "Soft Tissue": 386,
+            "Testis": 134,
+            "Thyroid": 318,
+            "Uterus": 578
+          }
+        },
+        {
+          "drugs_below_min_cells": 0,
+          "fold": 3,
+          "test_samples": 21906,
+          "tissue_dist": {
+            "Bladder/Urinary Tract": 566,
+            "Bone": 577,
+            "Bowel": 1490,
+            "Breast": 1515,
+            "CNS/Brain": 1069,
+            "Cervix": 385,
+            "Esophagus/Stomach": 1437,
+            "Head and Neck": 821,
+            "Kidney": 728,
+            "Liver": 385,
+            "Lung": 3983,
+            "Lymphoid": 2813,
+            "Myeloid": 819,
+            "Ovary/Fallopian Tube": 992,
+            "Pancreas": 906,
+            "Peripheral Nervous System": 469,
+            "Pleura": 386,
+            "Prostate": 192,
+            "Skin": 1028,
+            "Soft Tissue": 384,
+            "Thyroid": 384,
+            "Uterus": 577
+          }
+        },
+        {
+          "drugs_below_min_cells": 0,
+          "fold": 4,
+          "test_samples": 21993,
+          "tissue_dist": {
+            "Bladder/Urinary Tract": 531,
+            "Bone": 781,
+            "Bowel": 1255,
+            "Breast": 1507,
+            "CNS/Brain": 1070,
+            "Cervix": 384,
+            "Esophagus/Stomach": 1636,
+            "Head and Neck": 687,
+            "Kidney": 729,
+            "Liver": 385,
+            "Lung": 4320,
+            "Lymphoid": 2667,
+            "Myeloid": 912,
+            "Ovary/Fallopian Tube": 901,
+            "Pancreas": 962,
+            "Peripheral Nervous System": 494,
+            "Pleura": 193,
+            "Prostate": 193,
+            "Skin": 1126,
+            "Soft Tissue": 11,
+            "Testis": 134,
+            "Thyroid": 537,
+            "Uterus": 385,
+            "Vulva/Vagina": 193
+          }
+        }
+      ],
+      "pass": true
+    },
+    "g6": {
+      "check": "6_quick_fold_nonempty_sides",
+      "detail": {
+        "test_samples": 21944,
+        "train_samples": 87743
+      },
+      "pass": true
+    },
+    "g7": {
+      "check": "7_parent_scaffold_cluster_isolation",
+      "detail": [],
+      "pass": true
+    }
+  },
+  "lpo": {
+    "test_pairs": 21937,
+    "unique_pairs": 109687
+  },
+  "stage": "D3_build_dev_splits"
+}

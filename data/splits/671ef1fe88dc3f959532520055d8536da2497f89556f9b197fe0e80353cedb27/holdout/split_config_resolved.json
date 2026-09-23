@@ -1,0 +1,30 @@
+{
+  "cell_group_ratio": 0.15,
+  "cohort_hash": "671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27",
+  "drug_group_ratio": 0.15,
+  "drug_grouping": "connected components of standardized parent and Bemis-Murcko scaffold",
+  "environment": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pyarrow": "25.0.1",
+    "python": "3.14.6",
+    "rdkit": "2026.03.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "generated_at_utc": "2026-09-23T07:47:27.120555+00:00",
+  "git_commit": "93add6f3614fee976c284648828b25b445dfdd4f",
+  "grouping_rules": {
+    "use_model_errors": false,
+    "use_response_values": false
+  },
+  "implementation_sha256": {
+    "build_sealed_regions": "5c353ec080b38a72ecc9cf7fe74b6101cfd9ab606d63c660315dd6e638a5123c",
+    "chemical_groups": "ab148b10f94279f50478ca3d0587ff14e43175a8fef82e946e21b05f19e183b8"
+  },
+  "naming": "internal confirmation (entities participated in legacy project development); NOT independent data",
+  "split_seed": 20260923,
+  "stage": "D2_build_sealed_regions",
+  "tissue_balance_tolerance": 0.05
+}

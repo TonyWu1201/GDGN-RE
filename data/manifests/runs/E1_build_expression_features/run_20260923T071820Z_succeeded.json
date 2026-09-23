@@ -1,0 +1,62 @@
+{
+  "config_resolved": {
+    "data_hash": "e9a0f90e2e5256b1",
+    "environment": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "pyarrow": "25.0.1",
+      "python": "3.14.6",
+      "rdkit": "2026.03.6",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1"
+    },
+    "generated_at_utc": "2026-09-23T07:18:20.714025+00:00",
+    "git_commit": "93add6f3614fee976c284648828b25b445dfdd4f",
+    "hvg_main": 1000,
+    "output_dir": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco",
+    "preprocess_hash": "28920c67fdeae192",
+    "split_hash": "2645a153fa756bf6",
+    "stage": "E1_build_expression_features",
+    "unit": "log2(TPM+1); no re-log (C0 dictionary note)"
+  },
+  "duration_s": 53.8,
+  "error": null,
+  "input_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27\\lco\\fold_candidate_0.csv": "b57b4d40b996fca1e8443d58e14bbea3c899213d8bc50f003cbce4236eb3c7d4",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27\\lco\\fold_candidate_1.csv": "c117418c1dd15ef7a49f98442e9b77d92614097181c81b9a0af5126a105a74e9",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27\\lco\\fold_candidate_2.csv": "306a93c51097f57944548b3fe5aa6938cf68d9881e06b7a9c2831b34c09dcd73",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27\\lco\\fold_candidate_3.csv": "1f85ba966ba506f38aeff315389b2a6f68b4fb3496d7313ac97363b02fcef027",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27\\lco\\fold_candidate_4.csv": "75f280ee04757ca85b1ca640032c704f005ce7ea118d1224ca4636a401b0859a",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27\\lco\\fold_quick_screening_0.csv": "bbc32940dc330eea7de2a19a570812435f8c78d11c8d82b0f881665752f3f17f"
+  },
+  "output_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_candidate_0\\expression_test.npz": "bdadab984be3c560d2a6e26e7fbec11b86e46e3f4c5827aec460cfed6f1a01af",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_candidate_0\\expression_train.npz": "a5ea7d3e2091dfa6fa71ad7c4a0dc0ffaab7b6263f6f8eb003f9c8be41f78772",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_candidate_0\\gene_order.json": "f4ccd073426dbdd0e518396ec5f5ba8d3b03de96668b59420882844005c5a176",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_candidate_0\\preprocessing_state.json": "186177743d2289d165c07add9515aea0a2eed40e710cf1f54b3e435e8865ce37",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_candidate_1\\expression_test.npz": "b84256a50f7a0fb1b45cd560004ce59bbf77051407049c5e0ad7425fc7b3d776",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_candidate_1\\expression_train.npz": "a9d7a40c1e64afa9dde5557692e123d7eb61ffe394f3d3d33c56065344d5bf84",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_candidate_1\\gene_order.json": "ecb2777aed481e8a860b6d5ac3b6f936fc6ab6420a0a1d4b81914d6f62e93012",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_candidate_1\\preprocessing_state.json": "7a5533a45db0941cb07426d44b8d891de9c18a83239a73f9f69795f2ebfbf6bf",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_candidate_2\\expression_test.npz": "5dedfe3c90f8d2bbd7a099e9eba458bd5764be967c57f9624eebb48d9b7a3f32",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_candidate_2\\expression_train.npz": "4ed518f94529757b9556e0ae84ae5b90dbd32a14267fd20153b364bfd4e5c5f4",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_candidate_2\\gene_order.json": "acac9fc9fdb7a7ee174692e76849a16698e530c86f53ef764226c550dadc314f",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_candidate_2\\preprocessing_state.json": "571837b1c17d589d90d67d7fb50e384137d8aae613fa952603c3b5ee1193db1d",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_candidate_3\\expression_test.npz": "a3c114ee02a636319862cb31df8bd98626a7a46fd8620a68b8db76a47578021d",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_candidate_3\\expression_train.npz": "8f271ad70e49a8f86f7df6ed40d02f155697c2b2cdbfbdfe39012c6c54622768",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_candidate_3\\gene_order.json": "e3af9c9a299b609145c86e15b8fbbe64fe79098dd5e46ee285f05f9ec5fe85ca",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_candidate_3\\preprocessing_state.json": "8c313bed6ea4ce29ef3cbde842f1c656c03d264e8859c079d9295ac92762ee25",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_candidate_4\\expression_test.npz": "f01f4d84f0eb61bbf657cfa58a2451690ff406e66161928e03a41acfeb9fcd8a",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_candidate_4\\expression_train.npz": "73dc0297179dc194f51ebadc158019265db6a28361864ae70ba12a42c382ccea",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_candidate_4\\gene_order.json": "946a498ddec7ccbf258696c960322e0349fabfd4283a51adf7ddf7100e96be56",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_candidate_4\\preprocessing_state.json": "fac42eafce48b087d4fa22127f3a6bcfc35285994096f462e1277ca11b3d3ea3",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_quick_screening_0\\expression_test.npz": "872c3884a41bdc7014da8a5c7eb190c0081e613a9758ee865bd40b30b9e0f2ad",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_quick_screening_0\\expression_train.npz": "7fb76c0f7bd7deba1d346a04cc63a348621c3daf524e883dccf47c9f0afa237b",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_quick_screening_0\\gene_order.json": "c4b5a391020c25bb08e23bdd32ca78c5e155d3ab4c494e50d255f15b9b62fefd",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\28920c67fdeae192\\lco\\fold_quick_screening_0\\preprocessing_state.json": "95c17cf52e3f9e965f7ac70fc88a3c30a833138704083641b503d60f2e5756b0"
+  },
+  "stage": "E1_build_expression_features",
+  "started_at": "2026-09-23T07:17:26.927250+00:00",
+  "status": "succeeded"
+}

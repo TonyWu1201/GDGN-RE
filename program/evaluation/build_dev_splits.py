@@ -5,9 +5,9 @@
 协议（split_policy.json，本轮所需）：
 - LCO（主任务）：按细胞相关组 GroupKFold，组织分层；quick_screening 1 outer fold
   + candidate_confirmation 5 outer folds（各折独立落盘，测试侧组不与训练侧重叠）。
-  表达近邻聚类压力测试划分作为独立附加文件（不与身份组划分混用）。
+  OncotreeSubtype 分组压力测试作为独立附加文件；真正的表达近邻测试留待实现。
 - LPO（补充）：规范化样本对随机留出，同一 pair 不跨集合（1 outer fold）。
-- LDO-SO（次任务）：按 normalized_parent_id + scaffold 分组（1 outer fold）。
+- LDO-SO（次任务）：按标准化母体或 scaffold 的连通组分组（5 outer folds）。
 
 泄漏审计（leakage_audit.py，5 项必测）：
 1. 母体/相关组/重复测量不跨集合；
@@ -37,10 +37,12 @@ from program.common.runlog import (
     sha256_file,
     sha256_frame,
 )
+from program.evaluation.chemical_groups import chemical_clusters
 
 BASE_SPLIT_SEED = 20260923
 N_FOLDS_CANDIDATE = 5
 N_FOLDS_QUICK = 1
+QUICK_PARTITIONS = 5
 EXPR_NEIGHBOR_K = 10
 
 
@@ -96,7 +98,7 @@ def main() -> int:
     c_dev = set(cell_assign[cell_assign["region"] == "dev"]["cell_id"])
     d_dev = set(drug_assign[drug_assign["region"] == "dev"]["compound_id"])
     dev = core[core["cell_id"].isin(c_dev) & core["compound_id"].isin(d_dev)].copy()
-    assert len(dev) == 111022, f"开发区样本 {len(dev)} != 111,022"
+    assert not dev.empty, "开发区为空"
 
     cell_group = dict(zip(cell_assign["cell_id"], cell_assign["group_id"]))
     sid2cell = dict(zip(core["cell_id"], core["sanger_model_id"]))
@@ -105,13 +107,14 @@ def main() -> int:
     comp = pd.read_csv(P.ENTITIES_DIR / "compound_master.csv", dtype=str)
     cid2parent = dict(zip(comp["compound_id"], comp["normalized_parent_id"]))
     cid2scaf = dict(zip(comp["compound_id"], comp["scaffold_id"]))
+    cid2cluster = chemical_clusters(comp)
 
     split_dir = P.SPLITS_DIR / cohort_hash
     audit: dict = {"stage": stage, "cohort_hash": cohort_hash, "dev_samples": len(dev)}
 
     # ---- LCO：候选确认 5 folds + 快速筛选 1 fold ----
     lco_folds = stratified_group_folds(dev, "cell_group", "oncotree_lineage", N_FOLDS_CANDIDATE, BASE_SPLIT_SEED + 1)
-    lco_quick = stratified_group_folds(dev, "cell_group", "oncotree_lineage", 1, BASE_SPLIT_SEED + 1)
+    lco_quick = {0: stratified_group_folds(dev, "cell_group", "oncotree_lineage", QUICK_PARTITIONS, BASE_SPLIT_SEED + 4)[0]}
 
     lco_dir = split_dir / "lco"
     lco_dir.mkdir(parents=True, exist_ok=True)
@@ -136,13 +139,14 @@ def main() -> int:
     # 快速筛选 1 fold
     test_groups_q = lco_quick[0]
     is_test_q = dev["cell_group"].isin(test_groups_q)
+    assert is_test_q.any() and (~is_test_q).any(), "快速筛选折必须同时有训练和测试样本"
     out_q = dev[["sample_id", "cell_id", "compound_id", "cell_group", "oncotree_lineage"]].copy()
     out_q["role"] = np.where(is_test_q, "test", "train")
     out_q.to_csv(lco_dir / "fold_quick_screening_0.csv", index=False)
     fold_meta.append({"fold": "quick_0", "test_samples": int(is_test_q.sum()), "train_samples": int((~is_test_q).sum())})
 
-    # 表达近邻压力测试划分（独立附加文件）：按 OncotreeSubtype 细分组作身份邻近压力测试（同亚型更易混淆）
-    lco_nn_dir = split_dir / "lco_expression_neighbor_stress"
+    # 组织亚型压力测试；不能称为表达近邻聚类
+    lco_nn_dir = split_dir / "lco_subtype_stress"
     lco_nn_dir.mkdir(parents=True, exist_ok=True)
     model_csv = pd.read_csv(P.DEPMAP_MODEL_CSV, dtype=str)
     mid2sub = dict(zip(model_csv["ModelID"], model_csv["OncotreeSubtype"]))
@@ -173,23 +177,22 @@ def main() -> int:
     out_lpo["role"] = np.where(out_lpo["pair_key"].isin(test_pairs), "test", "train")
     out_lpo.drop(columns=["pair_key"]).to_csv(lpo_dir / "fold_0.csv", index=False)
 
-    # ---- LDO-SO：按 normalized_parent_id + scaffold 分组 ----
+    # ---- LDO-SO：同母体或同 scaffold 的连通化学簇整体划分 ----
     ldo_dir = split_dir / "ldo_so"
     ldo_dir.mkdir(parents=True, exist_ok=True)
-    dev_ldo = dev.assign(parent=dev["compound_id"].map(cid2parent), scaffold=dev["compound_id"].map(cid2scaf))
-    # 分组键 = parent（同 InChIKey 同组）；scaffold 用于报告
-    ldo_folds = stratified_group_folds(dev_ldo, "parent", "oncotree_lineage", 5, BASE_SPLIT_SEED + 3)
+    dev_ldo = dev.assign(parent=dev["compound_id"].map(cid2parent), scaffold=dev["compound_id"].map(cid2scaf), chemical_group=dev["compound_id"].map(cid2cluster), drug_stratum="NA")
+    ldo_folds = stratified_group_folds(dev_ldo, "chemical_group", "drug_stratum", 5, BASE_SPLIT_SEED + 3)
     ldo_meta = []
     for f in range(5):
         test_groups = ldo_folds[f]
-        is_test = dev_ldo["parent"].isin(test_groups)
-        out = dev_ldo[["sample_id", "cell_id", "compound_id", "parent", "scaffold", "oncotree_lineage"]].copy()
+        is_test = dev_ldo["chemical_group"].isin(test_groups)
+        out = dev_ldo[["sample_id", "cell_id", "compound_id", "parent", "scaffold", "chemical_group", "oncotree_lineage"]].copy()
         out["role"] = np.where(is_test, "test", "train")
         out.to_csv(ldo_dir / f"fold_{f}.csv", index=False)
-        ldo_meta.append({"fold": f, "test_parents": len(test_groups), "test_drugs": int(dev_ldo[is_test]["compound_id"].nunique()), "test_samples": int(is_test.sum())})
+        ldo_meta.append({"fold": f, "test_chemical_groups": len(test_groups), "test_parents": int(dev_ldo[is_test]["parent"].nunique()), "test_drugs": int(dev_ldo[is_test]["compound_id"].nunique()), "test_samples": int(is_test.sum())})
 
     audit["lco"] = fold_meta
-    audit["lco_stress"] = stress_meta
+    audit["lco_subtype_stress"] = stress_meta
     audit["lpo"] = {"test_pairs": n_test, "unique_pairs": len(unique_pairs)}
     audit["ldo_so"] = ldo_meta
 
@@ -204,6 +207,8 @@ def main() -> int:
         ldo_folds=ldo_folds,
         stress_folds=stress_folds,
         cid2parent=cid2parent,
+        cid2scaf=cid2scaf,
+        cid2cluster=cid2cluster,
         cell_group=cell_group,
         cohort_hash=cohort_hash,
         split_seed=BASE_SPLIT_SEED,
@@ -218,9 +223,14 @@ def main() -> int:
 
     base_cfg = {
         "stage": stage,
+        "implementation_sha256": {
+            "build_dev_splits": sha256_file(P.REPO_ROOT / "program" / "evaluation" / "build_dev_splits.py"),
+            "leakage_audit": sha256_file(P.REPO_ROOT / "program" / "evaluation" / "leakage_audit.py"),
+            "chemical_groups": sha256_file(P.REPO_ROOT / "program" / "evaluation" / "chemical_groups.py"),
+        },
         "split_seed_base": BASE_SPLIT_SEED,
         "folds": {"lco_candidate": N_FOLDS_CANDIDATE, "lco_quick": N_FOLDS_QUICK, "lpo": 1, "ldo_so": 5},
-        "protocols": ["lco", "lpo", "ldo_so", "lco_expression_neighbor_stress"],
+        "protocols": ["lco", "lpo", "ldo_so", "lco_subtype_stress"],
         "leakage_audit_all_pass": all_pass,
     }
     cfg = resolve_config(base_cfg)
@@ -228,7 +238,7 @@ def main() -> int:
     save_run_record(
         stage,
         cfg,
-        input_hashes={str(P.COHORTS_DIR / "core_samples.parquet"): sha256_file(P.COHORTS_DIR / "core_samples.parquet")},
+        input_hashes={str(p): sha256_file(p) for p in (P.COHORTS_DIR / "core_samples.parquet", P.ENTITIES_DIR / "compound_master.csv", holdout_dir / "cell_group_assignment.csv", holdout_dir / "drug_group_assignment.csv")},
         outputs={str(out_audit): sha256_file(out_audit)},
         status="succeeded",
         started_at=t0,

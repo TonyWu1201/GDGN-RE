@@ -1,0 +1,44 @@
+{
+  "config_resolved": {
+    "compound_id_rule": "sorted by integer DRUG_ID, CMP0001..",
+    "counts": {
+      "core": 242,
+      "excluded": 47,
+      "low_confidence": 4,
+      "review_required": 2,
+      "same_inchikey_pairs": 10,
+      "skeleton_inchikey_mismatches_attributed_to_salt": 7,
+      "std_failures": 0
+    },
+    "environment": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "pyarrow": "25.0.1",
+      "python": "3.14.6",
+      "rdkit": "2026.03.6",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1"
+    },
+    "generated_at_utc": "2026-09-23T06:59:38.569451+00:00",
+    "git_commit": "93add6f3614fee976c284648828b25b445dfdd4f",
+    "rdkit_version": "2026.03.6",
+    "salt_policy_rule": "largest_fragment_as_parent; metal complexes untouched (DECISION_LOG 2026-09-22)",
+    "stage": "C3_build_compound_master"
+  },
+  "duration_s": 2.3,
+  "error": null,
+  "input_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\canonical\\compound_master_raw.csv": "c9e7170d6065b5754615d4609e7b563ff4837cf8091d5a006f14f363f61ed439",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\canonical\\compound_structure_adjudication.csv": "6410fae5557eb4586ec3b4dce3dcff6bbcb6191d29cb90bab09a005a15912372",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\raw\\GDSC\\release8.5\\screened_compounds_rel_8.5_inchi.csv": "16fb779bf55a0171ef388d1764d074db28c12e3e28ddc74516816dfd2568061d"
+  },
+  "output_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\processed\\entities\\compound_disposition.csv": "74adcee34a041cedfb82c7f172e06e07f2889d6d2f4cd8b0a4ccbee16188761e",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\processed\\entities\\compound_master.csv": "4db48185ae02b089322e1e30286644df5b27a658936a2b6bc384a21177d8728e",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\processed\\entities\\compound_scaffolds.csv": "7c58cc17dde497ea89682226c382f75a8199b7b919e06c4adae08a7d8404cd45"
+  },
+  "stage": "C3_build_compound_master",
+  "started_at": "2026-09-23T06:59:36.247022+00:00",
+  "status": "succeeded"
+}

@@ -19,8 +19,9 @@
     "scikit-learn": "1.9.1",
     "scipy": "1.18.1"
   },
-  "generated_at_utc": "2026-09-23T05:10:46.231161+00:00",
-  "git_commit": "unknown",
+  "generated_at_utc": "2026-09-23T07:47:22.611176+00:00",
+  "git_commit": "93add6f3614fee976c284648828b25b445dfdd4f",
+  "implementation_sha256": "7ad46c56b7d0344ed64f406c60e9763b5657a547ed34cfed9ec5e4ab86cb24b1",
   "rdkit_version": "2026.03.6",
   "salt_policy_rule": "largest_fragment_as_parent; metal complexes untouched (DECISION_LOG 2026-09-22)",
   "stage": "C3_build_compound_master"

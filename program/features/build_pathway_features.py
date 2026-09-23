@@ -5,7 +5,8 @@
 分数标注为表达的派生表示，干预表达时同步重算（§16.5-6）。
 
 输出：data/features/<data_hash>/<split_hash>/<preprocess_hash>/pathway/
-      fold_*/pathway_train.npz + pathway_test.npz + pathway_mask.json + coverage_audit.json
+      fold_*/pathway_train.npz + pathway_test.npz + pathway_state.npz + members_by_set.json
+      + coverage_audit.json
 """
 
 from __future__ import annotations
@@ -93,16 +94,16 @@ def main() -> int:
     raw_scores = np.column_stack([sub[:, members_rel[n]].mean(axis=1) for n in names])
 
     # 哈希链
-    data_hash = data_hash_from_files([P.COHORTS_DIR / "core_samples.parquet", P.ENTITIES_DIR / "gene_master.csv", P.HALLMARK_ENTREZ_GMT])
-    fold_files = sorted((split_dir / "lco").glob("fold_candidate_*.csv"))
+    data_hash = data_hash_from_files([P.COHORTS_DIR / "core_samples.parquet", P.ENTITIES_DIR / "gene_master.csv", P.HALLMARK_ENTREZ_GMT, P.DEPMAP_EXPRESSION_CSV])
+    fold_files = sorted((split_dir / "lco").glob("fold_candidate_*.csv")) + [split_dir / "lco" / "fold_quick_screening_0.csv"]
     split_hash = split_hash_from_fold_files(fold_files)
-    prep_hash = hash_inputs({"min_members": MIN_MEMBERS, "aggregation": "mean_of_scaled_members", "n_sets": len(names)})
+    prep_hash = hash_inputs({"min_members": MIN_MEMBERS, "aggregation": "mean_of_scaled_members", "n_sets": len(names), "implementation_sha256": sha256_file(Path(__file__))})
 
     out_dir = feature_dir_for(P.FEATURES_DIR, data_hash, split_hash, prep_hash) / "pathway"
     out_dir.mkdir(parents=True, exist_ok=True)
 
     # 逐折：成员基因按训练折标准化 → 均值聚合 → 分数按训练折标准化
-    audit_rows = []
+    output_hashes = {}
     for fold_file in fold_files:
         fold = pd.read_csv(fold_file, dtype=str)
         train_ids = set(fold[fold["role"] == "train"]["sample_id"])
@@ -135,6 +136,14 @@ def main() -> int:
         fold_out.mkdir(parents=True, exist_ok=True)
         np.savez_compressed(fold_out / "pathway_train.npz", data=tr_scores, rows=np.array([m for m in train_cells if m in mid2row]), sets=np.array(names))
         np.savez_compressed(fold_out / "pathway_test.npz", data=te_scores, rows=np.array([m for m in test_cells if m in mid2row]), sets=np.array(names))
+        np.savez_compressed(
+            fold_out / "pathway_state.npz",
+            gene_columns=np.array(all_member_cols), gene_mean=gene_mu, gene_std=gene_sd,
+            score_mean=s_mu, score_std=s_sd, set_names=np.array(names),
+        )
+        (fold_out / "members_by_set.json").write_bytes(deterministic_json_bytes(members_rel))
+        for name in ("pathway_train.npz", "pathway_test.npz", "pathway_state.npz", "members_by_set.json"):
+            output_hashes[str(fold_out / name)] = sha256_file(fold_out / name)
 
     # 覆盖审计 + Jaccard
     coverage = {
@@ -161,11 +170,12 @@ def main() -> int:
     )
     save_config_resolved(stage, cfg)
     (out_dir / "coverage_audit.json").write_bytes(deterministic_json_bytes(coverage))
+    output_hashes[str(out_dir / "coverage_audit.json")] = sha256_file(out_dir / "coverage_audit.json")
     save_run_record(
         stage,
         cfg,
-        input_hashes={str(P.HALLMARK_ENTREZ_GMT): sha256_file(P.HALLMARK_ENTREZ_GMT)},
-        outputs={str(out_dir / "coverage_audit.json"): sha256_file(out_dir / "coverage_audit.json")},
+        input_hashes={str(p): sha256_file(p) for p in (P.HALLMARK_ENTREZ_GMT, P.DEPMAP_EXPRESSION_CSV)},
+        outputs=output_hashes,
         status="succeeded",
         started_at=t0,
     )

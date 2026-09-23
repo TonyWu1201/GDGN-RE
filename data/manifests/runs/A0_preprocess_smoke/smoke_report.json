@@ -1,0 +1,12 @@
+{
+  "cohort_hash": "671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27",
+  "feature_and_label_alignment": "pass",
+  "feature_columns": 3048,
+  "finite_predictions": true,
+  "scientific_metrics_reported": false,
+  "sealed_labels_used": false,
+  "split_hash": "2645a153fa756bf6",
+  "status": "smoke",
+  "test_samples": 128,
+  "train_samples": 512
+}

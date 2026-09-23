@@ -1,0 +1,6 @@
+{
+  "stage": "A0_preprocess_smoke",
+  "status": "failed",
+  "error": "Initial smoke load failed: expression NPZ rows were object arrays and required allow_pickle=True. E1 writer changed to Unicode IDs before retry.",
+  "scientific_metrics_reported": false
+}

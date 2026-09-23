@@ -1,6 +1,6 @@
 """阶段 D3 泄漏审计（program/evaluation/leakage_audit.py）。
 
-计划 §10 五项必测（任一失败即管线不通过）：
+计划中的五类泄漏检查加 quick 折可训练性、化学组隔离（任一失败即管线不通过）：
 1. 同一药物母体、细胞相关组、重复测量不跨受控集合（train/test 两两检查）；
 2. 封存区样本零出现在任何开发折；
 3. 分组与划分对标签值不敏感：置换响应数值后重跑划分，实体归属逐位不变；
@@ -99,6 +99,32 @@ def _check_fold_structure(dev, lco_folds, cid2parent) -> dict:
     return {"check": "5_fold_structure_stats", "pass": bool(ok), "detail": stats}
 
 
+def _check_quick_fold(dev, quick_folds) -> dict:
+    groups = quick_folds[0]
+    n_test = int(dev["cell_group"].isin(groups).sum())
+    n_train = len(dev) - n_test
+    return {
+        "check": "6_quick_fold_nonempty_sides",
+        "pass": n_train > 0 and n_test > 0,
+        "detail": {"train_samples": n_train, "test_samples": n_test},
+    }
+
+
+def _check_chemical_isolation(dev, ldo_folds, cid2parent, cid2scaf, cid2cluster) -> dict:
+    drugs = dev[["compound_id"]].drop_duplicates().copy()
+    for column, mapping in (("parent", cid2parent), ("scaffold", cid2scaf), ("chemical_group", cid2cluster)):
+        drugs[column] = drugs["compound_id"].map(mapping)
+    violations = []
+    for fold, test_groups in ldo_folds.items():
+        test = drugs[drugs["chemical_group"].isin(test_groups)]
+        train = drugs[~drugs["chemical_group"].isin(test_groups)]
+        for column in ("parent", "scaffold", "chemical_group"):
+            overlap = set(test[column]) & set(train[column])
+            if overlap:
+                violations.append({"fold": fold, "key": column, "n_overlapping": len(overlap)})
+    return {"check": "7_parent_scaffold_cluster_isolation", "pass": not violations, "detail": violations}
+
+
 def run_full_audit(
     dev,
     lco_folds,
@@ -107,6 +133,8 @@ def run_full_audit(
     ldo_folds,
     stress_folds,
     cid2parent,
+    cid2scaf,
+    cid2cluster,
     cell_group,
     cohort_hash,
     split_seed,
@@ -119,4 +147,6 @@ def run_full_audit(
     results["g3"] = _check_label_permutation_invariance(dev, cell_group, cid2parent, n_folds, split_seed + 1)
     results["g4"] = _check_determinism(dev, n_folds, split_seed + 1)
     results["g5"] = _check_fold_structure(dev, lco_folds, cid2parent)
+    results["g6"] = _check_quick_fold(dev, lco_quick)
+    results["g7"] = _check_chemical_isolation(dev, ldo_folds, cid2parent, cid2scaf, cid2cluster)
     return results

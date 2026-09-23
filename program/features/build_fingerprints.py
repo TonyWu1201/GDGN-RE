@@ -40,6 +40,10 @@ def smiles_to_fp(smi: str, gen) -> ExplicitBitVect | None:
     return gen.GetFingerprint(mol)
 
 
+def morgan_generator():
+    return rdFingerprintGenerator.GetMorganGenerator(radius=RADIUS, fpSize=N_BITS, includeChirality=True)
+
+
 def main() -> int:
     t0 = time.time()
     stage = "E2_build_fingerprints"
@@ -49,7 +53,7 @@ def main() -> int:
     comp = pd.read_csv(P.ENTITIES_DIR / "compound_master.csv", dtype=str)
     comp = comp.sort_values("compound_id").reset_index(drop=True)
 
-    gen = rdFingerprintGenerator.GetMorganGenerator(radius=RADIUS, fpSize=N_BITS)
+    gen = morgan_generator()
     fps: list[ExplicitBitVect] = []
     order: list[str] = []
     for _, r in comp.iterrows():
@@ -88,9 +92,9 @@ def main() -> int:
 
     # 哈希链
     data_hash = data_hash_from_files([P.COHORTS_DIR / "core_samples.parquet", P.ENTITIES_DIR / "compound_master.csv"])
-    fold_files = sorted((split_dir / "lco").glob("fold_candidate_*.csv"))
+    fold_files = sorted((split_dir / "lco").glob("fold_candidate_*.csv")) + [split_dir / "lco" / "fold_quick_screening_0.csv"]
     split_hash = split_hash_from_fold_files(fold_files)
-    prep_hash = hash_inputs({"rdkit": rdkit_version, "morgan_radius": RADIUS, "morgan_bits": N_BITS, "chiral": True})
+    prep_hash = hash_inputs({"rdkit": rdkit_version, "morgan_radius": RADIUS, "morgan_bits": N_BITS, "chiral": True, "implementation_sha256": sha256_file(P.REPO_ROOT / "program" / "features" / "build_fingerprints.py")})
 
     out_dir = feature_dir_for(P.FEATURES_DIR, data_hash, split_hash, prep_hash)
     out_dir.mkdir(parents=True, exist_ok=True)

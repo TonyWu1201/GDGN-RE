@@ -1,5 +1,5 @@
 {
-  "data_hash": "78d5ab2bf147263a",
+  "data_hash": "b5c7468047bf9876",
   "environment": {
     "numpy": "2.5.3",
     "pandas": "3.0.6",
@@ -10,17 +10,17 @@
     "scikit-learn": "1.9.1",
     "scipy": "1.18.1"
   },
-  "generated_at_utc": "2026-09-23T05:30:49.603557+00:00",
-  "git_commit": "unknown",
+  "generated_at_utc": "2026-09-23T07:01:23.725200+00:00",
+  "git_commit": "93add6f3614fee976c284648828b25b445dfdd4f",
   "morgan": {
     "binary": true,
     "bits": 2048,
     "radius": 2
   },
   "n_compounds": 242,
-  "n_unique_scaffold_groups": 20,
-  "preprocess_hash": "58f70a8b7a6011c1",
+  "n_unique_scaffold_groups": 22,
+  "preprocess_hash": "6f70020f28bcf736",
   "rdkit_version": "2026.03.6",
-  "split_hash": "3abe6fa44a26d08a",
+  "split_hash": "2645a153fa756bf6",
   "stage": "E2_build_fingerprints"
 }

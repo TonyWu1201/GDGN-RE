@@ -15,14 +15,19 @@
     "ldo_so": 5,
     "lpo": 1
   },
-  "generated_at_utc": "2026-09-23T05:23:18.456459+00:00",
-  "git_commit": "unknown",
+  "generated_at_utc": "2026-09-23T07:47:35.443216+00:00",
+  "git_commit": "93add6f3614fee976c284648828b25b445dfdd4f",
+  "implementation_sha256": {
+    "build_dev_splits": "800f613d86a6730b493ceb1cc735dedf8a4075e3b541097d07c7b1f59db9e547",
+    "chemical_groups": "ab148b10f94279f50478ca3d0587ff14e43175a8fef82e946e21b05f19e183b8",
+    "leakage_audit": "2a352c1e6828a695133db95c247bc64e1d9cded82f3a71cd5765c73d6c88d955"
+  },
   "leakage_audit_all_pass": true,
   "protocols": [
     "lco",
     "lpo",
     "ldo_so",
-    "lco_expression_neighbor_stress"
+    "lco_subtype_stress"
   ],
   "split_seed_base": 20260923,
   "stage": "D3_build_dev_splits"

@@ -3,6 +3,8 @@
 import numpy as np
 import pandas as pd
 import pytest
+import json
+from pathlib import Path
 
 from program.features.expression_preprocess import (
     fit_preprocessing,
@@ -23,6 +25,25 @@ def test_scaler_uses_train_only():
     _ = transform_with_state(val_a, state_a)
     _ = transform_with_state(val_b, state_a)
     assert np.allclose(state_a["medians"], mean_a)
+    assert not np.allclose(transform_with_state(val_a, state_a), transform_with_state(val_b, state_a))
+
+
+def test_single_test_row_uses_saved_training_scale():
+    train = np.array([[1.0, 2.0], [3.0, 4.0], [5.0, 6.0]])
+    state = fit_preprocessing(train)
+    single = np.array([[9.0, 10.0]])
+    expected = (single - np.array([3.0, 4.0])) / np.array([4.0, 4.0]) ** 0.5
+    assert np.allclose(transform_with_state(single, state), expected)
+    assert np.allclose(transform_with_state(single, state), transform_with_state(np.vstack([single, [50.0, 60.0]]), state)[:1])
+    assert np.allclose(transform_with_state(single, json.loads(json.dumps(state))), expected)
+
+
+def test_saved_expression_npz_loads_without_pickle():
+    config = json.loads(Path("data/manifests/runs/E1_build_expression_features/config_resolved.json").read_text(encoding="utf-8"))
+    fold = Path("data/features") / config["data_hash"] / config["split_hash"] / config["preprocess_hash"] / "lco" / "fold_candidate_0"
+    with np.load(fold / "expression_test.npz", allow_pickle=False) as feature:
+        assert len(feature["rows"]) == len(feature["data"])
+        assert feature["missing_mask"].shape == feature["data"].shape
 
 
 def test_imputation_uses_train_stats():

@@ -1,0 +1,39 @@
+{
+  "config_resolved": {
+    "data_hash": "b5c7468047bf9876",
+    "environment": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "pyarrow": "25.0.1",
+      "python": "3.14.6",
+      "rdkit": "2026.03.6",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1"
+    },
+    "generated_at_utc": "2026-09-23T07:01:23.725200+00:00",
+    "git_commit": "93add6f3614fee976c284648828b25b445dfdd4f",
+    "morgan": {
+      "binary": true,
+      "bits": 2048,
+      "radius": 2
+    },
+    "n_compounds": 242,
+    "n_unique_scaffold_groups": 22,
+    "preprocess_hash": "6f70020f28bcf736",
+    "rdkit_version": "2026.03.6",
+    "split_hash": "2645a153fa756bf6",
+    "stage": "E2_build_fingerprints"
+  },
+  "duration_s": 1.4,
+  "error": null,
+  "input_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\processed\\entities\\compound_master.csv": "4db48185ae02b089322e1e30286644df5b27a658936a2b6bc384a21177d8728e"
+  },
+  "output_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\b5c7468047bf9876\\2645a153fa756bf6\\6f70020f28bcf736\\fingerprints.npz": "e538bdf6a4e337feb1fc9622ab2c6f88881bd4569a8ee2205e105a1e1529b25c"
+  },
+  "stage": "E2_build_fingerprints",
+  "started_at": "2026-09-23T07:01:22.322927+00:00",
+  "status": "succeeded"
+}

@@ -6,6 +6,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import pytest
+from program.evaluation.chemical_groups import chemical_clusters
 
 
 def _cohort_hash() -> str:
@@ -52,6 +53,38 @@ def test_related_group_same_side():
         tr = set(fold[fold["role"] == "train"]["cell_group"])
         te = set(fold[fold["role"] == "test"]["cell_group"])
         assert tr.isdisjoint(te)
+
+
+def test_quick_fold_has_train_and_test():
+    ch = _cohort_hash()
+    fold = pd.read_csv(f"data/splits/{ch}/lco/fold_quick_screening_0.csv", dtype=str)
+    assert set(fold["role"]) == {"train", "test"}
+    assert set(fold[fold.role == "train"].cell_group).isdisjoint(set(fold[fold.role == "test"].cell_group))
+
+
+def test_chemical_scaffold_isolation():
+    ch = _cohort_hash()
+    for name in ["normalized_parent_id", "chemical_group_id"]:
+        assignment = pd.read_csv(f"data/splits/{ch}/holdout/drug_group_assignment.csv", dtype=str)
+        assert assignment.groupby(name)["region"].nunique().eq(1).all()
+    compounds = pd.read_csv("data/processed/entities/compound_master.csv", dtype=str)
+    assigned = assignment.merge(compounds[["compound_id", "scaffold_id"]], on="compound_id", validate="one_to_one")
+    assert assigned.groupby("scaffold_id")["region"].nunique().eq(1).all()
+    for f in range(5):
+        fold = pd.read_csv(f"data/splits/{ch}/ldo_so/fold_{f}.csv", dtype=str)
+        for name in ["parent", "scaffold", "chemical_group"]:
+            train = set(fold[fold.role == "train"][name])
+            test = set(fold[fold.role == "test"][name])
+            assert train.isdisjoint(test), (f, name)
+
+
+def test_chemical_clusters_join_transitively():
+    compounds = pd.DataFrame(
+        {"compound_id": ["A", "B", "C", "D"], "normalized_parent_id": ["P1", "P1", "P2", "P3"], "scaffold_id": ["S1", "S2", "S2", "S3"]}
+    )
+    groups = chemical_clusters(compounds)
+    assert groups["A"] == groups["B"] == groups["C"]
+    assert groups["D"] != groups["A"]
 
 
 def test_sealed_zero_leakage():

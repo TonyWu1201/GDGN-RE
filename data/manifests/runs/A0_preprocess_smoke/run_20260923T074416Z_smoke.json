@@ -1,0 +1,30 @@
+{
+  "config_resolved": {
+    "cohort_hash": "671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27",
+    "environment": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "pyarrow": "25.0.1",
+      "python": "3.14.6",
+      "rdkit": "2026.03.6",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1"
+    },
+    "generated_at_utc": "2026-09-23T07:44:16.506691+00:00",
+    "git_commit": "93add6f3614fee976c284648828b25b445dfdd4f",
+    "split_hash": "2645a153fa756bf6"
+  },
+  "duration_s": 0.4,
+  "error": null,
+  "input_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\b5c7468047bf9876\\2645a153fa756bf6\\6f70020f28bcf736\\fingerprints.npz": "e538bdf6a4e337feb1fc9622ab2c6f88881bd4569a8ee2205e105a1e1529b25c",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27\\lco\\fold_candidate_0.csv": "b57b4d40b996fca1e8443d58e14bbea3c899213d8bc50f003cbce4236eb3c7d4"
+  },
+  "output_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\manifests\\runs\\A0_preprocess_smoke\\smoke_report.json": "307f1df9261a0999ab7402e4f0fa66d9aa91f959ea09a9f1a805f8f166454ec0"
+  },
+  "stage": "A0_preprocess_smoke",
+  "started_at": "2026-09-23T07:44:16.150077+00:00",
+  "status": "smoke"
+}

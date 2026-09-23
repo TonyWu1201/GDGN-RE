@@ -21,6 +21,10 @@ def test_same_inchikey_same_parent():
     key_counts = m["inchikey_adjudicated"].value_counts()
     multi = key_counts[key_counts > 1]
     assert len(multi) == 10 and (multi == 2).all()
+    standardized_parent = m.groupby("inchikey_recomputed")["normalized_parent_id"].nunique()
+    assert (standardized_parent == 1).all()
+    afuresertib = m[m["compound_id"].isin(["CMP0144", "CMP0181"])]
+    assert afuresertib["normalized_parent_id"].nunique() == 1
 
 
 def test_rapamycin_and_low_confidence_not_in_core():

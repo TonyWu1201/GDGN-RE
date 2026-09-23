@@ -9,7 +9,7 @@
 - RDKit 标准化（固定版本）：保留 original_smiles 不动，另产
   standardized_isomeric_smiles；金属配合物（Cisplatin/Oxaliplatin）不拆片段，
   保留原始 SMILES 标 metal_complex_untouched（DECISION_LOG 2026-09-22 规则）。
-- 重复分组：同 InChIKey 药物赋同一 normalized_parent_id（10 对，Core 内全部成对）。
+- 重复分组：按标准化后的重算 InChIKey 赋 normalized_parent_id；保留审定键供核验。
 - Bemis–Murcko scaffold 预注册化学分组表（供 D2/D3 LDO-SO 用）。
 
 输出：compound_master.csv / compound_scaffolds.csv / compound_disposition.csv
@@ -146,9 +146,9 @@ def main() -> int:
         for d in mism_out["source_drug_id"]
     ]
 
-    # ---- normalized_parent_id：同 InChIKey 同 parent ----
+    # ---- normalized_parent_id：按去盐后实际用于建模的结构归组 ----
     parent_ids: dict[str, str] = {}
-    for ikey, grp in master.groupby("inchikey_adjudicated"):
+    for ikey, grp in master.groupby("inchikey_recomputed"):
         pid = f"NP{len(parent_ids) + 1:04d}"
         for cid in grp["compound_id"]:
             parent_ids[cid] = pid
@@ -194,6 +194,7 @@ def main() -> int:
     same_key_counts = master["inchikey_adjudicated"].value_counts()
     multi = same_key_counts[same_key_counts > 1]
     assert len(multi) == 10 and (multi == 2).all(), f"同 InChIKey 对不闭合: {multi.to_dict()}"
+    assert master.groupby("inchikey_recomputed")["normalized_parent_id"].nunique().eq(1).all(), "同标准化结构跨 parent"
     assert len(disposition) == 295, "295 药去向应闭合"
 
     out_master = P.ENTITIES_DIR / "compound_master.csv"
@@ -218,6 +219,10 @@ def main() -> int:
         "same_inchikey_pairs": {
             k: v.to_dict("records") for k, v in master.groupby("inchikey_adjudicated") if len(v) > 1
         },
+        "same_standardized_parent_groups": {
+            k: v[["compound_id", "source_name", "inchikey_adjudicated"]].to_dict("records")
+            for k, v in master.groupby("inchikey_recomputed") if len(v) > 1
+        },
         "n_normalized_parents": master["normalized_parent_id"].nunique(),
         "n_scaffolds": int((~scaffolds["scaffold_id"].isin([METAL_SCAFFOLD_ID, FAIL_SCAFFOLD_ID])).sum()),
         "metal_complex_untouched": master[master["salt_policy"] == "metal_complex_untouched"]["source_name"].tolist(),
@@ -227,6 +232,7 @@ def main() -> int:
 
     base_cfg = {
         "stage": stage,
+        "implementation_sha256": sha256_file(P.REPO_ROOT / "program" / "harmonize" / "build_compound_master.py"),
         "rdkit_version": rdkit_version,
         "salt_policy_rule": "largest_fragment_as_parent; metal complexes untouched (DECISION_LOG 2026-09-22)",
         "compound_id_rule": "sorted by integer DRUG_ID, CMP0001..",

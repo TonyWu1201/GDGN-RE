@@ -75,12 +75,13 @@ def main() -> int:
     data_hash = data_hash_from_files(
         [P.COHORTS_DIR / "core_samples.parquet", P.DEPMAP_EXPRESSION_CSV, P.ENTITIES_DIR / "gene_master.csv"]
     )
-    fold_files = sorted((split_dir / "lco").glob("fold_candidate_*.csv"))
+    fold_files = sorted((split_dir / "lco").glob("fold_candidate_*.csv")) + [split_dir / "lco" / "fold_quick_screening_0.csv"]
     split_hash = split_hash_from_fold_files(fold_files)
-    prep_hash = hash_inputs({"rdkit": "n/a", "hvg": HVG_MAIN, "impute": "median", "scale": "entity_z", "min_variance": 1e-8})
+    prep_hash = hash_inputs({"hvg": HVG_MAIN, "impute": "median", "scale": "entity_z", "min_variance": 1e-8, "fit_sha256": sha256_file(Path(__file__).with_name("expression_preprocess.py")), "build_sha256": sha256_file(Path(__file__))})
 
     out_dir = feature_dir_for(P.FEATURES_DIR, data_hash, split_hash, prep_hash) / "lco"
     out_dir.mkdir(parents=True, exist_ok=True)
+    output_hashes = {}
 
     for fold_file in fold_files:
         fold = pd.read_csv(fold_file, dtype=str)
@@ -95,31 +96,23 @@ def main() -> int:
         # 列对齐（同一 gene 顺序）
         test_expr = test_expr[train_expr.columns]
 
-        entity_ids = [cell_rev[c] for c in train_expr.index] if (cell_rev := {v: k for k, v in cell2mid.items()}) else None
         state = fit_preprocessing(train_expr.to_numpy(), impute="median", scale=True, hvg_n=HVG_MAIN, entity_ids=None)
         train_out = transform_with_state(train_expr.to_numpy(), state)
         test_out = transform_with_state(test_expr.to_numpy(), state)
+        train_missing = (~np.isfinite(train_expr.to_numpy()[:, state["selected_columns"]])).astype(np.uint8)
+        test_missing = (~np.isfinite(test_expr.to_numpy()[:, state["selected_columns"]])).astype(np.uint8)
 
         fold_out = out_dir / Path(fold_file).stem
         fold_out.mkdir(parents=True, exist_ok=True)
-        np.savez_compressed(fold_out / "expression_train.npz", data=train_out, rows=np.array(train_expr.index), cols=np.array(train_expr.columns)[state["selected_columns"]])
-        np.savez_compressed(fold_out / "expression_test.npz", data=test_out, rows=np.array(test_expr.index), cols=np.array(test_expr.columns)[state["selected_columns"]])
+        column_ids = np.asarray(train_expr.columns[state["selected_columns"]], dtype=str)
+        np.savez_compressed(fold_out / "expression_train.npz", data=train_out, missing_mask=train_missing, rows=np.asarray(train_expr.index, dtype=str), cols=column_ids)
+        np.savez_compressed(fold_out / "expression_test.npz", data=test_out, missing_mask=test_missing, rows=np.asarray(test_expr.index, dtype=str), cols=column_ids)
         (fold_out / "gene_order.json").write_bytes(
             deterministic_json_bytes({"selected_columns": [str(c) for c in state["selected_columns"]], "gene_pairs_in_order": [list(g) for g in [gene_pairs[c] for c in state["selected_columns"]]]})
         )
-        (fold_out / "preprocessing_state.json").write_bytes(
-            deterministic_json_bytes(
-                {
-                    "kept_columns": [int(c) for c in state["kept_columns"]],
-                    "selected_columns": [int(c) for c in state["selected_columns"]],
-                    "entity_scale": state["entity_scale"],
-                    "medians_head": [float(x) for x in state["medians"][:20]],
-                    "hvg_n": HVG_MAIN,
-                    "n_train_cells": len(train_cells),
-                    "n_test_cells": len(test_cells),
-                }
-            )
-        )
+        (fold_out / "preprocessing_state.json").write_bytes(deterministic_json_bytes(state))
+        for name in ("expression_train.npz", "expression_test.npz", "gene_order.json", "preprocessing_state.json"):
+            output_hashes[str(fold_out / name)] = sha256_file(fold_out / name)
 
     cfg = resolve_config(
         {
@@ -137,7 +130,7 @@ def main() -> int:
         stage,
         cfg,
         input_hashes={str(f): sha256_file(f) for f in fold_files},
-        outputs={str(out_dir / "hash_marker.txt"): (out_dir / "hash_marker").exists() and sha256_file(out_dir) or "dir"},
+        outputs=output_hashes,
         status="succeeded",
         started_at=t0,
     )

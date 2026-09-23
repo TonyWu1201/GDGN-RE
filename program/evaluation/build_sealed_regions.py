@@ -2,7 +2,7 @@
 
 计划 §8.2。先成组后抽样：
 - 细胞侧组 = related_cell_groups（Core 内仅 ML-1/ML-2 一组，其余单实体自组）；
-- 药物侧组 = normalized_parent_id（10 对重复必同组）；
+- 药物侧组 = 标准化母体或 scaffold 相同者构成的化学连通组；
 - 分组不使用响应数值或模型误差（split_policy.json）；
 - 组织分布作平衡约束（每组织在封存/开发侧占比偏差受控）；
 - 15%/15% 细胞组/药物组（预注册）。
@@ -33,6 +33,7 @@ from program.common.runlog import (
     sha256_file,
     sha256_frame,
 )
+from program.evaluation.chemical_groups import chemical_clusters
 
 SPLIT_SEED = 20260923
 CELL_GROUP_RATIO = 0.15
@@ -117,11 +118,11 @@ def main() -> int:
     cell_group = {c: sid2group.get(sid2cell[c], f"CG_{c}") for c in cell_ids}
     cell_tissue = dict(zip(core["cell_id"], core["oncotree_lineage"]))
 
-    # ---- 药物组：normalized_parent_id ----
+    # ---- 药物组：标准化母体或 scaffold 相同者必须同侧 ----
     comp = pd.read_csv(P.ENTITIES_DIR / "compound_master.csv", dtype=str)
     cid2parent = dict(zip(comp["compound_id"], comp["normalized_parent_id"]))
-    drug_group = {d: cid2parent[d] for d in drug_ids}
-    drug_tissue = {"DUMMY": "NA"}  # 药物侧无组织约束
+    clusters = chemical_clusters(comp)
+    drug_group = {d: clusters[d] for d in drug_ids}
 
     cell_region, cell_group_region = assign_groups_with_balance(cell_ids, cell_group, cell_tissue, CELL_GROUP_RATIO, SPLIT_SEED)
     drug_region, _ = assign_groups_with_balance(drug_ids, drug_group, {d: "NA" for d in drug_ids}, DRUG_GROUP_RATIO, SPLIT_SEED + 1)
@@ -147,8 +148,6 @@ def main() -> int:
     assert seen == {(c, d) for c in cell_ids for d in drug_ids}, "象限并集 != Core"
 
     # ---- 资格清单：封存区每药 ≥10 细胞且标签有方差 ----
-    y_by = core.groupby("compound_id")["y"].agg(["count", "nunique"])
-    cov = core.groupby("compound_id")["cell_id"].nunique()
     quad_lco_drug_n = core[core["compound_id"].isin(d_dev) & core["cell_id"].isin(c_hold)].groupby("compound_id")["cell_id"].nunique()
     quad_lco_drug_var = core[core["compound_id"].isin(d_dev) & core["cell_id"].isin(c_hold)].groupby("compound_id")["y"].nunique()
     eligibility = pd.DataFrame(
@@ -156,8 +155,8 @@ def main() -> int:
             "compound_id": sorted(d_dev),
         }
     )
-    eligibility["lco_confirmation_cells"] = eligibility["compound_id"].map(quad_lco_drug_var).fillna(0)
-    eligibility["has_label_variance"] = eligibility["lco_confirmation_cells"] > 1
+    eligibility["lco_confirmation_cells"] = eligibility["compound_id"].map(quad_lco_drug_n).fillna(0).astype(int)
+    eligibility["has_label_variance"] = eligibility["compound_id"].map(quad_lco_drug_var).fillna(0) > 1
     eligibility["meets_min10"] = eligibility["lco_confirmation_cells"] >= 10
     eligibility = eligibility.merge(comp[["compound_id", "source_name"]], on="compound_id", how="left")
 
@@ -177,7 +176,8 @@ def main() -> int:
     drug_assign = pd.DataFrame(
         {
             "compound_id": drug_ids,
-            "normalized_parent_id": [drug_group[d] for d in drug_ids],
+            "normalized_parent_id": [cid2parent[d] for d in drug_ids],
+            "chemical_group_id": [drug_group[d] for d in drug_ids],
             "region": [drug_region[d] for d in drug_ids],
         }
     )
@@ -193,12 +193,17 @@ def main() -> int:
 
     cfg_resolved = {
         "stage": stage,
+        "implementation_sha256": {
+            "build_sealed_regions": sha256_file(P.REPO_ROOT / "program" / "evaluation" / "build_sealed_regions.py"),
+            "chemical_groups": sha256_file(P.REPO_ROOT / "program" / "evaluation" / "chemical_groups.py"),
+        },
         "cohort_hash": cohort_hash,
         "split_seed": SPLIT_SEED,
         "cell_group_ratio": CELL_GROUP_RATIO,
         "drug_group_ratio": DRUG_GROUP_RATIO,
         "tissue_balance_tolerance": TISSUE_TOLERANCE,
         "grouping_rules": {"use_response_values": False, "use_model_errors": False},
+        "drug_grouping": "connected components of standardized parent and Bemis-Murcko scaffold",
         "naming": "internal confirmation (entities participated in legacy project development); NOT independent data",
     }
     cfg = resolve_config(cfg_resolved)
@@ -234,13 +239,13 @@ def main() -> int:
     # 同组实体零跨侧
     g2r = cell_assign.groupby("group_id")["region"].nunique()
     assert (g2r == 1).all(), "细胞组跨侧"
-    gp2r = drug_assign.groupby("normalized_parent_id")["region"].nunique()
+    gp2r = drug_assign.groupby("chemical_group_id")["region"].nunique()
     assert (gp2r == 1).all(), "药物组跨侧"
 
     save_run_record(
         stage,
         cfg,
-        input_hashes={str(P.COHORTS_DIR / "core_samples.parquet"): sha256_file(P.COHORTS_DIR / "core_samples.parquet")},
+        input_hashes={str(p): sha256_file(p) for p in (P.COHORTS_DIR / "core_samples.parquet", P.ENTITIES_DIR / "compound_master.csv", P.ENTITIES_DIR / "related_cell_groups.csv")},
         outputs={
             str(out_dir / "cell_group_assignment.csv"): sha256_file(out_dir / "cell_group_assignment.csv"),
             str(out_dir / "drug_group_assignment.csv"): sha256_file(out_dir / "drug_group_assignment.csv"),

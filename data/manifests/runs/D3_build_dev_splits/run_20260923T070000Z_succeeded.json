@@ -1,0 +1,42 @@
+{
+  "config_resolved": {
+    "environment": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "pyarrow": "25.0.1",
+      "python": "3.14.6",
+      "rdkit": "2026.03.6",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1"
+    },
+    "folds": {
+      "lco_candidate": 5,
+      "lco_quick": 1,
+      "ldo_so": 5,
+      "lpo": 1
+    },
+    "generated_at_utc": "2026-09-23T07:00:00.049684+00:00",
+    "git_commit": "93add6f3614fee976c284648828b25b445dfdd4f",
+    "leakage_audit_all_pass": true,
+    "protocols": [
+      "lco",
+      "lpo",
+      "ldo_so",
+      "lco_expression_neighbor_stress"
+    ],
+    "split_seed_base": 20260923,
+    "stage": "D3_build_dev_splits"
+  },
+  "duration_s": 6.3,
+  "error": null,
+  "input_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\processed\\cohorts\\core_samples.parquet": "369086037313730f6efb46bc6fe71591a864b5f8e2c5fc5be0d6b72ed6a06a68"
+  },
+  "output_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27\\split_audit.json": "45182c2315c38186ef71fbcbdc6ec5e6fec8d491f0acb925fba136d7ef64a8fa"
+  },
+  "stage": "D3_build_dev_splits",
+  "started_at": "2026-09-23T06:59:53.776025+00:00",
+  "status": "succeeded"
+}

@@ -1,5 +1,5 @@
 {
-  "data_hash": "5097d56e25abb0d9",
+  "data_hash": "e9a0f90e2e5256b1",
   "environment": {
     "numpy": "2.5.3",
     "pandas": "3.0.6",
@@ -10,12 +10,12 @@
     "scikit-learn": "1.9.1",
     "scipy": "1.18.1"
   },
-  "generated_at_utc": "2026-09-23T05:29:54.805008+00:00",
-  "git_commit": "unknown",
+  "generated_at_utc": "2026-09-23T07:32:34.554824+00:00",
+  "git_commit": "93add6f3614fee976c284648828b25b445dfdd4f",
   "hvg_main": 1000,
-  "output_dir": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\5097d56e25abb0d9\\3abe6fa44a26d08a\\f05fd3d9603d2b21\\lco",
-  "preprocess_hash": "f05fd3d9603d2b21",
-  "split_hash": "3abe6fa44a26d08a",
+  "output_dir": "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\features\\e9a0f90e2e5256b1\\2645a153fa756bf6\\291a5c3d0d235c57\\lco",
+  "preprocess_hash": "291a5c3d0d235c57",
+  "split_hash": "2645a153fa756bf6",
   "stage": "E1_build_expression_features",
   "unit": "log2(TPM+1); no re-log (C0 dictionary note)"
 }

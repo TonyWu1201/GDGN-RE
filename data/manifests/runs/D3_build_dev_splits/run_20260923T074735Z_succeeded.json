@@ -1,0 +1,50 @@
+{
+  "config_resolved": {
+    "environment": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "pyarrow": "25.0.1",
+      "python": "3.14.6",
+      "rdkit": "2026.03.6",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1"
+    },
+    "folds": {
+      "lco_candidate": 5,
+      "lco_quick": 1,
+      "ldo_so": 5,
+      "lpo": 1
+    },
+    "generated_at_utc": "2026-09-23T07:47:35.443216+00:00",
+    "git_commit": "93add6f3614fee976c284648828b25b445dfdd4f",
+    "implementation_sha256": {
+      "build_dev_splits": "800f613d86a6730b493ceb1cc735dedf8a4075e3b541097d07c7b1f59db9e547",
+      "chemical_groups": "ab148b10f94279f50478ca3d0587ff14e43175a8fef82e946e21b05f19e183b8",
+      "leakage_audit": "2a352c1e6828a695133db95c247bc64e1d9cded82f3a71cd5765c73d6c88d955"
+    },
+    "leakage_audit_all_pass": true,
+    "protocols": [
+      "lco",
+      "lpo",
+      "ldo_so",
+      "lco_subtype_stress"
+    ],
+    "split_seed_base": 20260923,
+    "stage": "D3_build_dev_splits"
+  },
+  "duration_s": 5.5,
+  "error": null,
+  "input_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\processed\\cohorts\\core_samples.parquet": "369086037313730f6efb46bc6fe71591a864b5f8e2c5fc5be0d6b72ed6a06a68",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\processed\\entities\\compound_master.csv": "4db48185ae02b089322e1e30286644df5b27a658936a2b6bc384a21177d8728e",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27\\holdout\\cell_group_assignment.csv": "9440db09cbd8d76aa114a1752e0eff99486566dd011c6a26f67c17280b9b2858",
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27\\holdout\\drug_group_assignment.csv": "3b3ee1010dbd0e1cb7665b073417f6e45449441b92ef197b1281bb8ae1b97c7f"
+  },
+  "output_sha256": {
+    "D:\\AAA_STUDY\\SRTP\\模型改进v2\\GDGN-RE\\data\\splits\\671ef1fe88dc3f959532520055d8536da2497f89556f9b197fe0e80353cedb27\\split_audit.json": "d775d2f3507dd2dc538da81fae8dbc7d0afceedcf2d65adb898b5ac2ed42abdb"
+  },
+  "stage": "D3_build_dev_splits",
+  "started_at": "2026-09-23T07:47:29.941608+00:00",
+  "status": "succeeded"
+}
