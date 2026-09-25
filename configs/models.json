@@ -66,6 +66,12 @@
     },
     "max_concurrent_neural_tracks": 2
   },
+  "a2_execution": {
+    "selected_models": ["additive", "r1_k16"],
+    "optional_models": ["r0", "r1_k32", "r2_drug_equal", "r2_rank", "p", "p_random", "p_projection", "p_linear"],
+    "ranking": {"noise_threshold": null, "temperature": null, "max_pairs_per_batch": 64},
+    "selection_note": "A1 MLP is the proposed R0 anchor after preflight verification. Add optional configurations only after recording the A2 branch decision; all fitted controls count toward the four-config cap."
+  },
   "candidate_entry_conditions": {
     "dti_gating": "基础模型稳定；明确研究 LCO 或 LDO-KT；对照：无 DTI、真实 DTI、打乱 DTI、相同来源覆盖",
     "structure_to_target": "有足够独立训练药物及可解释正例来源；drug-disjoint AUPRC/NDCG 无优势则不接响应模型",

@@ -54,3 +54,32 @@ uv run --no-cache --no-sync python -m program.cli report-a1
 ```
 
 报告会列出所有失败和缺失项；诊断不足时不会判定基础信号成立。LPO 仅作工程桥接，LCO 是主任务。当前实现不包含封存区或外部验证入口。
+
+## M4 / A2 最小机制（正式拟合在另一台电脑）
+
+A1 的三个 MLP 种子作为 R0 锚点；A2 dry-run 会核对其数据、样本 ID、标签和保存指标。默认正式矩阵只包含特征加性与 R1-K16，各在 LCO/LPO 运行三个种子，共 12 次已选配置拟合。所有正式 A2 配置由 `configs/models.json` 的 `a2_execution.selected_models` 冻结，最多 4 个新配置、24 次拟合；增加 R2 或 P 分支前先在 `guidance/DECISION_LOG.md` 登记取舍。R2 排序的噪声阈值和温度目前为空，必须由训练数据确定并登记后才能选择。
+
+若异机 dry-run 判定 A1 MLP 无法复用，先查明数据或实现差异；确需重训时把 `r0` 放在 `selected_models` 首位并删去相应可选配置，仍守住 4 配置/24 次上限。其余 A2 模型必须等同协议、同种子的重训 R0 成功后运行。
+
+本机先检查代码与输入，不运行完整 A2：
+
+```powershell
+uv run --no-cache --no-sync python -m pytest tests -q -p no:cacheprovider
+uv run --no-cache --no-sync python -m program.cli train --stage A2 --dry-run
+uv run --no-cache --no-sync python -m program.cli train --stage A2 --model additive --protocol lco --seed 42 --smoke
+```
+
+`--smoke` 只用小样本和短训练，运行状态为 `smoke`，不进入候选报告。另一台电脑同步代码及带哈希的 A1 预测、数据和特征资产后，先执行上述 dry-run，再显式启动冻结矩阵：
+
+```powershell
+uv lock --check --no-cache
+uv run --no-cache --no-sync python -m program.cli train --stage A2 --all
+```
+
+中断后同一命令加 `--resume`；成功运行不可覆盖。单条运行可用 `--stage A2 --model r1_k16 --protocol lco --seed 42`。对每条输出目录用 `evaluate --run-dir "<输出目录>"` 重算，再运行：
+
+```powershell
+uv run --no-cache --no-sync python -m program.cli report-a2
+```
+
+候选报告写入 `guidance/M4/A2_CANDIDATE_REPORT.md`，仅汇总正式 A2 运行。`guidance/`、`data/features/`、`data/runs/` 被 `.gitignore` 排除，跨机需单独同步相关资产并校验哈希；开发入口不读取 `data/holdout/` 响应标签。

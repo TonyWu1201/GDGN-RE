@@ -137,6 +137,7 @@ def test_tree_predictions_are_bitwise_stable_across_calls():
         reloaded = pickle.loads(pickle.dumps(fitted))
         return reloaded.predict(prepared, frame)
 
+    assert fitted.estimator.n_jobs == 1
     assert np.array_equal(first, fitted.predict(prepared, frame))
     assert np.array_equal(first, _predict())
     assert np.array_equal(first, _predict())

@@ -111,3 +111,27 @@ def evaluate_file(path: Path, min_cells: int = 10) -> dict:
 
 def write_metrics(path: Path, metrics: dict) -> None:
     path.write_text(json.dumps(metrics, ensure_ascii=False, indent=2, allow_nan=False), encoding="utf-8")
+
+
+def assert_metrics_close(actual: object, saved: object, path: str = "metrics") -> None:
+    """Allow machine-level float noise, while keeping schema and counts exact."""
+    if isinstance(actual, dict) and isinstance(saved, dict):
+        if actual.keys() != saved.keys():
+            raise ValueError(f"{path}: metric keys differ")
+        for key in actual:
+            assert_metrics_close(actual[key], saved[key], f"{path}.{key}")
+        return
+    if isinstance(actual, list) and isinstance(saved, list):
+        if len(actual) != len(saved):
+            raise ValueError(f"{path}: metric list length differs")
+        for i, (left, right) in enumerate(zip(actual, saved)):
+            assert_metrics_close(left, right, f"{path}[{i}]")
+        return
+    if isinstance(actual, bool) or isinstance(saved, bool):
+        equal = type(actual) is type(saved) and actual == saved
+    elif isinstance(actual, float) and isinstance(saved, (float, int)):
+        equal = np.isfinite(actual) and np.isfinite(saved) and bool(np.isclose(actual, saved, rtol=1e-12, atol=1e-12))
+    else:
+        equal = type(actual) is type(saved) and actual == saved
+    if not equal:
+        raise ValueError(f"{path}: recomputed metric differs from saved metric ({actual!r} != {saved!r})")
