@@ -116,6 +116,32 @@ def test_all_registered_sklearn_models_predict_finite_values():
         assert np.isfinite(prediction).all(), name
 
 
+def test_tree_predictions_are_bitwise_stable_across_calls():
+    rng = np.random.default_rng(0)
+    expression = rng.normal(size=(40, 8)).astype(np.float32)
+    fingerprints = rng.integers(0, 2, size=(6, 8)).astype(np.float32)
+    cells = [f"C{i}" for i in range(40)]
+    drugs = [f"D{j}" for j in range(6)]
+    frame = pd.DataFrame([
+        {"sample_id": f"{c}_{d}", "cell_id": c, "compound_id": d, "profile_rna_model_id": c,
+         "y": float(expression[i, 0] + j)}
+        for i, c in enumerate(cells) for j, d in enumerate(drugs)
+    ])
+    prepared = PreparedData(frame, frame, expression, fingerprints, cells, drugs, {}, [])
+    params = grid("tree")[0]
+    fitted = fit_baseline("tree", prepared, params)
+    first = fitted.predict(prepared, frame)
+    import pickle
+
+    def _predict() -> np.ndarray:
+        reloaded = pickle.loads(pickle.dumps(fitted))
+        return reloaded.predict(prepared, frame)
+
+    assert np.array_equal(first, fitted.predict(prepared, frame))
+    assert np.array_equal(first, _predict())
+    assert np.array_equal(first, _predict())
+
+
 def test_inner_lpo_keeps_same_pair_together():
     frame = pd.DataFrame({"sample_id": [f"S{i}" for i in range(20)],
                           "cell_id": [f"C{i // 2}" for i in range(20)],

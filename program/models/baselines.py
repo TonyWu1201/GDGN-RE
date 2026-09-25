@@ -144,5 +144,7 @@ def fit_baseline(name: str, prepared: PreparedData, params: dict, seed: int = 42
     else:
         model = ExtraTreesRegressor(**params, n_jobs=-1, random_state=seed)
     model.fit(x, y)
+    if name == "tree":
+        model.n_jobs = 1
     fitted.estimator, fitted.side = model, side
     return fitted
