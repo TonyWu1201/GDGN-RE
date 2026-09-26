@@ -67,10 +67,10 @@
     "max_concurrent_neural_tracks": 2
   },
   "a2_execution": {
-    "selected_models": ["additive", "r1_k16"],
-    "optional_models": ["r0", "r1_k32", "r2_drug_equal", "r2_rank", "p", "p_random", "p_projection", "p_linear"],
+    "selected_models": ["additive", "r1_k16", "r1_k32"],
+    "optional_models": ["r0", "r2_drug_equal", "r2_rank", "p", "p_random", "p_projection", "p_linear"],
     "ranking": {"noise_threshold": null, "temperature": null, "max_pairs_per_batch": 64},
-    "selection_note": "A1 MLP is the proposed R0 anchor after preflight verification. Add optional configurations only after recording the A2 branch decision; all fitted controls count toward the four-config cap."
+    "selection_note": "A1 MLP is the proposed R0 anchor after preflight verification. On 2026-09-25 r1_k32 was added as one single-variable continuation after the initial A2 screen (logged in guidance/DECISION_LOG.md); additive and r1_k16 remain in the matrix. All fitted controls count toward the four-config cap."
   },
   "candidate_entry_conditions": {
     "dti_gating": "基础模型稳定；明确研究 LCO 或 LDO-KT；对照：无 DTI、真实 DTI、打乱 DTI、相同来源覆盖",
